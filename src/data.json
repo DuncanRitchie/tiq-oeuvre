@@ -5,6 +5,7 @@
     "dates-as-text": "2005 Apr 12, 13, and 14",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "a human cannonball",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -12,7 +13,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["Big Nose","2005","John Prescott Theatre","Ellesmere Port","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Charlie Prince: Rock Idol of the Town",
     "epoch": 3352233600,
@@ -20,6 +22,7 @@
     "dates-as-text": "2006 Mar 23, 24, and 25",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "chorus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -27,7 +30,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["Charlie Prince Rock Idol of the Town","Charlie Prince","Rock Idol of the Town","The Happy Prince","2006","John Prescott Theatre","Ellesmere Port","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Twelve Days of Christmas",
     "epoch": 3375129600,
@@ -35,6 +39,7 @@
     "dates-as-text": "2006 Dec 13, 14, 15, and 16",
     "by": "Jigsaw Music Theatre, St Thomas of Canterbury Junior School, St Thomas of Canterbury Parish Church Choir, undergraduate carollers, and three professional actors",
     "my-acting-role": "an effervescent/demented professor emeritus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -42,7 +47,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["The Twelve Days of Christmas","Twelve Days of Christmas","Christmas","St Thomas of Canterbury","2006","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Call to Merlin",
     "epoch": 3387916800,
@@ -50,6 +56,7 @@
     "dates-as-text": "2007 May 10 and 11",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "chorus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -57,7 +64,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["Call to Merlin","Merlin","2007","John Prescott Theatre","Ellesmere Port","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Invisible Girl",
     "epoch": 3409603200,
@@ -65,6 +73,7 @@
     "dates-as-text": "2008 Jan 16 and 17",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "chorus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -72,7 +81,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["The Invisible Girl","Invisible Girl","2008","John Prescott Theatre","Ellesmere Port","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Chester Mystery Plays 2008",
     "epoch": 3423600000,
@@ -80,6 +90,7 @@
     "dates-as-text": "2008 Jun 26 to Jul 19",
     "by": "Jigsaw Music Theatre and many other actors and choristers within the CMP cast",
     "my-acting-role": "chorus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -87,7 +98,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["Chester Mystery Plays","Chester","Mystery Plays","Mysteries","2008","Chester Cathedral","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "1001 Nights",
     "epoch": 3447705600,
@@ -95,6 +107,7 @@
     "dates-as-text": "2009 Apr 01 and 02",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "a tailor and Sinbad the Sailor",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -102,7 +115,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["1001 Nights","2009","Arabian Nights","1001 Arabian Nights","Gateway Theatre","Chester","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Canterbury Tales",
     "epoch": 3476044800,
@@ -110,6 +124,7 @@
     "dates-as-text": "2010 Feb 23, 24, and 25",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "the Nun&rsquo;s Priest and a pig",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -117,7 +132,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["The Canterbury Tales","Canterbury Tales","2010","St Thomas of Canterbury Church","Duncan as Actor","Duncan as Lyricist","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Noah&rsquo;s Flood (Chester Mystery Play Reprise 2010)",
     "epoch": 3485980800,
@@ -125,6 +141,7 @@
     "dates-as-text": "2010 Jun 18, 19, and 20",
     "by": "Jigsaw Music Theatre and others in the CMP cast",
     "my-acting-role": "chorus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -132,7 +149,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["Noahs Flood","Noah","Chester","Mystery Plays","2010","Amphitheatre","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Crash of the Rhinos",
     "epoch": 3487104000,
@@ -140,6 +158,7 @@
     "dates-as-text": "2010 Jul 01, 02, and 04",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "a silverback gorilla",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -147,7 +166,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["The Crash of the Rhinos","Crash of the Rhinos","2010","Rhino Mania","Town Hall Square","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Court of King Ludwig",
     "epoch": 3506284800,
@@ -155,6 +175,7 @@
     "dates-as-text": "2011 Feb 08 and 09",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "a court jester",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -162,7 +183,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["The Court of King Ludwig","Court of King Ludwig","King Ludwig","2011","St Thomas of Canterbury Church","Duncan as Actor","Duncan as Lyricist","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Insect Circus",
     "epoch": 3517516800,
@@ -170,6 +192,7 @@
     "dates-as-text": "2011 Jul 18 and 19",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "a sadistic wasp-tamer",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -177,7 +200,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["The Insect Circus","Insect Circus","2011","Town Hall Square","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "More Than Salt",
     "epoch": 3521577600,
@@ -185,6 +209,7 @@
     "dates-as-text": "2011 Aug 04",
     "by": "Jigsaw Music Theatre and Ista (the International Schools Theatre Association)",
     "my-acting-role": "chorus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -192,7 +217,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["More Than Salt","ISTA","Porthleven","2011","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Snow Queen",
     "epoch": 3532464000,
@@ -200,6 +226,7 @@
     "dates-as-text": "2011 Dec 08 and 09",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": "chorus",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -207,7 +234,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["The Snow Queen","Snow Queen","2011","Eastgate Street","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Unsinkable",
     "epoch": 3547324800,
@@ -215,6 +243,7 @@
     "dates-as-text": "2012 May 28, 29, 30, and 31",
     "by": "Jigsaw Music Theatre, other Theatre in the Quarter actors, and the Hammond School",
     "my-acting-role": "look-out Archie Jewell",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -222,7 +251,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["Unsinkable","Titanic","RMS Titanic","Hammond","2012","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Noah&rsquo;s Flood (Chester Mystery Play Reprise 2012)",
     "epoch": 3547670400,
@@ -230,6 +260,7 @@
     "dates-as-text": "2012 Jun",
     "by": "Jigsaw Music Theatre and others in the CMP cast",
     "my-acting-role": "Cam, son of Noah",
+    "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
     "photo-url-max-width-400": null,
@@ -237,7 +268,8 @@
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
     "tags-batch-one": ["Noahs Flood","Chester","Mystery Play","2012","Amphitheatre","Duncan as Actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Ghosts of the City",
     "epoch": 3569356800,
@@ -245,14 +277,16 @@
     "dates-as-text": "2013 Feb 07 and 08",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_1280.jpg",
     "photo-url-max-width-500": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_500.jpg",
     "photo-url-max-width-400": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_400.jpg",
     "photo-url-max-width-250": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_250.jpg",
     "photo-url-max-width-100": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_100.jpg",
     "photo-url-max-width-75": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_75sq.jpg",
-    "tags-batch-one": ["Ghosts of the City","Jigsaw Music Theatre","2013","St Marys Creative Space","Duncan as Lyricist","Duncan as Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Ghosts of the City","Jigsaw Music Theatre","2013","St Marys Creative Space","Duncan as Lyricist","Duncan as Poster Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Firebird",
     "epoch": 3603052800,
@@ -260,14 +294,16 @@
     "dates-as-text": "2014 Mar 04 and 05",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/09fbff19ffc934e45253c47058cd4df1/tumblr_pkrpe6K5s31y4ne37o2_r2_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/09fbff19ffc934e45253c47058cd4df1/tumblr_pkrpe6K5s31y4ne37o2_r2_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/09fbff19ffc934e45253c47058cd4df1/tumblr_pkrpe6K5s31y4ne37o2_r2_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/09fbff19ffc934e45253c47058cd4df1/tumblr_pkrpe6K5s31y4ne37o2_r2_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/09fbff19ffc934e45253c47058cd4df1/tumblr_pkrpe6K5s31y4ne37o2_r2_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/09fbff19ffc934e45253c47058cd4df1/tumblr_pkrpe6K5s31y4ne37o2_r2_75sq.png",
-    "tags-batch-one": ["The Firebird","Firebird","Jigsaw Music Theatre","2014","Bishops High","Duncan as Lyricist","Duncan as Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Firebird","Firebird","Jigsaw Music Theatre","2014","Bishops High","Duncan as Lyricist","Duncan as Poster Designer","Duncan as Programme Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Masque",
     "epoch": 3606076800,
@@ -275,14 +311,16 @@
     "dates-as-text": "2014 Apr 08, 09, 11, and 12",
     "by": "Quartz Youth Theatre",
     "my-acting-role": "chorus",
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/5d0ac4375afa754f06b944699b106f05/tumblr_pkrpkxlbfp1y4ne37o2_r1_1280.jpg",
     "photo-url-max-width-500": "https://66.media.tumblr.com/5d0ac4375afa754f06b944699b106f05/tumblr_pkrpkxlbfp1y4ne37o2_r1_500.jpg",
     "photo-url-max-width-400": "https://66.media.tumblr.com/5d0ac4375afa754f06b944699b106f05/tumblr_pkrpkxlbfp1y4ne37o2_r1_400.jpg",
     "photo-url-max-width-250": "https://66.media.tumblr.com/5d0ac4375afa754f06b944699b106f05/tumblr_pkrpkxlbfp1y4ne37o2_r1_250.jpg",
     "photo-url-max-width-100": "https://66.media.tumblr.com/5d0ac4375afa754f06b944699b106f05/tumblr_pkrpkxlbfp1y4ne37o2_r1_100.jpg",
     "photo-url-max-width-75": "https://66.media.tumblr.com/5d0ac4375afa754f06b944699b106f05/tumblr_pkrpkxlbfp1y4ne37o2_r1_75sq.jpg",
-    "tags-batch-one": ["Masque","Quartz Youth Theatre","2014","Chester Town Hall","Duncan as Designer","Duncan as Actor","Quartz","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Masque","Quartz Youth Theatre","2014","Chester Town Hall","Duncan as Poster Designer","Duncan as Programme Designer","Duncan as Actor","Quartz","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Emperor&rsquo;s New Clothes",
     "epoch": 3613507200,
@@ -290,14 +328,16 @@
     "dates-as-text": "2014 Jul 03 and 05",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_75sq.png",
-    "tags-batch-one": ["The Emperors New Clothes","Emperors New Clothes","Jigsaw Music Theatre","2014"],
-    "tags-batch-two": ["Town Hall Square","Blue Coat Primary","Cambrian View","Garden Quarter","Duncan as Lyricist","Duncan as Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"]
+    "tags-batch-one": ["The Emperors New Clothes","Emperors New Clothes","Jigsaw Music Theatre","2014","Town Hall Square","Blue Coat Primary"],
+    "tags-batch-two": ["Cambrian View","Garden Quarter","Duncan as Lyricist","Duncan as Poster Designer","Duncan as Programme Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "verb": "Performed"
     },{
     "title": "The Scrapbook",
     "epoch": 3633292800,
@@ -305,14 +345,16 @@
     "dates-as-text": "2015 Feb 17, 18, 19, and 20",
     "by": "Quartz Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/2b32238e5a6ba8bc010a2f2752c3bb10/tumblr_pkrsb71wE01y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/2b32238e5a6ba8bc010a2f2752c3bb10/tumblr_pkrsb71wE01y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/2b32238e5a6ba8bc010a2f2752c3bb10/tumblr_pkrsb71wE01y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/2b32238e5a6ba8bc010a2f2752c3bb10/tumblr_pkrsb71wE01y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/2b32238e5a6ba8bc010a2f2752c3bb10/tumblr_pkrsb71wE01y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/2b32238e5a6ba8bc010a2f2752c3bb10/tumblr_pkrsb71wE01y4ne37o1_75sq.png",
-    "tags-batch-one": ["The Scrapbook","Scrapbook","Quartz Youth Theatre","2015","Chester Music Theatre","Whitby Hall","Duncan as Designer","Quartz","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Scrapbook","Scrapbook","Quartz Youth Theatre","2015","Chester Music Theatre","Whitby Hall","Duncan as Poster Designer","Duncan as Programme Designer","Quartz","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Strange Adventures of Odysseus",
     "epoch": 3635366400,
@@ -320,14 +362,16 @@
     "dates-as-text": "2015 Mar 13 and 14",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/5f6171a5aa4a493acf6a1d086aa494d0/tumblr_pkrsgzr0Ni1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/5f6171a5aa4a493acf6a1d086aa494d0/tumblr_pkrsgzr0Ni1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/5f6171a5aa4a493acf6a1d086aa494d0/tumblr_pkrsgzr0Ni1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/5f6171a5aa4a493acf6a1d086aa494d0/tumblr_pkrsgzr0Ni1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/5f6171a5aa4a493acf6a1d086aa494d0/tumblr_pkrsgzr0Ni1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/5f6171a5aa4a493acf6a1d086aa494d0/tumblr_pkrsgzr0Ni1y4ne37o1_75sq.png",
-    "tags-batch-one": ["The Strange Adventures of Odysseus","Strange Adventures of Odysseus","Odysseus","Jigsaw Music Theatre","2015","Blue Coat Primary","Duncan as Lyricist","Duncan as Designer","Jigsaw","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Strange Adventures of Odysseus","Strange Adventures of Odysseus","Odysseus","Jigsaw Music Theatre","2015","Blue Coat Primary"],
+    "tags-batch-two": ["Duncan as Lyricist","Duncan as Poster Designer","Duncan as Programme Designer","Jigsaw","Chester","Theatre in the Quarter","TiQ"],
+    "verb": "Performed"
     },{
     "title": "Paintbrush in Paradise",
     "epoch": 3645129600,
@@ -335,14 +379,16 @@
     "dates-as-text": "2015 Jul 04 and 05",
     "by": "Rewind Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/b3d99af91a5236c9c614d6c481706495/tumblr_pkrsk8qRT71y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/b3d99af91a5236c9c614d6c481706495/tumblr_pkrsk8qRT71y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/b3d99af91a5236c9c614d6c481706495/tumblr_pkrsk8qRT71y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/b3d99af91a5236c9c614d6c481706495/tumblr_pkrsk8qRT71y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/b3d99af91a5236c9c614d6c481706495/tumblr_pkrsk8qRT71y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/b3d99af91a5236c9c614d6c481706495/tumblr_pkrsk8qRT71y4ne37o1_75sq.png",
-    "tags-batch-one": ["Paintbrush in Paradise","Rewind Youth Theatre","Cheshire Dance","Blacon","2015","Blacon Festival","Abbey Green Stage","Northgate Quarter Choir Festival","Duncan as Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Paintbrush in Paradise","Rewind Youth Theatre","Cheshire Dance","Blacon","2015","Blacon Festival","Abbey Green Stage","Northgate Quarter Choir Festival","Duncan as Poster Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "City of Stories",
     "epoch": 3645216000,
@@ -350,14 +396,16 @@
     "dates-as-text": "2015 Jul 05",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/b03155808e9ddc82f2585ca1f921b011/tumblr_pkrsnt90Mu1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/b03155808e9ddc82f2585ca1f921b011/tumblr_pkrsnt90Mu1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/b03155808e9ddc82f2585ca1f921b011/tumblr_pkrsnt90Mu1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/b03155808e9ddc82f2585ca1f921b011/tumblr_pkrsnt90Mu1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/b03155808e9ddc82f2585ca1f921b011/tumblr_pkrsnt90Mu1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/b03155808e9ddc82f2585ca1f921b011/tumblr_pkrsnt90Mu1y4ne37o1_75sq.png",
-    "tags-batch-one": ["City of Stories","Jigsaw Music Theatre","2015","Rufus Court","Abbey Green","Duncan as Designer","Duncan as Lyricist","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["City of Stories","Jigsaw Music Theatre","2015","Rufus Court","Abbey Green","Duncan as Poster Designer","Duncan as Lyricist","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Ten Years",
     "epoch": 3652300800,
@@ -365,14 +413,16 @@
     "dates-as-text": "2015 Sep 25",
     "by": "Theatre in the Quarter",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/ec7f2bd17c77d4059e8fa00511709d27/tumblr_pkrsrebNXc1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/ec7f2bd17c77d4059e8fa00511709d27/tumblr_pkrsrebNXc1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/ec7f2bd17c77d4059e8fa00511709d27/tumblr_pkrsrebNXc1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/ec7f2bd17c77d4059e8fa00511709d27/tumblr_pkrsrebNXc1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/ec7f2bd17c77d4059e8fa00511709d27/tumblr_pkrsrebNXc1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/ec7f2bd17c77d4059e8fa00511709d27/tumblr_pkrsrebNXc1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Ten Years","2015","Hammond","Duncan as Designer","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Ten Years","2015","Hammond","Duncan as Poster Designer","Duncan as Programme Designer","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Best Days of our Lives",
     "epoch": 3654547200,
@@ -380,14 +430,16 @@
     "dates-as-text": "2015 Oct 21 and 22",
     "by": "Theatre in the Quarter",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/e973c1afc395d9dfda65cb37d43b0220/tumblr_pkrsvkIBhf1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/e973c1afc395d9dfda65cb37d43b0220/tumblr_pkrsvkIBhf1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/e973c1afc395d9dfda65cb37d43b0220/tumblr_pkrsvkIBhf1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/e973c1afc395d9dfda65cb37d43b0220/tumblr_pkrsvkIBhf1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/e973c1afc395d9dfda65cb37d43b0220/tumblr_pkrsvkIBhf1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/e973c1afc395d9dfda65cb37d43b0220/tumblr_pkrsvkIBhf1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Best Days of our Lives","Blacon","2015","Chester Cathedral","Duncan as Designer","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Best Days of our Lives","Blacon","2015","Chester Cathedral","Duncan as Poster Designer","Duncan as Programme Designer","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Christmas Day in the Workhouse",
     "epoch": 3661545600,
@@ -395,14 +447,16 @@
     "dates-as-text": "2016 Jan 10, 11, and 12",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/53c84c1f13c5045f4ea6de9d6fe68a27/tumblr_pkrtbzseaE1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/53c84c1f13c5045f4ea6de9d6fe68a27/tumblr_pkrtbzseaE1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/53c84c1f13c5045f4ea6de9d6fe68a27/tumblr_pkrtbzseaE1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/53c84c1f13c5045f4ea6de9d6fe68a27/tumblr_pkrtbzseaE1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/53c84c1f13c5045f4ea6de9d6fe68a27/tumblr_pkrtbzseaE1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/53c84c1f13c5045f4ea6de9d6fe68a27/tumblr_pkrtbzseaE1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Christmas Day in the Workhouse","Workhouse","Jigsaw Music Theatre","2016","St Marys Creative Space","Duncan as Designer","double bill","Jigsaw","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Christmas Day in the Workhouse","Workhouse","Jigsaw Music Theatre","2016","St Marys Creative Space","Duncan as Programme Designer","double bill","Jigsaw","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Revellers&rsquo; Adaptation of Twelfth Night",
     "epoch": 3661545600,
@@ -410,14 +464,16 @@
     "dates-as-text": "2016 Jan 10, 11, and 12",
     "by": "Quartz Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/74548daeb7112642d0380e2f1cd2b2ce/tumblr_pkrtksXqtB1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/74548daeb7112642d0380e2f1cd2b2ce/tumblr_pkrtksXqtB1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/74548daeb7112642d0380e2f1cd2b2ce/tumblr_pkrtksXqtB1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/74548daeb7112642d0380e2f1cd2b2ce/tumblr_pkrtksXqtB1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/74548daeb7112642d0380e2f1cd2b2ce/tumblr_pkrtksXqtB1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/74548daeb7112642d0380e2f1cd2b2ce/tumblr_pkrtksXqtB1y4ne37o1_75sq.png",
-    "tags-batch-one": ["The Revellers Adaptation of Twelfth Night","Twelfth Night","Quartz Youth Theatre","2016","St Marys Creative Space","Duncan as Designer","double bill","Quartz","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Revellers Adaptation of Twelfth Night","Twelfth Night","Quartz Youth Theatre","2016","St Marys Creative Space","Duncan as Programme Designer","double bill","Quartz","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Olympic Torch",
     "epoch": 3667680000,
@@ -425,14 +481,16 @@
     "dates-as-text": "2016 Mar 21 and 22",
     "by": "Rewind Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/5d678bafcfa4ec82e5face7772b0e8a5/tumblr_pkrto9gz0n1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/5d678bafcfa4ec82e5face7772b0e8a5/tumblr_pkrto9gz0n1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/5d678bafcfa4ec82e5face7772b0e8a5/tumblr_pkrto9gz0n1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/5d678bafcfa4ec82e5face7772b0e8a5/tumblr_pkrto9gz0n1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/5d678bafcfa4ec82e5face7772b0e8a5/tumblr_pkrto9gz0n1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/5d678bafcfa4ec82e5face7772b0e8a5/tumblr_pkrto9gz0n1y4ne37o1_75sq.png",
-    "tags-batch-one": ["The Olympic Torch","Olympic Torch","Rewind Youth Theatre","Cheshire Dance","Blacon","2016","St Marys Creative Space","Blacon High","Duncan as Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Olympic Torch","Olympic Torch","Rewind Youth Theatre","Cheshire Dance","Blacon","2016","St Marys Creative Space","Blacon High","Duncan as Poster Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "A Handbag of Harmonies",
     "epoch": 3675283200,
@@ -440,14 +498,16 @@
     "dates-as-text": "2016 Jun 17",
     "by": "A Handbag of Harmonies",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/ff4ee366d4a60d68b37296534469b1ce/tumblr_pkryemfdpZ1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/ff4ee366d4a60d68b37296534469b1ce/tumblr_pkryemfdpZ1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/ff4ee366d4a60d68b37296534469b1ce/tumblr_pkryemfdpZ1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/ff4ee366d4a60d68b37296534469b1ce/tumblr_pkryemfdpZ1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/ff4ee366d4a60d68b37296534469b1ce/tumblr_pkryemfdpZ1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/ff4ee366d4a60d68b37296534469b1ce/tumblr_pkryemfdpZ1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Concert","A Handbag of Harmonies","Handbags","2016","St Columbas Catholic Church Hall","Duncan as Designer","Chester"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Concert","A Handbag of Harmonies","Handbags","2016","St Columbas Catholic Church Hall","Duncan as Poster Designer","Chester"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Gulliver&rsquo;s Travels",
     "epoch": 3676147200,
@@ -455,14 +515,16 @@
     "dates-as-text": "2016 Jun 27, 28, and 29",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/b31ebc98abcd33d6882ea0594978a240/tumblr_pkryl8zC5g1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/b31ebc98abcd33d6882ea0594978a240/tumblr_pkryl8zC5g1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/b31ebc98abcd33d6882ea0594978a240/tumblr_pkryl8zC5g1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/b31ebc98abcd33d6882ea0594978a240/tumblr_pkryl8zC5g1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/b31ebc98abcd33d6882ea0594978a240/tumblr_pkryl8zC5g1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/b31ebc98abcd33d6882ea0594978a240/tumblr_pkryl8zC5g1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Gullivers Travels","Gulliver","Jigsaw Music Theatre","2016","St Marys Creative Space","Duncan as Photographer","Duncan as Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Gullivers Travels","Gulliver","Jigsaw Music Theatre","2016","St Marys Creative Space","Duncan as Photographer","Duncan as Poster Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Road to Rio",
     "epoch": 3676579200,
@@ -470,14 +532,16 @@
     "dates-as-text": "2016 Jul 02, 04, and 05",
     "by": "Rewind Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/f65d0a04aef80f21e729cbd1617c4f91/tumblr_pkryoqYi6v1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/f65d0a04aef80f21e729cbd1617c4f91/tumblr_pkryoqYi6v1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/f65d0a04aef80f21e729cbd1617c4f91/tumblr_pkryoqYi6v1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/f65d0a04aef80f21e729cbd1617c4f91/tumblr_pkryoqYi6v1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/f65d0a04aef80f21e729cbd1617c4f91/tumblr_pkryoqYi6v1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/f65d0a04aef80f21e729cbd1617c4f91/tumblr_pkryoqYi6v1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Road to Rio","Rio","Rewind Youth Theatre","Cheshire Dance","Blacon","2016","Blacon Festival","Blacon schools","Duncan as Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Road to Rio","Rio","Rewind Youth Theatre","Cheshire Dance","Blacon","2016","Blacon Festival","Blacon schools","Duncan as Poster Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Hills Are Alive",
     "epoch": 3676838400,
@@ -485,6 +549,7 @@
     "dates-as-text": "2016 Jul 05&ndash;07",
     "by": "St Mary&rsquo;s Creative Space",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/52ca5d6829fd73de6b1607145ed68753/tumblr_pkryvesuD41y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/52ca5d6829fd73de6b1607145ed68753/tumblr_pkryvesuD41y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/52ca5d6829fd73de6b1607145ed68753/tumblr_pkryvesuD41y4ne37o1_400.png",
@@ -492,7 +557,8 @@
     "photo-url-max-width-100": "https://66.media.tumblr.com/52ca5d6829fd73de6b1607145ed68753/tumblr_pkryvesuD41y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/52ca5d6829fd73de6b1607145ed68753/tumblr_pkryvesuD41y4ne37o1_75sq.png",
     "tags-batch-one": ["The Hills Are Alive","Hills Are Alive","Theatre in the Quarter","Llangollen 2016","St Marys Creative Space","2016","illustration not mine","Chester","Duncan as CoDesigner"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "A series of concerts performed"
     },{
     "title": "Christmas 2016 in the Garden Quarter",
     "epoch": 3689193600,
@@ -500,6 +566,7 @@
     "dates-as-text": "2016 Nov 25&ndash;Dec 24",
     "by": "the Garden Quarter",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/a928bb8e074abcc2615ecf03b9bc2428/tumblr_pkryzetAMD1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/a928bb8e074abcc2615ecf03b9bc2428/tumblr_pkryzetAMD1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/a928bb8e074abcc2615ecf03b9bc2428/tumblr_pkryzetAMD1y4ne37o1_400.png",
@@ -507,7 +574,8 @@
     "photo-url-max-width-100": "https://66.media.tumblr.com/a928bb8e074abcc2615ecf03b9bc2428/tumblr_pkryzetAMD1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/a928bb8e074abcc2615ecf03b9bc2428/tumblr_pkryzetAMD1y4ne37o1_75sq.png",
     "tags-batch-one": ["Christmas 2016 in the Garden Quarter","Christmas","Garden Quarter","2016","illustration not mine","Chester","Duncan as CoDesigner"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "A series of events performed"
     },{
     "title": "The Night Before Christmas",
     "epoch": 3690921600,
@@ -515,14 +583,16 @@
     "dates-as-text": "2016 Dec 15, 16, and 17",
     "by": "Jigsaw Music Theatre and Rewind Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/53a59b42214ccab0fd6f83b4390be57b/tumblr_pkrzdrKaWF1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/53a59b42214ccab0fd6f83b4390be57b/tumblr_pkrzdrKaWF1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/53a59b42214ccab0fd6f83b4390be57b/tumblr_pkrzdrKaWF1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/53a59b42214ccab0fd6f83b4390be57b/tumblr_pkrzdrKaWF1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/53a59b42214ccab0fd6f83b4390be57b/tumblr_pkrzdrKaWF1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/53a59b42214ccab0fd6f83b4390be57b/tumblr_pkrzdrKaWF1y4ne37o1_75sq.png",
-    "tags-batch-one": ["The Night Before Christmas","Night Before Christmas","Jigsaw Music Theatre","Rewind Youth Theatre","Theatre in the Quarter","Cheshire Dance","Blacon","2016","Duncan as Designer","double bill","Jigsaw","Rewind","Chester"],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Night Before Christmas","Night Before Christmas","Jigsaw Music Theatre","Rewind Youth Theatre","Theatre in the Quarter","Cheshire Dance"],
+    "tags-batch-two": ["Blacon","2016","Duncan as Poster Designer","Duncan as Programme Designer","double bill","Jigsaw","Rewind","Chester"],
+    "verb": "Performed"
     },{
     "title": "Before a Fall",
     "epoch": 3692995200,
@@ -530,14 +600,16 @@
     "dates-as-text": "2017 Jan 08, 09, and 10",
     "by": "Quartz Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/d2b4040a0f88ee465ef3677b09b62014/tumblr_pkrzhgHJyR1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/d2b4040a0f88ee465ef3677b09b62014/tumblr_pkrzhgHJyR1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/d2b4040a0f88ee465ef3677b09b62014/tumblr_pkrzhgHJyR1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/d2b4040a0f88ee465ef3677b09b62014/tumblr_pkrzhgHJyR1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/d2b4040a0f88ee465ef3677b09b62014/tumblr_pkrzhgHJyR1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/d2b4040a0f88ee465ef3677b09b62014/tumblr_pkrzhgHJyR1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Before a Fall","Quartz Youth Theatre","2017","St Marys Creative Space","Duncan as Designer","Quartz","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Before a Fall","Quartz Youth Theatre","2017","St Marys Creative Space","Duncan as Poster Designer","Duncan as Programme Designer","Quartz","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "An Evening with A Handbag of Harmonies",
     "epoch": 3697056000,
@@ -545,14 +617,16 @@
     "dates-as-text": "2017 Feb 24",
     "by": "A Handbag of Harmonies",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/5bf139729f6a93c5e33a21e8ab626ea7/tumblr_pkrzldbt0Y1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/5bf139729f6a93c5e33a21e8ab626ea7/tumblr_pkrzldbt0Y1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/5bf139729f6a93c5e33a21e8ab626ea7/tumblr_pkrzldbt0Y1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/5bf139729f6a93c5e33a21e8ab626ea7/tumblr_pkrzldbt0Y1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/5bf139729f6a93c5e33a21e8ab626ea7/tumblr_pkrzldbt0Y1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/5bf139729f6a93c5e33a21e8ab626ea7/tumblr_pkrzldbt0Y1y4ne37o1_75sq.png",
-    "tags-batch-one": ["An Evening with A Handbag of Harmonies","A Handbag of Harmonies","Handbags","2017","Church of the Good Shepherd","Heswall","Duncan as Designer","Chester"],
-    "tags-batch-two": null
+    "tags-batch-one": ["An Evening with A Handbag of Harmonies","A Handbag of Harmonies","Handbags","2017","Church of the Good Shepherd","Heswall","Duncan as Poster Designer","Chester"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "The Promise",
     "epoch": 3707078400,
@@ -560,14 +634,16 @@
     "dates-as-text": "2017 Jun 20 and 21",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/3629c28f995181c8e84d6316c2347e8c/tumblr_pkrzo7wZ0Y1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/3629c28f995181c8e84d6316c2347e8c/tumblr_pkrzo7wZ0Y1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/3629c28f995181c8e84d6316c2347e8c/tumblr_pkrzo7wZ0Y1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/3629c28f995181c8e84d6316c2347e8c/tumblr_pkrzo7wZ0Y1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/3629c28f995181c8e84d6316c2347e8c/tumblr_pkrzo7wZ0Y1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/3629c28f995181c8e84d6316c2347e8c/tumblr_pkrzo7wZ0Y1y4ne37o1_75sq.png",
-    "tags-batch-one": ["The Promise","Promise","Jigsaw Music Theatre","2017","St Marys Creative Space","Duncan as Designer","Duncan as Photographer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Promise","Promise","Jigsaw Music Theatre","2017","St Marys Creative Space","Duncan as Poster Designer"],
+    "tags-batch-two": ["Duncan as Programme Designer","Duncan as Photographer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "verb": "Performed"
     },{
     "title": "Swagalicious",
     "epoch": 3707251200,
@@ -575,14 +651,16 @@
     "dates-as-text": "2017 Jun 22, Jun 23, Jul 01",
     "by": "Rewind Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/3c1c4c301d628fdaff816cb23ac9705e/tumblr_pkrzrobjyB1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/3c1c4c301d628fdaff816cb23ac9705e/tumblr_pkrzrobjyB1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/3c1c4c301d628fdaff816cb23ac9705e/tumblr_pkrzrobjyB1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/3c1c4c301d628fdaff816cb23ac9705e/tumblr_pkrzrobjyB1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/3c1c4c301d628fdaff816cb23ac9705e/tumblr_pkrzrobjyB1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/3c1c4c301d628fdaff816cb23ac9705e/tumblr_pkrzrobjyB1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Swagalicious","Rewind Youth Theatre","Cheshire Dance","Blacon","2017","Blacon schools","Blacon Festival","Duncan as Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Swagalicious","Rewind Youth Theatre","Cheshire Dance","Blacon","2017","Blacon schools","Blacon Festival","Duncan as Poster Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Chester International Music Week",
     "epoch": 3713385600,
@@ -590,6 +668,7 @@
     "dates-as-text": "2017 Jul 03, 04, 05, 06",
     "by": "various choirs and performers organized by St Mary&rsquo;s Creative Space",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_1280.jpg",
     "photo-url-max-width-500": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_500.jpg",
     "photo-url-max-width-400": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_400.jpg",
@@ -597,7 +676,8 @@
     "photo-url-max-width-100": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_100.jpg",
     "photo-url-max-width-75": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_75sq.jpg",
     "tags-batch-one": ["Chester International Music Week","Music Week","St Marys Creative Space","2017","Duncan as Photographer","Chester","A Handbag of Harmonies","Handbags"],
-    "tags-batch-two": null
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Night of Promises",
     "epoch": 3720211200,
@@ -605,14 +685,16 @@
     "dates-as-text": "2017 Sep 01",
     "by": "St Thomas of Canterbury Church, Chester",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/d82361e64bfc3cdf49f9b49d32e8c809/tumblr_pkrzz4efG11y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/d82361e64bfc3cdf49f9b49d32e8c809/tumblr_pkrzz4efG11y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/d82361e64bfc3cdf49f9b49d32e8c809/tumblr_pkrzz4efG11y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/d82361e64bfc3cdf49f9b49d32e8c809/tumblr_pkrzz4efG11y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/d82361e64bfc3cdf49f9b49d32e8c809/tumblr_pkrzz4efG11y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/d82361e64bfc3cdf49f9b49d32e8c809/tumblr_pkrzz4efG11y4ne37o1_75sq.png",
-    "tags-batch-one": ["Night of Promises","Promises","Garden Quarter","2017","St Thomas Church","Duncan as Designer","Chester"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Night of Promises","Promises","Garden Quarter","2017","St Thomas Church","Duncan as Poster Designer","Chester"],
+    "tags-batch-two": null,
+    "verb": "Hosted"
     },{
     "title": "A Tale of our Time",
     "epoch": 3722630400,
@@ -620,14 +702,16 @@
     "dates-as-text": "2017 Nov 19 and 20",
     "by": "Quartz Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/77b021b88446473bcbd36c56fc33e73b/tumblr_pks027UtWe1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/77b021b88446473bcbd36c56fc33e73b/tumblr_pks027UtWe1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/77b021b88446473bcbd36c56fc33e73b/tumblr_pks027UtWe1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/77b021b88446473bcbd36c56fc33e73b/tumblr_pks027UtWe1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/77b021b88446473bcbd36c56fc33e73b/tumblr_pks027UtWe1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/77b021b88446473bcbd36c56fc33e73b/tumblr_pks027UtWe1y4ne37o1_75sq.png",
-    "tags-batch-one": ["A Tale of our Time","Tale of our Time","Quartz Youth Theatre","2017","St Marys Creative Space","Duncan as Designer","Quartz","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["A Tale of our Time","Tale of our Time","Quartz Youth Theatre","2017","St Marys Creative Space","Duncan as Poster Designer","Duncan as Programme Designer","Quartz","Chester","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Christmas Child",
     "epoch": 3722630400,
@@ -635,14 +719,16 @@
     "dates-as-text": "2017 Dec 17 and 18",
     "by": "Jigsaw Music Theatre and Rewind Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Christmas Child","The Girl with No Name","Girl with No Name","The Boy who Wrote Messages"],
-    "tags-batch-two": ["Boy who Wrote Messages","Rewind Youth Theatre","Jigsaw Music Theatre","Cheshire Dance","Blacon","2017","St Marys Creative Space","Duncan as Designer","double bill","Jigsaw","Rewind","Chester","Theatre in the Quarter","TiQ"]
+    "tags-batch-one": ["Christmas Child","The Girl with No Name","Girl with No Name","The Boy who Wrote Messages","Boy who Wrote Messages","Rewind Youth Theatre"],
+    "tags-batch-two": ["Jigsaw Music Theatre","Cheshire Dance","Blacon","2017","St Marys Creative Space","Duncan as Poster Designer","Duncan as Programme Designer","double bill","Jigsaw","Rewind","Chester","Theatre in the Quarter","TiQ"],
+    "verb": "Performed"
     },{
     "title": "The Colour Snatchers &amp; Another Side",
     "epoch": 3731097600,
@@ -650,14 +736,16 @@
     "dates-as-text": "2019 Feb 03 and 04",
     "by": "Jigsaw Music Theatre and Quartz Youth Theatre",
     "my-acting-role": null,
-    "photo-url-max-width-1280": "https://66.media.tumblr.com/82d7e4c024e9970020ac6c70b112db80/tumblr_pks0jzR2pc1y4ne37o1_1280.png",
-    "photo-url-max-width-500": "https://66.media.tumblr.com/82d7e4c024e9970020ac6c70b112db80/tumblr_pks0jzR2pc1y4ne37o1_500.png",
-    "photo-url-max-width-400": "https://66.media.tumblr.com/82d7e4c024e9970020ac6c70b112db80/tumblr_pks0jzR2pc1y4ne37o1_400.png",
-    "photo-url-max-width-250": "https://66.media.tumblr.com/82d7e4c024e9970020ac6c70b112db80/tumblr_pks0jzR2pc1y4ne37o1_250.png",
-    "photo-url-max-width-100": "https://66.media.tumblr.com/82d7e4c024e9970020ac6c70b112db80/tumblr_pks0jzR2pc1y4ne37o1_100.png",
-    "photo-url-max-width-75": "https://66.media.tumblr.com/82d7e4c024e9970020ac6c70b112db80/tumblr_pks0jzR2pc1y4ne37o1_75sq.png",
-    "tags-batch-one": ["The Colour Snatchers","Colour Snatchers","Another Side","Jigsaw Music Theatre"],
-    "tags-batch-two": ["Quartz Youth Theatre","2019","Duncan as Lyricist","Duncan as Designer","St Marys Creative Space","double bill","Jigsaw","Quartz","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"]
+    "poster-orientation": "landscape",
+    "photo-url-max-width-1280": "https://66.media.tumblr.com/fc53f99dac572278eb4b9814a78bbbcc/tumblr_pkvlpzNPC91y4ne37o2_r1_1280.jpg",
+    "photo-url-max-width-500": "https://66.media.tumblr.com/fc53f99dac572278eb4b9814a78bbbcc/tumblr_pkvlpzNPC91y4ne37o2_r1_500.jpg",
+    "photo-url-max-width-400": "https://66.media.tumblr.com/fc53f99dac572278eb4b9814a78bbbcc/tumblr_pkvlpzNPC91y4ne37o2_r1_400.jpg",
+    "photo-url-max-width-250": "https://66.media.tumblr.com/fc53f99dac572278eb4b9814a78bbbcc/tumblr_pkvlpzNPC91y4ne37o2_r1_250.jpg",
+    "photo-url-max-width-100": "https://66.media.tumblr.com/fc53f99dac572278eb4b9814a78bbbcc/tumblr_pkvlpzNPC91y4ne37o2_r1_100.jpg",
+    "photo-url-max-width-75": "https://66.media.tumblr.com/fc53f99dac572278eb4b9814a78bbbcc/tumblr_pkvlpzNPC91y4ne37o2_r1_75sq.jpg",
+    "tags-batch-one": ["The Colour Snatchers","Colour Snatchers","Another Side","Jigsaw Music Theatre","Quartz Youth Theatre","2019"],
+    "tags-batch-two": ["Duncan as Lyricist","Duncan as Poster Designer","Duncan as Programme Designer","St Marys Creative Space","double bill","Jigsaw","Quartz","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "verb": "Performed"
     },{
     "title": "The Colour Snatchers",
     "epoch": 3758382000,
@@ -665,14 +753,16 @@
     "dates-as-text": "2019 Feb 03 and 04",
     "by": "Jigsaw Music Theatre",
     "my-acting-role": null,
-    "photo-url-max-width-1280": "https://66.media.tumblr.com/17f83fa54df69b3cfd9d7ce5b73e143e/tumblr_pkt6riRaL61y4ne37o1_1280.jpg",
-    "photo-url-max-width-500": "https://66.media.tumblr.com/17f83fa54df69b3cfd9d7ce5b73e143e/tumblr_pkt6riRaL61y4ne37o1_500.jpg",
-    "photo-url-max-width-400": "https://66.media.tumblr.com/17f83fa54df69b3cfd9d7ce5b73e143e/tumblr_pkt6riRaL61y4ne37o1_400.jpg",
-    "photo-url-max-width-250": "https://66.media.tumblr.com/17f83fa54df69b3cfd9d7ce5b73e143e/tumblr_pkt6riRaL61y4ne37o1_250.jpg",
-    "photo-url-max-width-100": "https://66.media.tumblr.com/17f83fa54df69b3cfd9d7ce5b73e143e/tumblr_pkt6riRaL61y4ne37o1_100.jpg",
-    "photo-url-max-width-75": "https://66.media.tumblr.com/17f83fa54df69b3cfd9d7ce5b73e143e/tumblr_pkt6riRaL61y4ne37o1_75sq.jpg",
-    "tags-batch-one": ["The Colour Snatchers","Colour Snatchers","Jigsaw Music Theatre","2019","St Marys Creative Space","Duncan as Assistant Director","Duncan as Designer","Duncan as Lyricist","double bill","Jigsaw","Chester","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "poster-orientation": "portrait",
+    "photo-url-max-width-1280": "https://66.media.tumblr.com/e4a33ce151b04da5d7ecdac04f65dcbc/tumblr_pkvlsfzgtX1y4ne37o2_r1_1280.jpg",
+    "photo-url-max-width-500": "https://66.media.tumblr.com/e4a33ce151b04da5d7ecdac04f65dcbc/tumblr_pkvlsfzgtX1y4ne37o2_r1_500.jpg",
+    "photo-url-max-width-400": "https://66.media.tumblr.com/e4a33ce151b04da5d7ecdac04f65dcbc/tumblr_pkvlsfzgtX1y4ne37o2_r1_400.jpg",
+    "photo-url-max-width-250": "https://66.media.tumblr.com/e4a33ce151b04da5d7ecdac04f65dcbc/tumblr_pkvlsfzgtX1y4ne37o2_r1_250.jpg",
+    "photo-url-max-width-100": "https://66.media.tumblr.com/e4a33ce151b04da5d7ecdac04f65dcbc/tumblr_pkvlsfzgtX1y4ne37o2_r1_100.jpg",
+    "photo-url-max-width-75": "https://66.media.tumblr.com/e4a33ce151b04da5d7ecdac04f65dcbc/tumblr_pkvlsfzgtX1y4ne37o2_r1_75sq.jpg",
+    "tags-batch-one": ["The Colour Snatchers","Colour Snatchers","Jigsaw Music Theatre","2019","St Marys Creative Space","Duncan as Assistant Director"],
+    "tags-batch-two": ["Duncan as Poster Designer","Duncan as Programme Designer","Duncan as Lyricist","double bill","Jigsaw","Chester","Theatre in the Quarter","TiQ"],
+    "verb": "Performed"
     },{
     "title": "Another Side",
     "epoch": 3758385600,
@@ -680,14 +770,16 @@
     "dates-as-text": "2019 Feb 03 and 04",
     "by": "Quartz Youth Theatre",
     "my-acting-role": null,
-    "photo-url-max-width-1280": "https://66.media.tumblr.com/74c3ab45e46dce354f85e4d60c5fbd3e/tumblr_pkt6vcr8w51y4ne37o1_1280.jpg",
-    "photo-url-max-width-500": "https://66.media.tumblr.com/74c3ab45e46dce354f85e4d60c5fbd3e/tumblr_pkt6vcr8w51y4ne37o1_500.jpg",
-    "photo-url-max-width-400": "https://66.media.tumblr.com/74c3ab45e46dce354f85e4d60c5fbd3e/tumblr_pkt6vcr8w51y4ne37o1_400.jpg",
-    "photo-url-max-width-250": "https://66.media.tumblr.com/74c3ab45e46dce354f85e4d60c5fbd3e/tumblr_pkt6vcr8w51y4ne37o1_250.jpg",
-    "photo-url-max-width-100": "https://66.media.tumblr.com/74c3ab45e46dce354f85e4d60c5fbd3e/tumblr_pkt6vcr8w51y4ne37o1_100.jpg",
-    "photo-url-max-width-75": "https://66.media.tumblr.com/74c3ab45e46dce354f85e4d60c5fbd3e/tumblr_pkt6vcr8w51y4ne37o1_75sq.jpg",
-    "tags-batch-one": ["Another Side","Quartz Youth Theatre","2019","St Marys Creative Space","double bill","Duncan as Designer","Quartz","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "poster-orientation": "portrait",
+    "photo-url-max-width-1280": "https://66.media.tumblr.com/8895f9031290c5e56d429d621eb94731/tumblr_pkvltlcK7t1y4ne37o2_r1_1280.jpg",
+    "photo-url-max-width-500": "https://66.media.tumblr.com/8895f9031290c5e56d429d621eb94731/tumblr_pkvltlcK7t1y4ne37o2_r1_500.jpg",
+    "photo-url-max-width-400": "https://66.media.tumblr.com/8895f9031290c5e56d429d621eb94731/tumblr_pkvltlcK7t1y4ne37o2_r1_400.jpg",
+    "photo-url-max-width-250": "https://66.media.tumblr.com/8895f9031290c5e56d429d621eb94731/tumblr_pkvltlcK7t1y4ne37o2_r1_250.jpg",
+    "photo-url-max-width-100": "https://66.media.tumblr.com/8895f9031290c5e56d429d621eb94731/tumblr_pkvltlcK7t1y4ne37o2_r1_100.jpg",
+    "photo-url-max-width-75": "https://66.media.tumblr.com/8895f9031290c5e56d429d621eb94731/tumblr_pkvltlcK7t1y4ne37o2_r1_75sq.jpg",
+    "tags-batch-one": ["Another Side","Quartz Youth Theatre","2019","St Marys Creative Space","double bill","Duncan as Poster Designer","Duncan as Programme Designer","Quartz","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     },{
     "title": "Blacon&rsquo;s Mystery Express",
     "epoch": 3762806400,
@@ -695,26 +787,15 @@
     "dates-as-text": "2019 Mar 27",
     "by": "Rewind Youth Theatre",
     "my-acting-role": null,
+    "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_500.png",
     "photo-url-max-width-400": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_100.png",
     "photo-url-max-width-75": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Blacons Mystery Express","2019","Blacon","Mystery","Express","Blacon High","schools tour","Duncan as Designer","Rewind","Chester","Duncan as Poster Designer","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Blacons Mystery Express","2019","Blacon","Mystery","Express","Blacon High","schools tour","Duncan as Poster Designer","Rewind","Chester","Duncan as Poster Designer","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null,
+    "verb": "Performed"
     }]
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
