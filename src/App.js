@@ -17,7 +17,11 @@ class App extends Component {
         datesAsText={play["dates-as-text"]}
         verb={play.verb}
         by={play.by}
+        byArray={play["by-array"]}
+        synopsis={play.synopsis}
         myActingRole={play["my-acting-role"]}
+        mySongsLyricized={play["my-songs-lyricized"]}
+        exampleLyric={play["example-lyric"]}
         tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
         image500={play["photo-url-max-width-500"]}/>
