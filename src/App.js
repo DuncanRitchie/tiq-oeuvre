@@ -18,6 +18,18 @@ class App extends Component {
     this.setState({filter: {title: title, troupe: "", year: "", myRole: ""}})
   }
 
+  troupeHandler = (e) => {
+    this.setState({filter: {title: "", troupe: e.target.textContent, year: "", myRole: ""}})
+  }
+
+  yearHandler = (e) => {
+    this.setState({filter: {title: "", troupe: "", year: e.target.textContent.substr(0,4), myRole: ""}})
+  }
+
+  myRoleHandler = (myRole) => {
+    this.setState({filter: {title: "", troupe: "", year: "", myRole: myRole}})
+  }
+
   render() {
     let allPlays = this.state.allData.filter(play=>{
       let bool = true;
@@ -51,6 +63,9 @@ class App extends Component {
         posterOrientation={play["poster-orientation"]}
         image500={play["photo-url-max-width-500"]}
         titleHandler={this.titleHandler}
+        troupeHandler={this.troupeHandler}
+        yearHandler={this.yearHandler}
+        myRoleHandler={this.myRoleHandler}
         />
       )
     })
