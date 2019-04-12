@@ -8,7 +8,7 @@ const PlayDetails = (props) => {
         <div class="play-details">
             {props.image500 ? <img src={props.image500} alt={ReactHtmlParser(props.title)} class={props.posterOrientation}/> : null}
             <div class={props.image500 ? "play-text" : "play-text-only"}>
-                <h1 class="play-title">{ReactHtmlParser(props.title)}</h1>
+                <h1 class="play-title" onClick={()=>{props.titleHandler(props.title)}}>{ReactHtmlParser(props.title)}</h1>
                 <p>{props.verb} <strong>{ReactHtmlParser(props.datesAsText)}</strong> {props.datePrecision === "month" ? <span>&nbsp;(I can&rsquo;t be more precise than that)</span> : null }
                 by {props.byArray.map((troupe,index)=>{return <Tag text={troupe}/>})}</p>
                 {props.synopsis ? <p>Synopsis: {ReactHtmlParser(props.synopsis)}</p> : null}

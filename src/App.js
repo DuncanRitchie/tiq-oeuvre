@@ -14,6 +14,10 @@ class App extends Component {
     }
   }
   
+  titleHandler = (title) => {
+    this.setState({filter: {title: title, troupe: "", year: "", myRole: ""}})
+  }
+
   render() {
     let allPlays = this.state.allData.filter(play=>{
       let bool = true;
@@ -39,13 +43,15 @@ class App extends Component {
         verb={play.verb}
         by={play.by}
         byArray={play["by-array"]}
-        synopsis={play.synopsis}
+        synopsis={play.synopsis}s
         myActingRole={play["my-acting-role"]}
         mySongsLyricized={play["my-songs-lyricized"]}
         exampleLyric={play["example-lyric"]}
         tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
-        image500={play["photo-url-max-width-500"]}/>
+        image500={play["photo-url-max-width-500"]}
+        titleHandler={this.titleHandler}
+        />
       )
     })
     return (
