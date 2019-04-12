@@ -353,8 +353,8 @@
     "photo-url-max-width-250": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_250.jpg",
     "photo-url-max-width-100": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_100.jpg",
     "photo-url-max-width-75": "https://66.media.tumblr.com/a76d8040fb8e45887da92a6bb33da7bb/tumblr_pkrp8zoMK31y4ne37o2_r1_75sq.jpg",
-    "tags-batch-one": ["Ghosts of the City","Jigsaw Music Theatre",2013,"St Marys Creative Space","Duncan as Lyricist","Duncan as Poster Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Ghosts of the City","Jigsaw Music Theatre",2013,"St Marys Creative Space","Duncan as Lyricist","Duncan as Poster Designer","Duncan as Programme Designer"],
+    "tags-batch-two": ["Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"]
     },{
     "title": "The Firebird",
     "epoch": 3603052800,
@@ -836,8 +836,8 @@
     "photo-url-max-width-250": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_250.jpg",
     "photo-url-max-width-100": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_100.jpg",
     "photo-url-max-width-75": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_75sq.jpg",
-    "tags-batch-one": ["Chester International Music Week","Mill View Primary School Choir","Mother Touch Dance Group","A Handbag of Harmonies","St Werburghs Primary School Choir","Chester Town Hall Square","Duncan as Photographer"],
-    "tags-batch-two": ["St Marys Creative Space","Parkie Youth Choir","St Marys","St Marys Centre","Town Hall Square","Eastgate Street","International","Music","Week","CIMW","Chester",2017,"Eisteddfod","Handbags","Mother Touch","Ruisi Zhi","Jiaman Yin"]
+    "tags-batch-one": ["Chester International Music Week","Mill View Primary School Choir","St Werburghs Primary School Choir","Mother Touch Dance Group","A Handbag of Harmonies","Chester Town Hall Square"],
+    "tags-batch-two": ["Duncan as Photographer","St Marys Creative Space","Parkie Youth Choir","St Marys","St Marys Centre","Town Hall Square","Eastgate Street","Week","CIMW","Chester",2017,"Eisteddfod","Handbags","Mother Touch","Ruisi Zhi","Jiaman Yin"]
     },{
     "title": "Night of Promises",
     "epoch": 3720211200,

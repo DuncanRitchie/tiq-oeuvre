@@ -5,11 +5,32 @@ import './App.css';
 
 class App extends Component {
   state = {
-    allData: data
+    allData: data,
+    filter: {
+      title: "",
+      troupe: "",
+      year: "",
+      myRole: ""
+    }
   }
   
   render() {
-    let allPlays = this.state.allData.reverse().map((play, index) => {
+    let allPlays = this.state.allData.filter(play=>{
+      let bool = true;
+      if (this.state.filter.title) {
+        bool = bool && play.title===this.state.filter.title
+      }
+      if (this.state.filter.troupe) {
+        bool = bool && play["by-array"].includes(this.state.filter.troupe)
+      }
+      if (this.state.filter.year) {
+        bool = bool && play["dates-as-text"].substr(0,4) === this.state.filter.year
+      }
+      if (this.state.filter.myRole) {
+        bool = bool && play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+this.state.filter.myRole)
+      }
+      return bool
+    }).reverse().map((play, index) => {
       return (
         <PlayDetails key={index} title={play.title}
         epoch={play.epoch}
