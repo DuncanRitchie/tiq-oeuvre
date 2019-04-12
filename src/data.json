@@ -713,6 +713,27 @@
     "tags-batch-one": ["Christmas 2016 in the Garden Quarter","Christmas","Garden Quarter",2016,"illustration not mine","Chester","Duncan as CoDesigner"],
     "tags-batch-two": null
     },{
+    "title": "The Garden Quarter&rsquo;s Famous Christmas Market",
+    "epoch": 3689884800,
+    "date-precision": "day",
+    "dates-as-text": "2016 Dec 03",
+    "verb": "Hosted",
+    "by": "the Garden Quarter",
+    "by-array": ["the Garden Quarter"],
+    "synopsis": "An all-day market featuring a celebrated photographer.",
+    "my-acting-role": null,
+    "my-songs-lyricized": null,
+    "example-lyric": null,
+    "poster-orientation": "portrait",
+    "photo-url-max-width-1280": "https://66.media.tumblr.com/5a2247ed4ac1b7394c26b9f37797c309/tumblr_pkvkny2EIg1y4ne37o1_1280.png",
+    "photo-url-max-width-500": "https://66.media.tumblr.com/5a2247ed4ac1b7394c26b9f37797c309/tumblr_pkvkny2EIg1y4ne37o1_500.png",
+    "photo-url-max-width-400": "https://66.media.tumblr.com/5a2247ed4ac1b7394c26b9f37797c309/tumblr_pkvkny2EIg1y4ne37o1_400.png",
+    "photo-url-max-width-250": "https://66.media.tumblr.com/5a2247ed4ac1b7394c26b9f37797c309/tumblr_pkvkny2EIg1y4ne37o1_250.png",
+    "photo-url-max-width-100": "https://66.media.tumblr.com/5a2247ed4ac1b7394c26b9f37797c309/tumblr_pkvkny2EIg1y4ne37o1_100.png",
+    "photo-url-max-width-75": "https://66.media.tumblr.com/5a2247ed4ac1b7394c26b9f37797c309/tumblr_pkvkny2EIg1y4ne37o1_75sq.png",
+    "tags-batch-one": ["The Garden Quarters Famous Christmas Market","Garden Quarters Famous Christmas Market","Garden Quarter","Christmas 2016 in the Garden Quarter","Market","St Thomas of Canterbury Church"],
+    "tags-batch-two": ["illustration not mine","Chester","2016","Duncan as CoDesigner","Christmas"]
+    },{
     "title": "The Night Before Christmas",
     "epoch": 3690921600,
     "date-precision": "day",
@@ -986,16 +1007,5 @@
     "tags-batch-one": ["Blacons Mystery Express",2019,"Blacon","Mystery","Express","Blacon High","schools tour","Duncan as Poster Designer","Rewind","Chester","Duncan as Poster Designer","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     }]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
