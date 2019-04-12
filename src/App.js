@@ -94,6 +94,8 @@ class App extends Component {
     })
     return (
       <div className="App">
+        <h1>Duncan&rsquo;s work with Theatre in the Quarter and associated groups</h1>
+        {/* {this.state.filter === {title: "", troupe: "", year: "", myRole: ""} ? <p>Showing all.</p> : <p>Filtered to: </p>} */}
         {allPlays}
       </div>
     );
