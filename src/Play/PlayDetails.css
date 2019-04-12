@@ -16,3 +16,18 @@ img.landscape {
 .play-text {
     width: 50%
 }
+
+.date {
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 6px;
+    background-color: #00ff00
+}
+
+.date:hover {
+    background-color: #80ff80
+}
+
+.date:active {
+    background-color: #b0ffb0
+}

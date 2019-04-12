@@ -26,7 +26,30 @@ class App extends Component {
     this.setState({filter: {title: "", troupe: "", year: e.target.textContent.substr(0,4), myRole: ""}})
   }
 
-  myRoleHandler = (myRole) => {
+  myRoleHandler = (e) => {
+    let myRole = ""
+    switch (e.target.textContent) {
+      case "poster designer":
+        myRole = "Poster Designer"
+        break;
+      case "programme designer":
+        myRole = "Programme Designer"
+        break;
+      case "lyricist":
+        myRole = "Lyricist"
+        break;
+      case "photographer":
+        myRole = "Photographer"
+        break;
+      case "assistant-director":
+        myRole = "Assistant Director"
+        break;
+      case "poster co-designer (with illustration by Alison Pitt)":
+        myRole = "CoDesigner"
+        break;
+      default:
+        myRole = ""
+    }
     this.setState({filter: {title: "", troupe: "", year: "", myRole: myRole}})
   }
 

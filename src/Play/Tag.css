@@ -4,4 +4,13 @@
     border: 1px solid black;
     border-radius: 6px;
     padding: 2px 4px;
+    background-color: #00ffff
+}
+
+.tag:hover {
+    background-color: #80ffff
+}
+
+.tag:active {
+    background-color: #b0ffff
 }
