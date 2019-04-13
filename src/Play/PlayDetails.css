@@ -17,6 +17,18 @@ img.landscape {
     width: 50%
 }
 
+.play-title {
+    border-radius: 6px
+}
+
+.play-title:hover {
+    background-color: #80ffff
+}
+
+.play-title:active {
+    background-color: #b0ffff  
+}
+
 .date {
     display: inline-block;
     padding: 2px 4px;
