@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import data from "./data.json";
+import jsonData from "./data.json";
 import PlayDetails from "./Play/PlayDetails";
+import ReactHtmlParser from 'react-html-parser';
 import './App.css';
 
 class App extends Component {
   state = {
-    allData: data,
+    allData: jsonData,
     filter: {
       title: "",
       troupe: "",
@@ -54,7 +55,7 @@ class App extends Component {
   }
 
   render() {
-    let allPlays = this.state.allData.filter(play=>{
+    let filteredPlays = this.state.allData.filter(play=>{
       let bool = true;
       if (this.state.filter.title) {
         bool = bool && play.title===this.state.filter.title
@@ -69,7 +70,9 @@ class App extends Component {
         bool = bool && play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+this.state.filter.myRole)
       }
       return bool
-    }).reverse().map((play, index) => {
+    })
+    let numPlays = filteredPlays.length;
+    let mappedPlays = filteredPlays.reverse().map((play, index) => {
       return (
         <PlayDetails key={index} title={play.title}
         epoch={play.epoch}
@@ -92,11 +95,39 @@ class App extends Component {
         />
       )
     })
+    let filterParagraph = "";
+    if (numPlays > 1) {
+      filterParagraph = "Filtered to productions"
+    }
+    else if (numPlays === 1) {
+      filterParagraph = "Filtered to one production"
+    }
+    else {
+      filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filters${ReactHtmlParser("rdquo; &mdash;&nbsp;")}there are no productions`
+    }
+    if (this.state.filter.myRole) {
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${this.state.filter.myRole.toLowerCase()}`
+    }
+    if (this.state.filter.year) {
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${this.state.filter.year}`
+    }
+    if (this.state.filter.troupe) {
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(this.state.filter.troupe)}`
+    }
+    if (this.state.filter.title) {
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+this.state.filter.title+"&rdquo;")}`
+    }
+    // {this.state.filter.troupe ? `${ReactHtmlParser("&ensp;")}performed by ${ReactHtmlParser(this.state.filter.troupe)}` : ""}+
+    // {this.state.filter.year ? `${ReactHtmlParser("&ensp;")}performed in ${this.state.filter.year}` : ""}+
+    // {this.state.filter.title ? `${ReactHtmlParser("&ensp;")}entitled ${ReactHtmlParser("&ldquo;"+this.state.filter.title+"&rdquo;")}` : ""}
+    // ) : "Showing all productions"} 
     return (
       <div className="App">
         <h1>Duncan&rsquo;s work with Theatre in the Quarter and associated groups</h1>
+        <p>{filterParagraph}.</p>
+        <p onClick={this.myRoleHandler}>Clear filters</p>
         {/* {this.state.filter === {title: "", troupe: "", year: "", myRole: ""} ? <p>Showing all.</p> : <p>Filtered to: </p>} */}
-        {allPlays}
+        {mappedPlays}
       </div>
     );
   }
