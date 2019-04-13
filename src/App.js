@@ -67,11 +67,20 @@ class App extends Component {
   filterPlays = () => {
     let filteredPlays = jsonData.filter(play=>{
       let bool = true;
+      if (play.title === "The Colour Snatchers &amp; Another Side") {
+        bool = false
+      }
       if (this.state.filter.title) {
         bool = bool && play.title===this.state.filter.title
       }
       if (this.state.filter.troupe) {
-        bool = bool && play["by-array"].includes(this.state.filter.troupe)
+        let troupeBool = false;
+        play["by-array"].map((troupeCode,index)=>{
+          if (this.state.filter.troupe.includes(ReactHtmlParser(troupeCode))) {
+            troupeBool = true
+          }
+        })
+        bool = bool && troupeBool
       }
       if (this.state.filter.year) {
         bool = bool && play["dates-as-text"].substr(0,4) === this.state.filter.year
@@ -110,7 +119,7 @@ class App extends Component {
       )
     })
     let filterParagraph = "";
-    if (numPlays === jsonData.length) {
+    if (numPlays === jsonData.length-1) {
       filterParagraph = `Showing all ${numPlays} productions. Click a date, troupe, role, or title to set a filter`
     }
     else if (numPlays > 1) {
@@ -134,10 +143,6 @@ class App extends Component {
     if (this.state.filter.title) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+this.state.filter.title+"&rdquo;")}`
     }
-    // {this.state.filter.troupe ? `${ReactHtmlParser("&ensp;")}performed by ${ReactHtmlParser(this.state.filter.troupe)}` : ""}+
-    // {this.state.filter.year ? `${ReactHtmlParser("&ensp;")}performed in ${this.state.filter.year}` : ""}+
-    // {this.state.filter.title ? `${ReactHtmlParser("&ensp;")}entitled ${ReactHtmlParser("&ldquo;"+this.state.filter.title+"&rdquo;")}` : ""}
-    // ) : "Showing all productions"} 
     return (
       <div className="App">
         <h1>Duncan&rsquo;s work with Theatre in the Quarter and associated groups</h1>
@@ -146,7 +151,7 @@ class App extends Component {
           this.state.filter.troupe === "" && 
           this.state.filter.myRole === "" && 
           this.state.filter.year === "" ? null :
-          <span className="clear-filters" onClick={this.myRoleHandler}>Clear filters</span>}
+          <span className="clear-filters" onClick={this.myRoleHandler}>Clear filter</span>}
         </p>
         {mappedPlays}
       </div>
