@@ -19,18 +19,17 @@ img.landscape {
 
 .date {
     display: inline-block;
-    font-weight: bold;
     padding: 2px 4px;
     margin: -0.5px 2px -0.5px 2px;
     border-radius: 6px;
     border: 1px solid black;
-    background-color: #00ff00
+    background-color: #00ffff
 }
 
 .date:hover {
-    background-color: #80ff80
+    background-color: #80ffff
 }
 
 .date:active {
-    background-color: #b0ffb0
+    background-color: #b0ffff
 }

@@ -22,19 +22,19 @@ class App extends Component {
 
   troupeHandler = (e) => {
     this.setState({
-      filter: {title: "", troupe: e.target.textContent, year: "", myRole: ""}
+      filter: {title: "", troupe: e.currentTarget.textContent, year: "", myRole: ""}
     })
   }
 
   yearHandler = (e) => {
     this.setState({
-      filter: {title: "", troupe: "", year: e.target.textContent.substr(0,4), myRole: ""}
+      filter: {title: "", troupe: "", year: e.currentTarget.textContent.substr(0,4), myRole: ""}
     })
   }
 
   myRoleHandler = (e) => {
     let myRole = ""
-    switch (e.target.textContent) {
+    switch (e.currentTarget.textContent) {
       case "poster designer":
         myRole = "Poster Designer"
         break;
@@ -52,6 +52,9 @@ class App extends Component {
         break;
       case "poster co-designer (with illustration by Alison Pitt)":
         myRole = "CoDesigner"
+        break;
+      case "actor":
+        myRole = "Actor"
         break;
       default:
         myRole = ""
@@ -108,16 +111,16 @@ class App extends Component {
     })
     let filterParagraph = "";
     if (numPlays === jsonData.length) {
-      filterParagraph = "No filters applied"
+      filterParagraph = `Showing all ${numPlays} productions. Click a date, troupe, role, or title to set a filter`
     }
     else if (numPlays > 1) {
-      filterParagraph = "Filtered to productions"
+      filterParagraph = `Filtered to ${numPlays} productions`
     }
     else if (numPlays === 1) {
       filterParagraph = "Filtered to one production"
     }
     else {
-      filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filters${ReactHtmlParser("rdquo; &mdash;&nbsp;")}there are no productions`
+      filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filters${ReactHtmlParser("&rdquo; &mdash;&nbsp;")}there are no productions`
     }
     if (this.state.filter.myRole) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${this.state.filter.myRole.toLowerCase()}`
@@ -138,9 +141,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Duncan&rsquo;s work with Theatre in the Quarter and associated groups</h1>
-        <p>{filterParagraph}.</p>
-        <p onClick={this.myRoleHandler}>Clear filters</p>
-        {/* {this.state.filter === {title: "", troupe: "", year: "", myRole: ""} ? <p>Showing all.</p> : <p>Filtered to: </p>} */}
+        <p>{filterParagraph}.&ensp;
+          {this.state.filter.title === "" && 
+          this.state.filter.troupe === "" && 
+          this.state.filter.myRole === "" && 
+          this.state.filter.year === "" ? null :
+          <span className="clear-filters" onClick={this.myRoleHandler}>Clear filters</span>}
+        </p>
         {mappedPlays}
       </div>
     );
