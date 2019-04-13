@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "www.duncanritchie.co.uk/tiq-projects/precache-manifest.d54ec26d3cb1c0252c8ff6692fb42ac9.js"
+  "/tiq-projects/precache-manifest.b9e669af8fd7fcaf14ecfc232f62eec8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("www.duncanritchie.co.uk/tiq-projects/index.html", {
+workbox.routing.registerNavigationRoute("/tiq-projects/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
