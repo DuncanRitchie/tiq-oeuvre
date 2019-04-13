@@ -3,16 +3,17 @@ import jsonData from "./data.json";
 import HeaderBar from "./HeaderBar/HeaderBar";
 import MappedPlays from "./MappedPlays/MappedPlays";
 import PlayDetails from "./Play/PlayDetails";
+import queryString from "query-string";
 import ReactHtmlParser from 'react-html-parser';
 import './App.css';
 
 class App extends Component {
   state = {
     filter: {
-      title: "",
-      troupe: "",
-      year: "",
-      myRole: ""
+      slug: queryString.parse(window.location.search).slug || "",
+      troupe: queryString.parse(window.location.search).troupe || "",
+      year: queryString.parse(window.location.search).year || "",
+      myRole: queryString.parse(window.location.search).role || ""
     }
   }
   
@@ -69,11 +70,11 @@ class App extends Component {
   filterPlays = () => {
     let filteredPlays = jsonData.filter(play=>{
       let bool = true;
-      if (play.title === "The Colour Snatchers &amp; Another Side") {
+      if (play.slug === "colour-snatchers-another-side") {
         bool = false
       }
-      if (this.state.filter.title) {
-        bool = bool && play.title===this.state.filter.title
+      if (this.state.filter.slug) {
+        bool = bool && play.slug===this.state.filter.slug
       }
       if (this.state.filter.troupe) {
         let troupeBool = false;
@@ -97,10 +98,15 @@ class App extends Component {
   }
 
   render() {
+    console.log(window.location.search)
+    console.log(queryString.parse(window.location.search))
     let numPlays = this.filterPlays().length;
     let mappedPlays = this.filterPlays().map((play, index) => {
       return (
-        <PlayDetails key={index} title={play.title}
+        <PlayDetails 
+        key={index} 
+        title={play.title}
+        slug={play.slug}
         epoch={play.epoch}
         datePrecision={play["date-precision"]}
         datesAsText={play["dates-as-text"]}
@@ -143,8 +149,9 @@ class App extends Component {
     if (this.state.filter.troupe) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(this.state.filter.troupe)}`
     }
-    if (this.state.filter.title) {
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+this.state.filter.title+"&rdquo;")}`
+    if (this.state.filter.slug) {
+      let playTitle = jsonData.find(play=>{return play.slug===this.state.filter.slug}).title
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+playTitle+"&rdquo;")}`
     }
     return (
       <div className="App">
