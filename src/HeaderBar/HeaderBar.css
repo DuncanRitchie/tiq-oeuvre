@@ -1,0 +1,6 @@
+.header-bar {
+    background-color: chartreuse;
+    position: fixed;
+    top: 0;
+    width: 100%
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import jsonData from "./data.json";
+import HeaderBar from "./HeaderBar/HeaderBar";
 import PlayDetails from "./Play/PlayDetails";
 import ReactHtmlParser from 'react-html-parser';
 import './App.css';
@@ -145,14 +146,7 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <h1>Duncan&rsquo;s work with Theatre in the Quarter and associated groups</h1>
-        <p>{filterParagraph}.&ensp;
-          {this.state.filter.title === "" && 
-          this.state.filter.troupe === "" && 
-          this.state.filter.myRole === "" && 
-          this.state.filter.year === "" ? null :
-          <span className="clear-filters" onClick={this.myRoleHandler}>Clear filter</span>}
-        </p>
+        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} clearFilter={this.myRoleHandler}/>
         {mappedPlays}
       </div>
     );
