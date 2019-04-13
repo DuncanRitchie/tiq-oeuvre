@@ -1,5 +1,5 @@
 .play-details {
-    height: 100vh;
+    height: calc(100vh - 144px);
     display: flex;
     justify-content: space-around;
     align-items: center;

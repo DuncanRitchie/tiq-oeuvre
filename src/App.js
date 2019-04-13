@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import jsonData from "./data.json";
 import HeaderBar from "./HeaderBar/HeaderBar";
+import MappedPlays from "./MappedPlays/MappedPlays";
 import PlayDetails from "./Play/PlayDetails";
 import ReactHtmlParser from 'react-html-parser';
 import './App.css';
@@ -121,7 +122,7 @@ class App extends Component {
     })
     let filterParagraph = "";
     if (numPlays === jsonData.length-1) {
-      filterParagraph = `Showing all ${numPlays} productions. Click a date, troupe, role, or title to set a filter`
+      filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, or title to set a filter`
     }
     else if (numPlays > 1) {
       filterParagraph = `Filtered to ${numPlays} productions`
@@ -147,7 +148,7 @@ class App extends Component {
     return (
       <div className="App">
         <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} clearFilter={this.myRoleHandler}/>
-        {mappedPlays}
+        <MappedPlays mappedPlays={mappedPlays} />
       </div>
     );
   }

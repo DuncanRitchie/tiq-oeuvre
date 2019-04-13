@@ -10,7 +10,7 @@ const PlayDetails = (props) => {
         <div className="play-details">
             {props.image500 ? <img src={props.image500} alt={ReactHtmlParser(props.title)} className={props.posterOrientation}/> : null}
             <div className={props.image500 ? "play-text" : "play-text-only"}>
-                <h1 className="play-title" onClick={()=>{props.titleHandler(props.title)}}>{ReactHtmlParser(props.title)}</h1>
+                <h2 className="play-title" onClick={()=>{props.titleHandler(props.title)}}>{ReactHtmlParser(props.title)}</h2>
                 <p className="play-by-p">{props.verb} <Tag handler={props.yearHandler} text={props.datesAsText} /> 
                 {props.datePrecision === "month" ? <span>&nbsp;(I can&rsquo;t be more precise than that)</span> : null }
                 &nbsp;by {byMap}</p>

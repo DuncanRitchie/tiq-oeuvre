@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactHtmlParser from 'react-html-parser';
 import './HeaderBar.css';
 
 const HeaderBar = (props) => {
