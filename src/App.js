@@ -17,54 +17,50 @@ class App extends Component {
     }
   }
   
-  titleHandler = (title) => {
-    this.setState({
-      filter: {title: title, troupe: "", year: "", myRole: ""}
-    })
+  slugHandler = (slug) => {
+    window.location.search = "slug="+slug
   }
 
-  troupeHandler = (e) => {
-    this.setState({
-      filter: {title: "", troupe: e.currentTarget.textContent, year: "", myRole: ""}
-    })
+  troupeHandler = (slug) => {
+    window.location.search = "troupe="+slug
   }
 
   yearHandler = (e) => {
-    this.setState({
-      filter: {title: "", troupe: "", year: e.currentTarget.textContent.substr(0,4), myRole: ""}
-    })
+    window.location.search = "year="+e.currentTarget.textContent.substr(0,4)
   }
 
   myRoleHandler = (e) => {
     let myRole = ""
     switch (e.currentTarget.textContent) {
-      case "poster designer":
-        myRole = "Poster Designer"
+      case "poster-designer":
+        myRole = "poster-designer"
         break;
-      case "programme designer":
-        myRole = "Programme Designer"
+      case "programme-designer":
+        myRole = "programme-designer"
         break;
       case "lyricist":
-        myRole = "Lyricist"
+        myRole = "lyricist"
         break;
       case "photographer":
-        myRole = "Photographer"
+        myRole = "photographer"
         break;
       case "assistant-director":
-        myRole = "Assistant Director"
+        myRole = "assistant-director"
         break;
       case "poster co-designer (with illustration by Alison Pitt)":
-        myRole = "CoDesigner"
+        myRole = "co-designer"
         break;
       case "actor":
-        myRole = "Actor"
+        myRole = "actor"
         break;
       default:
         myRole = ""
     }
-    this.setState({
-      filter: {title: "", troupe: "", year: "", myRole: myRole}
-    })
+    window.location.search = "role="+myRole
+  }
+
+  clearFilter = () => {
+    window.location.search = ""
   }
 
   filterPlays = () => {
@@ -78,8 +74,8 @@ class App extends Component {
       }
       if (this.state.filter.troupe) {
         let troupeBool = false;
-        play["by-array"].map((troupeCode,index)=>{
-          if (this.state.filter.troupe.includes(ReactHtmlParser(troupeCode))) {
+        play["by-array-slug"].map((troupeSlug,index)=>{
+          if (this.state.filter.troupe.includes(troupeSlug)) {
             troupeBool = true
           }
           return troupeBool
@@ -111,8 +107,8 @@ class App extends Component {
         datePrecision={play["date-precision"]}
         datesAsText={play["dates-as-text"]}
         verb={play.verb}
-        by={play.by}
         byArray={play["by-array"]}
+        byArraySlug={play["by-array-slug"]}
         synopsis={play.synopsis}s
         myActingRole={play["my-acting-role"]}
         mySongsLyricized={play["my-songs-lyricized"]}
@@ -120,7 +116,7 @@ class App extends Component {
         tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
         image500={play["photo-url-max-width-500"]}
-        titleHandler={this.titleHandler}
+        slugHandler={this.slugHandler}
         troupeHandler={this.troupeHandler}
         yearHandler={this.yearHandler}
         myRoleHandler={this.myRoleHandler}
@@ -147,7 +143,12 @@ class App extends Component {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${this.state.filter.year}`
     }
     if (this.state.filter.troupe) {
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(this.state.filter.troupe)}`
+      let playFound = jsonData.find(play=>{return play["by-array-slug"].includes(this.state.filter.troupe)});
+      let troupeFound = this.state.filter.troupe;
+      if (playFound) {
+        troupeFound = playFound["by-array"][playFound["by-array-slug"].findIndex(troupe=>{return troupe===this.state.filter.troupe})]
+      }
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
     if (this.state.filter.slug) {
       let playTitle = jsonData.find(play=>{return play.slug===this.state.filter.slug}).title
@@ -155,7 +156,7 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} clearFilter={this.myRoleHandler}/>
+        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} clearFilter={this.clearFilter}/>
         <MappedPlays mappedPlays={mappedPlays} />
       </div>
     );
