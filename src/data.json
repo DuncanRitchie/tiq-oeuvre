@@ -219,7 +219,7 @@
     "synopsis": "A royal wedding is being planned, but the entertainment is locked in the palace dungeon on accusations of trying to feed the bride to a dragon. An original comedy play.",
     "my-acting-role": "a court jester",
     "my-songs-lyricized": ["The Musicians&rsquo; Tango (The Rat Song)"],
-    "example-lyric": "We hear scurrying rats in the sewers<br />while we&rsquo;re worrying about our futures.",
+    "example-lyric": "We hear scurrying rats in the sewer<br />while we&rsquo;re worrying about our future.",
     "poster-orientation": null,
     "photo-url-max-width-1280": null,
     "photo-url-max-width-500": null,
@@ -336,8 +336,8 @@
     "tags-batch-two": null
     },{
     "title": "Ghosts of the City",
-    "epoch": 3569356800,
-    "date-precision": "day",
+    "epoch": 3569427000,
+    "date-precision": "print",
     "dates-as-text": "2013 Feb 07 and 08",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -357,8 +357,8 @@
     "tags-batch-two": ["Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"]
     },{
     "title": "The Firebird",
-    "epoch": 3603052800,
-    "date-precision": "day",
+    "epoch": 3603123000,
+    "date-precision": "print",
     "dates-as-text": "2014 Mar 04 and 05",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -378,8 +378,8 @@
     "tags-batch-two": null
     },{
     "title": "Masque",
-    "epoch": 3606076800,
-    "date-precision": "day",
+    "epoch": 3606148800,
+    "date-precision": "print",
     "dates-as-text": "2014 Apr 08, 09, 11, and 12",
     "verb": "Performed",
     "by": "Quartz Youth Theatre",
@@ -399,8 +399,8 @@
     "tags-batch-two": null
     },{
     "title": "The Emperor&rsquo;s New Clothes",
-    "epoch": 3613507200,
-    "date-precision": "day",
+    "epoch": 3613577400,
+    "date-precision": "print",
     "dates-as-text": "2014 Jul 03 and 05",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -408,7 +408,7 @@
     "synopsis": "A very vain emperor is persuaded to wear clothes that apparently cannot be seen by fools but actually cannot be seen by anyone because they aren&rsquo;t there.",
     "my-acting-role": null,
     "my-songs-lyricized": ["Enter the Emperor","You&rsquo;ll Have What You Deserve","The Tricksters&rsquo; Escape","No Man or Woman Could Tell Another","The Emperor&rsquo;s No Clothes","My Grandest Garments I Wish to Give","So Spoke the Emperor"],
-    "example-lyric": "Good afternoon Your Majesty, we&rsquo;re humbled to be here,<br />about to clothe the king of clothes, a fashion pioneer!<br />",
+    "example-lyric": "If we may say it brazenly, if we may have the nerve,<br />our cloth&rsquo;s so special, rare, and new<br />we&rsquo;ll only offer it to you<br />You&rsquo;ll have from us unrivalled clothes, you&rsquo;ll have what you deserve.",
     "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_1280.png",
     "photo-url-max-width-500": "https://66.media.tumblr.com/56e2759894163856e84444681474abbf/tumblr_pkrpomDvHB1y4ne37o1_r1_500.png",
@@ -420,8 +420,8 @@
     "tags-batch-two": ["Garden Quarter","Duncan as Lyricist","Duncan as Poster Designer","Duncan as Programme Designer","Jigsaw","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"]
     },{
     "title": "The Scrapbook",
-    "epoch": 3633292800,
-    "date-precision": "day",
+    "epoch": 3633361200,
+    "date-precision": "print",
     "dates-as-text": "2015 Feb 17, 18, 19, and 20",
     "verb": "Performed",
     "by": "Quartz Youth Theatre",
@@ -441,8 +441,8 @@
     "tags-batch-two": null
     },{
     "title": "The Strange Adventures of Odysseus",
-    "epoch": 3635366400,
-    "date-precision": "day",
+    "epoch": 3635436600,
+    "date-precision": "print",
     "dates-as-text": "2015 Mar 13 and 14",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -462,8 +462,8 @@
     "tags-batch-two": ["Duncan as Poster Designer","Duncan as Programme Designer","Jigsaw","Chester","Theatre in the Quarter","TiQ"]
     },{
     "title": "Paintbrush in Paradise",
-    "epoch": 3645129600,
-    "date-precision": "day",
+    "epoch": 3645180000,
+    "date-precision": "print",
     "dates-as-text": "2015 Jul 04 and 05",
     "verb": "Performed",
     "by": "Rewind Youth Theatre",
@@ -483,8 +483,8 @@
     "tags-batch-two": null
     },{
     "title": "City of Stories",
-    "epoch": 3645216000,
-    "date-precision": "day",
+    "epoch": 3645275400,
+    "date-precision": "print",
     "dates-as-text": "2015 Jul 05",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -504,8 +504,8 @@
     "tags-batch-two": null
     },{
     "title": "Ten Years",
-    "epoch": 3652300800,
-    "date-precision": "day",
+    "epoch": 3652372800,
+    "date-precision": "print",
     "dates-as-text": "2015 Sep 25",
     "verb": "Performed",
     "by": "Theatre in the Quarter",
@@ -525,8 +525,8 @@
     "tags-batch-two": null
     },{
     "title": "Best Days of our Lives",
-    "epoch": 3654547200,
-    "date-precision": "day",
+    "epoch": 3654595800,
+    "date-precision": "print",
     "dates-as-text": "2015 Oct 21 and 22",
     "verb": "Performed",
     "by": "Theatre in the Quarter",
@@ -546,8 +546,8 @@
     "tags-batch-two": null
     },{
     "title": "Christmas Day in the Workhouse",
-    "epoch": 3661545600,
-    "date-precision": "day",
+    "epoch": 3661615800,
+    "date-precision": "print",
     "dates-as-text": "2016 Jan 10, 11, and 12",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -567,8 +567,8 @@
     "tags-batch-two": null
     },{
     "title": "The Revellers&rsquo; Adaptation of Twelfth Night",
-    "epoch": 3661545600,
-    "date-precision": "day",
+    "epoch": 3661619400,
+    "date-precision": "print",
     "dates-as-text": "2016 Jan 10, 11, and 12",
     "verb": "Performed",
     "by": "Quartz Youth Theatre",
@@ -588,8 +588,8 @@
     "tags-batch-two": null
     },{
     "title": "The Olympic Torch",
-    "epoch": 3667680000,
-    "date-precision": "day",
+    "epoch": 3667748400,
+    "date-precision": "print",
     "dates-as-text": "2016 Mar 21 and 22",
     "verb": "Performed",
     "by": "Rewind Youth Theatre",
@@ -608,9 +608,9 @@
     "tags-batch-one": ["The Olympic Torch","Olympic Torch","Rewind Youth Theatre","Cheshire Dance","Blacon",2016,"St Marys Creative Space","Blacon High","Duncan as Poster Designer","Rewind","Chester","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     },{
-    "title": "A Handbag of Harmonies",
-    "epoch": 3675283200,
-    "date-precision": "day",
+    "title": "A Handbag of Harmonies Concert",
+    "epoch": 3675353400,
+    "date-precision": "print",
     "dates-as-text": "2016 Jun 17",
     "verb": "Performed",
     "by": "A Handbag of Harmonies",
@@ -630,8 +630,8 @@
     "tags-batch-two": null
     },{
     "title": "Gulliver&rsquo;s Travels",
-    "epoch": 3676147200,
-    "date-precision": "day",
+    "epoch": 3676215600,
+    "date-precision": "print",
     "dates-as-text": "2016 Jun 27, 28, and 29",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -672,8 +672,8 @@
     "tags-batch-two": null
     },{
     "title": "The Hills Are Alive",
-    "epoch": 3676838400,
-    "date-precision": "day",
+    "epoch": 3676885200,
+    "date-precision": "print",
     "dates-as-text": "2016 Jul 05&ndash;07",
     "verb": "A series of concerts performed",
     "by": "St Mary&rsquo;s Creative Space",
@@ -693,8 +693,8 @@
     "tags-batch-two": null
     },{
     "title": "Christmas 2016 in the Garden Quarter",
-    "epoch": 3689193600,
-    "date-precision": "day",
+    "epoch": 3689254800,
+    "date-precision": "print",
     "dates-as-text": "2016 Nov 25&ndash;Dec 24",
     "verb": "A series of events performed",
     "by": "the Garden Quarter",
@@ -714,8 +714,8 @@
     "tags-batch-two": null
     },{
     "title": "The Garden Quarter&rsquo;s Famous Christmas Market",
-    "epoch": 3689884800,
-    "date-precision": "day",
+    "epoch": 3689922600,
+    "date-precision": "print",
     "dates-as-text": "2016 Dec 03",
     "verb": "Hosted",
     "by": "the Garden Quarter",
@@ -735,8 +735,8 @@
     "tags-batch-two": ["illustration not mine","Chester","2016","Duncan as CoDesigner","Christmas"]
     },{
     "title": "The Night Before Christmas",
-    "epoch": 3690921600,
-    "date-precision": "day",
+    "epoch": 3690991800,
+    "date-precision": "print",
     "dates-as-text": "2016 Dec 15, 16, and 17",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre and Rewind Youth Theatre",
@@ -756,8 +756,8 @@
     "tags-batch-two": ["Blacon",2016,"Duncan as Poster Designer","Duncan as Programme Designer","double bill","Jigsaw","Rewind","Chester"]
     },{
     "title": "Before a Fall",
-    "epoch": 3692995200,
-    "date-precision": "day",
+    "epoch": 3693065400,
+    "date-precision": "print",
     "dates-as-text": "2017 Jan 08, 09, and 10",
     "verb": "Performed",
     "by": "Quartz Youth Theatre",
@@ -777,13 +777,13 @@
     "tags-batch-two": null
     },{
     "title": "An Evening with A Handbag of Harmonies",
-    "epoch": 3697056000,
-    "date-precision": "day",
+    "epoch": 3697126200,
+    "date-precision": "print",
     "dates-as-text": "2017 Feb 24",
     "verb": "Performed",
     "by": "A Handbag of Harmonies",
     "by-array": ["A Handbag of Harmonies"],
-    "synopsis": null,
+    "synopsis": "A concert from Chester&rsquo;s favourite feather-boa-wearning women&rsquo;s choir, with a guest appearance from the men&rsquo;s choir of a local golf club.",
     "my-acting-role": null,
     "my-songs-lyricized": null,
     "example-lyric": null,
@@ -798,8 +798,8 @@
     "tags-batch-two": null
     },{
     "title": "The Promise",
-    "epoch": 3707078400,
-    "date-precision": "day",
+    "epoch": 3707148600,
+    "date-precision": "print",
     "dates-as-text": "2017 Jun 20 and 21",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre",
@@ -861,8 +861,8 @@
     "tags-batch-two": ["Duncan as Photographer","St Marys Creative Space","Parkie Youth Choir","St Marys","St Marys Centre","Town Hall Square","Eastgate Street","Week","CIMW","Chester",2017,"Eisteddfod","Handbags","Mother Touch","Ruisi Zhi","Jiaman Yin"]
     },{
     "title": "Night of Promises",
-    "epoch": 3720211200,
-    "date-precision": "day",
+    "epoch": 3720279600,
+    "date-precision": "print",
     "dates-as-text": "2017 Sep 01",
     "verb": "Hosted",
     "by": "St Thomas of Canterbury Church, Chester",
@@ -881,30 +881,9 @@
     "tags-batch-one": ["Night of Promises","Promises","Garden Quarter",2017,"St Thomas Church","Duncan as Poster Designer","Chester"],
     "tags-batch-two": null
     },{
-    "title": "Christmas Child",
-    "epoch": 3722630400,
-    "date-precision": "day",
-    "dates-as-text": "2017 Dec 17 and 18",
-    "verb": "Performed",
-    "by": "Jigsaw Music Theatre and Rewind Youth Theatre",
-    "by-array": ["Jigsaw Music Theatre","Rewind Youth Theatre"],
-    "synopsis": "A well-wishing boy and an anonymous girl are each adrift in a world they don&rsquo;t fit into.",
-    "my-acting-role": null,
-    "my-songs-lyricized": null,
-    "example-lyric": null,
-    "poster-orientation": "portrait",
-    "photo-url-max-width-1280": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_1280.png",
-    "photo-url-max-width-500": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_500.png",
-    "photo-url-max-width-400": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_400.png",
-    "photo-url-max-width-250": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_250.png",
-    "photo-url-max-width-100": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_100.png",
-    "photo-url-max-width-75": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_75sq.png",
-    "tags-batch-one": ["Christmas Child","The Girl with No Name","Girl with No Name","The Boy who Wrote Messages","Boy who Wrote Messages","Rewind Youth Theatre"],
-    "tags-batch-two": ["Jigsaw Music Theatre","Cheshire Dance","Blacon",2017,"St Marys Creative Space","Duncan as Poster Designer","Duncan as Programme Designer","double bill","Jigsaw","Rewind","Chester","Theatre in the Quarter","TiQ"]
-    },{
     "title": "A Tale of our Time",
-    "epoch": 3722630400,
-    "date-precision": "day",
+    "epoch": 3720281400,
+    "date-precision": "print",
     "dates-as-text": "2017 Nov 19 and 20",
     "verb": "Performed",
     "by": "Quartz Youth Theatre",
@@ -923,14 +902,35 @@
     "tags-batch-one": ["A Tale of our Time","Tale of our Time","Quartz Youth Theatre",2017,"St Marys Creative Space","Duncan as Poster Designer","Duncan as Programme Designer","Quartz","Chester","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     },{
+    "title": "Christmas Child",
+    "epoch": 3722700600,
+    "date-precision": "print",
+    "dates-as-text": "2017 Dec 17 and 18",
+    "verb": "Performed",
+    "by": "Jigsaw Music Theatre and Rewind Youth Theatre",
+    "by-array": ["Jigsaw Music Theatre","Rewind Youth Theatre"],
+    "synopsis": "A well-wishing boy and an anonymous girl are each adrift in a world they don&rsquo;t fit into.",
+    "my-acting-role": null,
+    "my-songs-lyricized": null,
+    "example-lyric": null,
+    "poster-orientation": "portrait",
+    "photo-url-max-width-1280": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_1280.png",
+    "photo-url-max-width-500": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_500.png",
+    "photo-url-max-width-400": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_400.png",
+    "photo-url-max-width-250": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_250.png",
+    "photo-url-max-width-100": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_100.png",
+    "photo-url-max-width-75": "https://66.media.tumblr.com/94e5bfad559700ab4dca29e12c272ea9/tumblr_pks0847e5K1y4ne37o1_75sq.png",
+    "tags-batch-one": ["Christmas Child","The Girl with No Name","Girl with No Name","The Boy who Wrote Messages","Boy who Wrote Messages","Rewind Youth Theatre"],
+    "tags-batch-two": ["Jigsaw Music Theatre","Cheshire Dance","Blacon",2017,"St Marys Creative Space","Duncan as Poster Designer","Duncan as Programme Designer","double bill","Jigsaw","Rewind","Chester","Theatre in the Quarter","TiQ"]
+    },{
     "title": "The Colour Snatchers &amp; Another Side",
-    "epoch": 3731097600,
-    "date-precision": "day",
+    "epoch": 3758382000,
+    "date-precision": "print",
     "dates-as-text": "2019 Feb 03 and 04",
     "verb": "Performed",
     "by": "Jigsaw Music Theatre and Quartz Youth Theatre",
     "by-array": ["Jigsaw Music Theatre","Quartz Youth Theatre"],
-    "synopsis": "Four children seek the help of an enchantress and a colour-breathing dragon to save the world from ecological disaster. Then a girl rebels against a totalitarian surveillance state.",
+    "synopsis": "Four children seek the help of an enchantress and a colour-breathing dragon to save the world from ecological disaster. Then a girl rebels against a totalitarian surveillance state and discovers a community of outcasts.",
     "my-acting-role": null,
     "my-songs-lyricized": ["There&rsquo;s a Hedge","Everything is Grey","The Colour Dragon"],
     "example-lyric": "You&rsquo;re our saviour who imbues<br /> all the world with all its hues.<br /> Music is the fuel you use.<br /> Won&rsquo;t you help us with our blues?",
@@ -972,7 +972,7 @@
     "verb": "Performed",
     "by": "Quartz Youth Theatre",
     "by-array": ["Quartz Youth Theatre"],
-    "synopsis": "A girl rebels against a totalitarian surveillance state.",
+    "synopsis": "A girl rebels against a totalitarian surveillance state and discovers a community of outcasts.",
     "my-acting-role": null,
     "my-songs-lyricized": null,
     "example-lyric": null,
@@ -987,8 +987,8 @@
     "tags-batch-two": ["Duncan as Photographer","Quartz","Chester","Duncan as Assistant Director","Theatre in the Quarter","TiQ"]
     },{
     "title": "Blacon&rsquo;s Mystery Express",
-    "epoch": 3762806400,
-    "date-precision": "day",
+    "epoch": 3762873000,
+    "date-precision": "print",
     "dates-as-text": "2019 Mar 27",
     "verb": "Performed",
     "by": "Rewind Youth Theatre",

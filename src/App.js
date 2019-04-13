@@ -6,7 +6,6 @@ import './App.css';
 
 class App extends Component {
   state = {
-    allData: jsonData,
     filter: {
       title: "",
       troupe: "",
@@ -16,15 +15,21 @@ class App extends Component {
   }
   
   titleHandler = (title) => {
-    this.setState({filter: {title: title, troupe: "", year: "", myRole: ""}})
+    this.setState({
+      filter: {title: title, troupe: "", year: "", myRole: ""}
+    })
   }
 
   troupeHandler = (e) => {
-    this.setState({filter: {title: "", troupe: e.target.textContent, year: "", myRole: ""}})
+    this.setState({
+      filter: {title: "", troupe: e.target.textContent, year: "", myRole: ""}
+    })
   }
 
   yearHandler = (e) => {
-    this.setState({filter: {title: "", troupe: "", year: e.target.textContent.substr(0,4), myRole: ""}})
+    this.setState({
+      filter: {title: "", troupe: "", year: e.target.textContent.substr(0,4), myRole: ""}
+    })
   }
 
   myRoleHandler = (e) => {
@@ -51,11 +56,13 @@ class App extends Component {
       default:
         myRole = ""
     }
-    this.setState({filter: {title: "", troupe: "", year: "", myRole: myRole}})
+    this.setState({
+      filter: {title: "", troupe: "", year: "", myRole: myRole}
+    })
   }
 
-  render() {
-    let filteredPlays = this.state.allData.filter(play=>{
+  filterPlays = () => {
+    let filteredPlays = jsonData.filter(play=>{
       let bool = true;
       if (this.state.filter.title) {
         bool = bool && play.title===this.state.filter.title
@@ -71,8 +78,12 @@ class App extends Component {
       }
       return bool
     })
-    let numPlays = filteredPlays.length;
-    let mappedPlays = filteredPlays.reverse().map((play, index) => {
+    return filteredPlays.reverse()
+  }
+
+  render() {
+    let numPlays = this.filterPlays().length;
+    let mappedPlays = this.filterPlays().map((play, index) => {
       return (
         <PlayDetails key={index} title={play.title}
         epoch={play.epoch}
@@ -96,7 +107,10 @@ class App extends Component {
       )
     })
     let filterParagraph = "";
-    if (numPlays > 1) {
+    if (numPlays === jsonData.length) {
+      filterParagraph = "No filters applied"
+    }
+    else if (numPlays > 1) {
       filterParagraph = "Filtered to productions"
     }
     else if (numPlays === 1) {
