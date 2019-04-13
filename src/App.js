@@ -81,6 +81,7 @@ class App extends Component {
           if (this.state.filter.troupe.includes(ReactHtmlParser(troupeCode))) {
             troupeBool = true
           }
+          return troupeBool
         })
         bool = bool && troupeBool
       }
