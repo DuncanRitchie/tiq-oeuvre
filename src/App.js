@@ -94,8 +94,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(window.location.search)
-    console.log(queryString.parse(window.location.search))
     let numPlays = this.filterPlays().length;
     let mappedPlays = this.filterPlays().map((play, index) => {
       return (
