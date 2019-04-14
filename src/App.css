@@ -19,11 +19,3 @@
 .clear-filters:active {
     background-color: #ffffb0
 }
-
-.song-title {
-  display: inline-block;
-  margin: -0.5px 4px -0.5px 4px;
-  border: 1px solid black;
-  border-radius: 6px;
-  padding: 2px 4px
-}

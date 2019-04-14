@@ -1,16 +1,16 @@
 .play-details {
-    height: calc(100vh - 144px);
+    min-height: calc(100vh - 144px);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 img.portrait {
-    height: 90%
+    height: calc(100vh - 168px)
 }
 
 img.landscape {
-    height: 60%
+    height: calc(100vh - 240px)
 }
 
 .play-text {
@@ -20,7 +20,6 @@ img.landscape {
 .upcoming {
     position: absolute;
     transform: translate(-12px,-54px);
-    /* src: "./upcoming.png" */
 }
 
 .upcoming:hover {
@@ -64,4 +63,39 @@ img.landscape {
 
 .date:active {
     background-color: #b0ffff
+}
+
+.song-title {
+  display: inline-block;
+  margin: -0.5px 4px -0.5px 4px;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 2px 4px
+}
+
+@media (max-width: 767px) {
+
+    .play-details {
+        min-height: calc(100vh - 96px);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: space-around;
+        border-bottom: 1px solid black;
+    }
+
+    .play-text {
+        width: 90vw
+    }
+
+    .upcoming {
+        position: relative;
+        margin: 12px 0 -24px 0;
+        transform: translate(0px,0px);
+    }
+
+    img.portrait, img.landscape {
+        margin: 8px 0 36px 0
+    }
+
 }

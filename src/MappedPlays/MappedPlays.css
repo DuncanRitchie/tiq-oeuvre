@@ -1,3 +1,11 @@
 .mapped-plays {
     padding-top: 144px
 }
+
+@media (max-width: 767px) {
+
+    .mapped-plays {
+        padding-top: 96px
+    }
+    
+}

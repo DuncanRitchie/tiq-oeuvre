@@ -18,15 +18,16 @@ const PlayDetails = (props) => {
                 {props.datePrecision === "month" ? <span>&nbsp;(I can&rsquo;t be more precise than that)</span> : null }
                 &nbsp;by {byMap}</p>
                 {props.synopsis ? <p>Synopsis: {ReactHtmlParser(props.synopsis)}</p> : null}
-                <p>My roles: 
-                {props.tags.includes("Duncan as actor") ? <Tag handler={props.myRoleHandler} text="actor"/> : null}
-                {props.tags.includes("Duncan as poster-designer") ? <Tag handler={props.myRoleHandler} text="poster-designer"/> : null}
-                {props.tags.includes("Duncan as programme-designer") ? <Tag handler={props.myRoleHandler} text="programme-designer"/> : null}
-                {props.tags.includes("Duncan as lyricist") ? <Tag handler={props.myRoleHandler} text="lyricist" /> : null}
-                {props.tags.includes("Duncan as photographer") ? <Tag handler={props.myRoleHandler} text="photographer"/> : null}
-                {props.tags.includes("Duncan as assistant-director") ? <Tag handler={props.myRoleHandler} text="assistant-director"/> : null}
-                {props.tags.includes("Duncan as co-designer") ? <Tag handler={props.myRoleHandler} text="poster co-designer (with illustration by Alison Pitt)"/> : null}</p>
-    {props.mySongsLyricized ? <p>Songs I lyricized: {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{ReactHtmlParser(song)}</span>})}</p> : null}
+                <p className="play-roles-p">My roles: 
+                    {props.tags.includes("Duncan as actor") ? <Tag handler={props.myRoleHandler} text="actor"/> : null}
+                    {props.tags.includes("Duncan as poster-designer") ? <Tag handler={props.myRoleHandler} text="poster-designer"/> : null}
+                    {props.tags.includes("Duncan as programme-designer") ? <Tag handler={props.myRoleHandler} text="programme-designer"/> : null}
+                    {props.tags.includes("Duncan as lyricist") ? <Tag handler={props.myRoleHandler} text="lyricist" /> : null}
+                    {props.tags.includes("Duncan as photographer") ? <Tag handler={props.myRoleHandler} text="photographer"/> : null}
+                    {props.tags.includes("Duncan as assistant-director") ? <Tag handler={props.myRoleHandler} text="assistant-director"/> : null}
+                    {props.tags.includes("Duncan as co-designer") ? <Tag handler={props.myRoleHandler} text="poster co-designer (with illustration by Alison Pitt)"/> : null}
+                </p>
+                {props.mySongsLyricized ? <p>Songs I lyricized: {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{ReactHtmlParser(song)}</span>})}</p> : null}
                 {props.exampleLyric ? <p>Example lyric:<br/>
                 {ReactHtmlParser(props.exampleLyric)}</p> : null}
             </div>

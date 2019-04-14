@@ -133,7 +133,7 @@ class App extends Component {
     })
     let filterParagraph = "";
     if (numPlays === jsonData.length-1) {
-      filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or "upcoming" sticker to set a filter`
+      filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or ${ReactHtmlParser("&ldquo;upcoming&rdquo;")} sticker to set a filter`
     }
     else if (numPlays > 1) {
       filterParagraph = `Filtered to ${numPlays} productions`
