@@ -1,5 +1,5 @@
 .header-bar {
-    background-color: chartreuse;
+    background-color: rgb(248, 242, 192);
     position: fixed;
     top: 0;
     width: 100%;
@@ -14,7 +14,7 @@
         min-height: 96px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -24,6 +24,7 @@
     }
 
     .filter-paragraph {
-        font-size: 16px
+        font-size: 16px;
+        margin: 0
     }
 }
