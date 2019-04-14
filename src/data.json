@@ -1041,7 +1041,7 @@
     "verb": "Performed",
     "by-array": ["Rewind Youth Theatre"],
     "by-array-slug": ["rewind-youth-theatre"],
-    "synopsis": "A train re-unites the rival factions of a suburb of Chester by taking them to another world.",
+    "synopsis": "An intergalactic train re-unites the rival factions of a suburb of Chester by taking them to a civilisation on another world.",
     "my-acting-role": null,
     "my-songs-lyricized": null,
     "example-lyric": null,
@@ -1054,8 +1054,28 @@
     "photo-url-max-width-75": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_75sq.png",
     "tags-batch-one": ["Blacons Mystery Express",2019,"Blacon","Mystery","Express","Blacon High","schools tour","Duncan as poster-designer","Rewind","Chester","Duncan as poster-designer","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
+    },{
+    "title": "On the Ocean",
+    "slug": "on-the-ocean",
+    "epoch": 3767299200,
+    "date-precision": "day",
+    "dates-as-text": "2019 May 18",
+    "verb": "Performed",
+    "by-array": ["Quartz Youth Theatre"],
+    "by-array-slug": ["quartz-youth-theatre"],
+    "synopsis": "Sailors of yore embark on a long voyage to see nothing but themselves, their ship, the open sea, and perhaps some less-than-welcome tentacles.",
+    "my-acting-role": null,
+    "my-songs-lyricized": null,
+    "example-lyric": null,
+    "poster-orientation": "portrait",
+    "photo-url-max-width-1280": null,
+    "photo-url-max-width-500": null,
+    "photo-url-max-width-400": null,
+    "photo-url-max-width-250": null,
+    "photo-url-max-width-100": null,
+    "photo-url-max-width-75": null,
+    "tags-batch-one": ["On the Ocean","Ocean","Quartz Youth Theatre","Quartz","Theatre in the Quarter","TiQ","Chester",2019,"Duncan as assistant-director","Duncan as poster-designer"],
+    "tags-batch-two": null
     }]
-    
-    
     
     
