@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 29.851596 21.020506"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="29.851597mm"
    height="21.020506mm"
-   width="29.851597mm">
+   viewBox="0 0 29.851596 21.020506"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="upcoming.svg"
+   inkscape:export-filename="C:\Users\Owner\Documents\CodeNation\TiQ-Projects\src\Play\upcoming.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <title
      id="title16">Upcoming!</title>
   <defs
      id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="-87.300104"
+     inkscape:cy="9.3566769"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="746"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -27,23 +54,39 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-89.376277,-130.28844)"
-     id="layer1">
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-89.376277,-130.28844)">
     <path
-       transform="matrix(0.17112522,-0.01869348,0.01869348,0.17112522,82.564474,119.39037)"
-       d="m 123.5106,200.0139 -28.163486,-32.09429 -42.40481,5.00566 21.820483,-36.70274 -17.86447,-38.782542 41.649284,9.410742 31.363959,-28.974585 3.92019,42.518905 37.24846,20.87526 -39.22647,16.86738 z"
+       sodipodi:type="star"
+       style="fill:#ffcc00;stroke-width:0.26458332"
        id="path11"
-       style="fill:#ffcc00;stroke-width:0.26458332" />
+       sodipodi:sides="5"
+       sodipodi:cx="106.8686"
+       sodipodi:cy="137.90512"
+       sodipodi:r1="64.299736"
+       sodipodi:r2="32.149872"
+       sodipodi:arg1="1.3089969"
+       sodipodi:arg2="1.9373155"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 123.5106,200.0139 -28.163486,-32.09429 -42.40481,5.00566 21.820483,-36.70274 -17.86447,-38.782542 41.649284,9.410742 31.363959,-28.974585 3.92019,42.518905 37.24846,20.87526 -39.22647,16.86738 z"
+       inkscape:transform-center-x="-0.87175799"
+       inkscape:transform-center-y="-0.19297636"
+       transform="matrix(0.17112522,-0.01869348,0.01869348,0.17112522,82.564474,119.39037)" />
     <text
-       transform="rotate(-9.4245275)"
-       id="text14"
-       y="158.13876"
-       x="64.808563"
+       xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Alegreya SC';-inkscape-font-specification:'Alegreya SC';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;font-family:'Alegreya SC';-inkscape-font-specification:'Alegreya SC';stroke-width:0.26458332"
-         y="158.13876"
+       x="64.808563"
+       y="158.13876"
+       id="text14"
+       transform="rotate(-9.4245275)"><tspan
+         sodipodi:role="line"
+         id="tspan12"
          x="64.808563"
-         id="tspan12">Upcoming!</tspan></text>
+         y="158.13876"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;font-family:'Alegreya SC';-inkscape-font-specification:'Alegreya SC';stroke-width:0.26458332">Upcoming!</tspan></text>
   </g>
 </svg>

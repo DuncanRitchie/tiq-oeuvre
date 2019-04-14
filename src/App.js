@@ -13,7 +13,8 @@ class App extends Component {
       slug: queryString.parse(window.location.search).slug || "",
       troupe: queryString.parse(window.location.search).troupe || "",
       year: queryString.parse(window.location.search).year || "",
-      myRole: queryString.parse(window.location.search).role || ""
+      myRole: queryString.parse(window.location.search).role || "",
+      upcoming: queryString.parse(window.location.search).upcoming || false
     }
   }
   
@@ -27,6 +28,10 @@ class App extends Component {
 
   yearHandler = (e) => {
     window.location.search = "year="+e.currentTarget.textContent.substr(0,4)
+  }
+
+  upcomingHandler = () => {
+    window.location.search = "upcoming=true"
   }
 
   myRoleHandler = (e) => {
@@ -88,6 +93,10 @@ class App extends Component {
       if (this.state.filter.myRole) {
         bool = bool && play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+this.state.filter.myRole)
       }
+      if (this.state.filter.upcoming) {
+        let date = new Date().getTime()/1000
+        bool = bool && date<play.epoch
+      }
       return bool
     })
     return filteredPlays.reverse()
@@ -118,12 +127,13 @@ class App extends Component {
         troupeHandler={this.troupeHandler}
         yearHandler={this.yearHandler}
         myRoleHandler={this.myRoleHandler}
+        upcomingHandler={this.upcomingHandler}
         />
       )
     })
     let filterParagraph = "";
     if (numPlays === jsonData.length-1) {
-      filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, or title to set a filter`
+      filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or "upcoming" sticker to set a filter`
     }
     else if (numPlays > 1) {
       filterParagraph = `Filtered to ${numPlays} productions`
@@ -132,7 +142,7 @@ class App extends Component {
       filterParagraph = "Filtered to one production"
     }
     else {
-      filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filters${ReactHtmlParser("&rdquo; &mdash;&nbsp;")}there are no productions`
+      filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filter${ReactHtmlParser("&rdquo; &mdash;&nbsp;")}there are no productions`
     }
     if (this.state.filter.myRole) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${this.state.filter.myRole.toLowerCase()}`
@@ -151,6 +161,9 @@ class App extends Component {
     if (this.state.filter.slug) {
       let playTitle = jsonData.find(play=>{return play.slug===this.state.filter.slug}).title
       filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+playTitle+"&rdquo;")}`
+    }
+    if (this.state.filter.upcoming) {
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}that ${numPlays===1 ? "has" : "have"} not been performed yet`
     }
     return (
       <div className="App">

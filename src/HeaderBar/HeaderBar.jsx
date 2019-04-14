@@ -9,7 +9,8 @@ const HeaderBar = (props) => {
             {props.filter.slug === "" && 
             props.filter.troupe === "" && 
             props.filter.myRole === "" && 
-            props.filter.year === "" ? null :
+            props.filter.year === "" && 
+            !props.filter.upcoming ? null :
             <span className="clear-filters" onClick={props.clearFilter}>Clear filter</span>}
             </p>
         </div>
