@@ -17,6 +17,11 @@ img.landscape {
     width: 50%
 }
 
+.upcoming {
+    position: absolute;
+    transform: translate(-12px,-54px)
+}
+
 .play-title {
     border-radius: 6px
 }

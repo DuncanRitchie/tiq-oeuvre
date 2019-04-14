@@ -3,5 +3,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 144px
+    min-height: 144px;
+    z-index: 2
 }
