@@ -1,8 +1,8 @@
 .play-details {
     min-height: calc(100vh - 144px);
     width: 95%;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,8 +69,8 @@ img.landscape {
     .play-details {
         min-height: calc(100vh - 96px);
         width: 95vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
