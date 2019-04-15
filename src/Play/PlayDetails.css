@@ -1,5 +1,6 @@
 .play-details {
     min-height: calc(100vh - 144px);
+    width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -14,7 +15,7 @@ img.landscape {
 }
 
 .play-text {
-    width: 50%
+    width: 55%
 }
 
 .upcoming {
@@ -65,6 +66,7 @@ img.landscape {
 
     .play-details {
         min-height: calc(100vh - 96px);
+        width: 95vw;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
