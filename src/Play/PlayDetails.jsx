@@ -8,7 +8,7 @@ const PlayDetails = (props) => {
     let date = new Date().getTime()/1000
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
     return (
-        <div className="play-details">
+        <div className={props.image500 ? "play-details" : "play-details play-details-text-only"}>
             {props.image500 ? <img src={props.image500} alt={ReactHtmlParser(props.title)} className={props.posterOrientation}/> : null}
             <div className={props.image500 ? "play-text" : "play-text-only"}>
                 
