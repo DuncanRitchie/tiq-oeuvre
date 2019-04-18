@@ -1,13 +1,13 @@
 {
-  "main.css": "/tiq-projects/static/css/main.142741e9.chunk.css",
-  "main.js": "/tiq-projects/static/js/main.92db0f86.chunk.js",
-  "main.js.map": "/tiq-projects/static/js/main.92db0f86.chunk.js.map",
-  "runtime~main.js": "/tiq-projects/static/js/runtime~main.0f7b85f9.js",
-  "runtime~main.js.map": "/tiq-projects/static/js/runtime~main.0f7b85f9.js.map",
-  "static/js/2.c126e0b8.chunk.js": "/tiq-projects/static/js/2.c126e0b8.chunk.js",
-  "static/js/2.c126e0b8.chunk.js.map": "/tiq-projects/static/js/2.c126e0b8.chunk.js.map",
-  "index.html": "/tiq-projects/index.html",
-  "precache-manifest.c9531d40c45332be9b0598e57aeb3ee7.js": "/tiq-projects/precache-manifest.c9531d40c45332be9b0598e57aeb3ee7.js",
-  "service-worker.js": "/tiq-projects/service-worker.js",
-  "static/css/main.142741e9.chunk.css.map": "/tiq-projects/static/css/main.142741e9.chunk.css.map"
+  "main.css": "/tiq-oeuvre/static/css/main.654d971d.chunk.css",
+  "main.js": "/tiq-oeuvre/static/js/main.a2e91c37.chunk.js",
+  "main.js.map": "/tiq-oeuvre/static/js/main.a2e91c37.chunk.js.map",
+  "runtime~main.js": "/tiq-oeuvre/static/js/runtime~main.393755fd.js",
+  "runtime~main.js.map": "/tiq-oeuvre/static/js/runtime~main.393755fd.js.map",
+  "static/js/2.959e83b9.chunk.js": "/tiq-oeuvre/static/js/2.959e83b9.chunk.js",
+  "static/js/2.959e83b9.chunk.js.map": "/tiq-oeuvre/static/js/2.959e83b9.chunk.js.map",
+  "index.html": "/tiq-oeuvre/index.html",
+  "precache-manifest.78cd7a1f7274b38c30cebf2a92f0e348.js": "/tiq-oeuvre/precache-manifest.78cd7a1f7274b38c30cebf2a92f0e348.js",
+  "service-worker.js": "/tiq-oeuvre/service-worker.js",
+  "static/css/main.654d971d.chunk.css.map": "/tiq-oeuvre/static/css/main.654d971d.chunk.css.map"
 }
