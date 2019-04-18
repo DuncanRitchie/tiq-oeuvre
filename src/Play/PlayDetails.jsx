@@ -3,7 +3,6 @@ import ReactHtmlParser from 'react-html-parser';
 import Tag from "./Tag"
 import "./PlayDetails.css"
 import upcoming from "./upcoming.png"
-
 const PlayDetails = (props) => {
     let date = new Date().getTime()/1000
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
@@ -34,5 +33,4 @@ const PlayDetails = (props) => {
         </div>
     )
 }
-
 export default PlayDetails

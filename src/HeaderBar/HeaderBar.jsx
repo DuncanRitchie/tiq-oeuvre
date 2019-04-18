@@ -1,6 +1,5 @@
 import React from 'react';
 import './HeaderBar.css';
-
 const HeaderBar = (props) => {
     return (
         <div className="header-bar">
@@ -16,5 +15,4 @@ const HeaderBar = (props) => {
         </div>
     )
 }
-
 export default HeaderBar

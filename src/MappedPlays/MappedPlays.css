@@ -1,6 +1,11 @@
+.mapped-plays-and-footer {
+    background-color: rgb(254, 255, 250);
+    min-height: 100vh;
+}
+
 .mapped-plays {
     padding-top: 144px;
-    background-color: rgb(254, 255, 250)
+    min-height: calc(100vh - 204px)
 }
 
 .footer {
@@ -36,4 +41,13 @@ a:hover {
         margin-top: -1px
     }
     
+}
+
+@media (min-width: 1080px) {
+    .mapped-plays {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around
+    }
 }

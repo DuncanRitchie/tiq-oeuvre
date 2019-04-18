@@ -6,7 +6,7 @@
 }
 
 img.portrait {
-    height: calc(100vh - 168px)
+    max-height: calc(100vh - 168px)
 }
 
 img.landscape {
@@ -97,4 +97,24 @@ img.landscape {
         margin: 8px 0 36px 0
     }
 
+}
+
+@media (min-width: 1440px) {
+    .play-details {
+        width: 45vw
+    }
+}
+
+@media (min-height: 1080px) {
+    .play-details {
+        min-height: calc(50vh - 72px)
+    }
+
+    img.portrait {
+        height: calc(50vh - 84px)
+    }
+    
+    img.landscape {
+        height: calc(50vh - 120px)
+    }
 }
