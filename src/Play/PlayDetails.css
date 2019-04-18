@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.play-details-text-only {
+    width: 100%
+}
+
 img.portrait {
     max-height: calc(100vh - 168px)
 }
@@ -14,7 +18,7 @@ img.landscape {
 }
 
 .play-text {
-    width: 55%
+    width: 55vw
 }
 
 .upcoming {
@@ -46,7 +50,7 @@ img.landscape {
 }
 
 .play-text-only {
-    width: 95vw;
+    width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
