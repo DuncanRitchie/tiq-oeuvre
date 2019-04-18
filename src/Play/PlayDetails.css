@@ -63,6 +63,10 @@ img.landscape {
     background-color: #f3fbfb  
 }
 
+.play-text {
+    padding: 0 6px;
+}
+
 .song-title {
   display: inline-block;
   margin: -0.5px 4px -0.5px 4px;
