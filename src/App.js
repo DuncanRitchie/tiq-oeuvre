@@ -68,6 +68,37 @@ class App extends Component {
     window.location.search = ""
   }
 
+  troupeRubric = () => {
+    let troupeSlug = this.state.filter.troupe
+    let rubric = ""
+    switch (troupeSlug) {
+      case "jigsaw-music-theatre":
+        rubric = "Jigsaw were founded in 1991 and are now under the TiQ umbrella, with about two dozen members aged between seven and twelve."
+        break
+      case "quartz-youth-theatre":
+        rubric = "Established in 2013, Quartz are the arm of TiQ for teenage thespians, with around 19 current members."
+        break
+      case "rewind-youth-theatre":
+        rubric = "Rewind are a company of primary-schoolchildren in the Chester suburb of Blacon; they are co-managed by TiQ and Cheshire Dance."
+        break
+      case "handbag-of-harmonies":
+        rubric = "A Handbag of Harmonies are a choir of several dozen women from the Chester area, with handbags, feather boas, and a huge reportoire arranged by their managing director, Matt Baker."
+        break
+      case "garden-quarter-association":
+        rubric = "The Garden Quarter is the suburb of Chester that TiQ are based in."
+        break
+      case "chester-mystery-plays-cast":
+        rubric = "The Chester Mystery Plays are a huge dramatic endeavour every five years (the next cycle will be in 2023) to retell Bible stories in or around Chester Cathedral; individual plays have also been reprised in Chester&rsquo;s amphitheatre."
+        break
+      case "theatre-in-the-quarter-adults":
+        rubric = "TiQ was founded in 2005 to provide the residents of Chester with theatrical experiences alongside professional actors, as well as to run the children&rsquo;s group Jigsaw (and later Quartz and Rewind)."
+        break
+      default:
+        rubric = ""
+    }
+    return (rubric)
+  }
+
   filterPlays = () => {
     let filteredPlays = jsonData.filter(play=>{
       let bool = true;
@@ -167,7 +198,7 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} clearFilter={this.clearFilter}/>
+        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
         <MappedPlays mappedPlays={mappedPlays} />
       </div>
     );

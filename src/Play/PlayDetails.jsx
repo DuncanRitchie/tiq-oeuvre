@@ -5,15 +5,16 @@ import "./PlayDetails.css"
 import upcoming from "./upcoming.png"
 const PlayDetails = (props) => {
     let date = new Date().getTime()/1000
+    let isUpcoming = date<props.epoch
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
     return (
         <div className={props.image500 ? "play-details" : "play-details play-details-text-only"}>
             {props.image500 ? <img src={props.image500} alt={ReactHtmlParser(props.title)} className={props.posterOrientation}/> : null}
             <div className={props.image500 ? "play-text" : "play-text-only"}>
                 
-                {date<props.epoch ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler}/> : null}
+                {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler}/> : null}
                 <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}}>{ReactHtmlParser(props.title)}</h2>
-                <p className="play-by-p">{props.verb} <Tag handler={props.yearHandler} text={props.datesAsText} /> 
+                <p className="play-by-p">{isUpcoming ? "To be ".concat(props.verb.toLowerCase()) : props.verb} <Tag handler={props.yearHandler} text={props.datesAsText} /> 
                 {props.datePrecision === "month" ? <span>&nbsp;(I can&rsquo;t be more precise than that)</span> : null }
                 &nbsp;by {byMap}</p>
                 {props.synopsis ? <p>Synopsis: {ReactHtmlParser(props.synopsis)}</p> : null}

@@ -4,7 +4,7 @@ const HeaderBar = (props) => {
     return (
         <div className="header-bar">
             <h1 className="main-header">My Theatre in the Quarter &oelig;uvre</h1>
-            <p className="filter-paragraph">{props.filterParagraph}.&ensp;
+            <p className="filter-paragraph">{props.filterParagraph}. {props.rubric}&ensp;
             {props.filter.slug === "" && 
             props.filter.troupe === "" && 
             props.filter.myRole === "" && 
