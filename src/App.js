@@ -82,7 +82,7 @@ class App extends Component {
         rubric = "Rewind are a company of primary-schoolchildren in the Chester suburb of Blacon; they are co-managed by TiQ and Cheshire Dance."
         break
       case "handbag-of-harmonies":
-        rubric = "A Handbag of Harmonies are a choir of several dozen women from the Chester area, with handbags, feather boas, and a huge reportoire arranged by their managing director, Matt Baker."
+        rubric = "A Handbag of Harmonies are a choir of several dozen women from the Chester area, with handbags, feather boas, and a huge repertoire arranged by their managing director, Matt Baker."
         break
       case "garden-quarter-association":
         rubric = "The Garden Quarter is the suburb of Chester that TiQ are based in."
