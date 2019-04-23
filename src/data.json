@@ -1,5 +1,6 @@
 [{
     "title": "Big Nose",
+    "is-in-oeuvre": true,
     "slug": "big-nose",
     "epoch": 1113260400,
     "date-precision": "day",
@@ -22,6 +23,7 @@
     "tags-batch-two": null
     },{
     "title": "Charlie Prince: Rock Idol of the Town",
+    "is-in-oeuvre": true,
     "slug": "charlie-prince-rock-idol-of-the-town",
     "epoch": 1143072000,
     "date-precision": "day",
@@ -44,6 +46,7 @@
     "tags-batch-two": null
     },{
     "title": "The Twelve Days of Christmas",
+    "is-in-oeuvre": true,
     "slug": "twelve-days-of-christmas",
     "epoch": 1165968000,
     "date-precision": "day",
@@ -66,6 +69,7 @@
     "tags-batch-two": null
     },{
     "title": "Call to Merlin",
+    "is-in-oeuvre": true,
     "slug": "call-to-merlin",
     "epoch": 1178751600,
     "date-precision": "day",
@@ -88,6 +92,7 @@
     "tags-batch-two": null
     },{
     "title": "The Invisible Girl",
+    "is-in-oeuvre": true,
     "slug": "invisible-girl",
     "epoch": 1200441600,
     "date-precision": "day",
@@ -110,6 +115,7 @@
     "tags-batch-two": null
     },{
     "title": "Chester Mystery Plays 2008",
+    "is-in-oeuvre": true,
     "slug": "chester-mystery-plays-2008",
     "epoch": 1214434800,
     "date-precision": "day",
@@ -132,6 +138,7 @@
     "tags-batch-two": null
     },{
     "title": "1001 Nights",
+    "is-in-oeuvre": true,
     "slug": "1001-nights",
     "epoch": 1238540400,
     "date-precision": "day",
@@ -154,6 +161,7 @@
     "tags-batch-two": null
     },{
     "title": "The Canterbury Tales",
+    "is-in-oeuvre": true,
     "slug": "canterbury-tales",
     "epoch": 1266883200,
     "date-precision": "day",
@@ -176,6 +184,7 @@
     "tags-batch-two": null
     },{
     "title": "Noah&rsquo;s Flood (Chester Mystery Play Reprise 2010)",
+    "is-in-oeuvre": true,
     "slug": "noahs-flood-chester-mystery-play-reprise-2010",
     "epoch": 1276815600,
     "date-precision": "day",
@@ -198,6 +207,7 @@
     "tags-batch-two": null
     },{
     "title": "The Crash of the Rhinos",
+    "is-in-oeuvre": true,
     "slug": "crash-of-the-rhinos",
     "epoch": 1277938800,
     "date-precision": "day",
@@ -220,6 +230,7 @@
     "tags-batch-two": null
     },{
     "title": "The Court of King Ludwig",
+    "is-in-oeuvre": true,
     "slug": "court-of-king-ludwig",
     "epoch": 1297123200,
     "date-precision": "day",
@@ -242,6 +253,7 @@
     "tags-batch-two": null
     },{
     "title": "The Insect Circus",
+    "is-in-oeuvre": true,
     "slug": "insect-circus",
     "epoch": 1308351600,
     "date-precision": "day",
@@ -264,6 +276,7 @@
     "tags-batch-two": null
     },{
     "title": "More Than Salt",
+    "is-in-oeuvre": true,
     "slug": "more-than-salt",
     "epoch": 1312412400,
     "date-precision": "day",
@@ -286,6 +299,7 @@
     "tags-batch-two": null
     },{
     "title": "The Snow Queen",
+    "is-in-oeuvre": true,
     "slug": "snow-queen",
     "epoch": 1323302400,
     "date-precision": "day",
@@ -308,6 +322,7 @@
     "tags-batch-two": null
     },{
     "title": "Unsinkable",
+    "is-in-oeuvre": true,
     "slug": "unsinkable",
     "epoch": 1338159600,
     "date-precision": "day",
@@ -330,6 +345,7 @@
     "tags-batch-two": null
     },{
     "title": "Noah&rsquo;s Flood (Chester Mystery Play Reprise 2012)",
+    "is-in-oeuvre": true,
     "slug": "noahs-flood-chester-mystery-play-reprise-2012",
     "epoch": 1338505200,
     "date-precision": "month",
@@ -352,6 +368,7 @@
     "tags-batch-two": null
     },{
     "title": "Ghosts of the City",
+    "is-in-oeuvre": true,
     "slug": "ghosts-of-the-city",
     "epoch": 1360265400,
     "date-precision": "print",
@@ -374,6 +391,7 @@
     "tags-batch-two": ["Jigsaw","Chester","Duncan as assistant-director","Theatre in the Quarter","TiQ"]
     },{
     "title": "The Firebird",
+    "is-in-oeuvre": true,
     "slug": "firebird",
     "epoch": 1393961400,
     "date-precision": "print",
@@ -396,6 +414,7 @@
     "tags-batch-two": null
     },{
     "title": "Masque",
+    "is-in-oeuvre": true,
     "slug": "masque",
     "epoch": 1396983600,
     "date-precision": "print",
@@ -418,6 +437,7 @@
     "tags-batch-two": null
     },{
     "title": "The Emperor&rsquo;s New Clothes",
+    "is-in-oeuvre": true,
     "slug": "emperors-new-clothes",
     "epoch": 1404412200,
     "date-precision": "print",
@@ -440,6 +460,7 @@
     "tags-batch-two": ["Garden Quarter","Duncan as lyricist","Duncan as poster-designer","Duncan as programme-designer","Jigsaw","Chester","Duncan as assistant-director","Theatre in the Quarter","TiQ"]
     },{
     "title": "The Scrapbook",
+    "is-in-oeuvre": true,
     "slug": "scrapbook",
     "epoch": 1424199600,
     "date-precision": "print",
@@ -462,6 +483,7 @@
     "tags-batch-two": null
     },{
     "title": "The Strange Adventures of Odysseus",
+    "is-in-oeuvre": true,
     "slug": "strange-adventures-of-odysseus",
     "epoch": 1426275000,
     "date-precision": "print",
@@ -484,6 +506,7 @@
     "tags-batch-two": ["Duncan as poster-designer","Duncan as programme-designer","Jigsaw","Chester","Theatre in the Quarter","TiQ"]
     },{
     "title": "Paintbrush in Paradise",
+    "is-in-oeuvre": true,
     "slug": "paintbrush-in-paradise",
     "epoch": 1436014800,
     "date-precision": "print",
@@ -506,6 +529,7 @@
     "tags-batch-two": null
     },{
     "title": "City of Stories",
+    "is-in-oeuvre": true,
     "slug": "city-of-stories",
     "epoch": 1436110200,
     "date-precision": "print",
@@ -528,6 +552,7 @@
     "tags-batch-two": null
     },{
     "title": "Ten Years",
+    "is-in-oeuvre": true,
     "slug": "ten-years",
     "epoch": 1443207600,
     "date-precision": "print",
@@ -550,6 +575,7 @@
     "tags-batch-two": null
     },{
     "title": "Best Days of our Lives",
+    "is-in-oeuvre": true,
     "slug": "best-days-of-our-lives",
     "epoch": 1445434200,
     "date-precision": "print",
@@ -572,6 +598,7 @@
     "tags-batch-two": null
     },{
     "title": "Christmas Day in the Workhouse",
+    "is-in-oeuvre": true,
     "slug": "christmas-day-in-the-workhouse",
     "epoch": 1452454200,
     "date-precision": "print",
@@ -594,6 +621,7 @@
     "tags-batch-two": null
     },{
     "title": "The Revellers&rsquo; Adaptation of Twelfth Night",
+    "is-in-oeuvre": true,
     "slug": "revellers-adaptation-of-twelfth-night",
     "epoch": 1452457800,
     "date-precision": "print",
@@ -616,6 +644,7 @@
     "tags-batch-two": null
     },{
     "title": "The Olympic Torch",
+    "is-in-oeuvre": true,
     "slug": "olympic-torch",
     "epoch": 1458586800,
     "date-precision": "print",
@@ -638,6 +667,7 @@
     "tags-batch-two": null
     },{
     "title": "A Handbag of Harmonies Concert",
+    "is-in-oeuvre": true,
     "slug": "handbag-of-harmonies-concert",
     "epoch": 1466188200,
     "date-precision": "print",
@@ -660,6 +690,7 @@
     "tags-batch-two": null
     },{
     "title": "Gulliver&rsquo;s Travels",
+    "is-in-oeuvre": true,
     "slug": "gullivers-travels",
     "epoch": 1467050400,
     "date-precision": "print",
@@ -682,6 +713,7 @@
     "tags-batch-two": null
     },{
     "title": "Road to Rio",
+    "is-in-oeuvre": true,
     "slug": "road-to-rio",
     "epoch": 1467414000,
     "date-precision": "day",
@@ -704,6 +736,7 @@
     "tags-batch-two": null
     },{
     "title": "The Hills Are Alive",
+    "is-in-oeuvre": true,
     "slug": "hills-are-alive",
     "epoch": 1467720000,
     "date-precision": "print",
@@ -726,6 +759,7 @@
     "tags-batch-two": ["Llangollen 2016","Cantilon","Coro San Benildo","Helsby Hillside","Fireflies","Soundwall","Little Big Band","Mother Touch","St Marys","St Marys Centre",2016,"illustration not mine","Chester","Duncan as co-designer"]
     },{
     "title": "Christmas 2016 in the Garden Quarter",
+    "is-in-oeuvre": true,
     "slug": "christmas-2016-in-the-garden-quarter",
     "epoch": 1480093200,
     "date-precision": "print",
@@ -748,6 +782,7 @@
     "tags-batch-two": null
     },{
     "title": "The Garden Quarter&rsquo;s Famous Christmas Market",
+    "is-in-oeuvre": true,
     "slug": "garden-quarters-famous-christmas-market",
     "epoch": 1480761000,
     "date-precision": "print",
@@ -770,6 +805,7 @@
     "tags-batch-two": ["illustration not mine","Chester","2016","Duncan as co-designer","Christmas"]
     },{
     "title": "The Night Before Christmas",
+    "is-in-oeuvre": true,
     "slug": "night-before-christmas",
     "epoch": 1481830200,
     "date-precision": "print",
@@ -792,6 +828,7 @@
     "tags-batch-two": ["Blacon",2016,"Duncan as poster-designer","Duncan as programme-designer","double bill","Jigsaw","Rewind","Chester"]
     },{
     "title": "Before a Fall",
+    "is-in-oeuvre": true,
     "slug": "before-a-fall",
     "epoch": 1483903800,
     "date-precision": "print",
@@ -814,6 +851,7 @@
     "tags-batch-two": null
     },{
     "title": "An Evening with A Handbag of Harmonies",
+    "is-in-oeuvre": true,
     "slug": "evening-with-a-handbag-of-harmonies",
     "epoch": 1487964600,
     "date-precision": "print",
@@ -836,6 +874,7 @@
     "tags-batch-two": null
     },{
     "title": "The Promise",
+    "is-in-oeuvre": true,
     "slug": "promise",
     "epoch": 1497983400,
     "date-precision": "print",
@@ -858,6 +897,7 @@
     "tags-batch-two": ["Duncan as photographer","Jigsaw","Chester","Duncan as assistant-director","Theatre in the Quarter","TiQ"]
     },{
     "title": "Swagalicious",
+    "is-in-oeuvre": true,
     "slug": "swagalicious",
     "epoch": 1498086000,
     "date-precision": "day",
@@ -880,6 +920,7 @@
     "tags-batch-two": null
     },{
     "title": "Chester International Music Week",
+    "is-in-oeuvre": true,
     "slug": "chester-international-music-week",
     "epoch": 1504220400,
     "date-precision": "day",
@@ -902,6 +943,7 @@
     "tags-batch-two": ["Duncan as photographer","St Marys Creative Space","Parkie Youth Choir","St Marys","St Marys Centre","Town Hall Square","Eastgate Street","Week","CIMW","Chester",2017,"Eisteddfod","Handbags","Mother Touch","Ruisi Zhi","Jiaman Yin"]
     },{
     "title": "Night of Promises",
+    "is-in-oeuvre": true,
     "slug": "night-of-promises",
     "epoch": 1511118000,
     "date-precision": "print",
@@ -924,6 +966,7 @@
     "tags-batch-two": null
     },{
     "title": "A Tale of our Time",
+    "is-in-oeuvre": true,
     "slug": "tale-of-our-time",
     "epoch": 1511119800,
     "date-precision": "print",
@@ -946,6 +989,7 @@
     "tags-batch-two": null
     },{
     "title": "Christmas Child",
+    "is-in-oeuvre": true,
     "slug": "christmas-child",
     "epoch": 1513539000,
     "date-precision": "print",
@@ -968,6 +1012,7 @@
     "tags-batch-two": ["Jigsaw Music Theatre","Cheshire Dance","Blacon",2017,"St Marys Creative Space","Duncan as poster-designer","Duncan as programme-designer","double bill","Jigsaw","Rewind","Chester","Theatre in the Quarter","TiQ"]
     },{
     "title": "The Colour Snatchers &amp; Another Side",
+    "is-in-oeuvre": false,
     "slug": "colour-snatchers-another-side",
     "epoch": 1549220400,
     "date-precision": "print",
@@ -990,6 +1035,7 @@
     "tags-batch-two": ["Duncan as poster-designer","Duncan as programme-designer","St Marys Creative Space","double bill","Jigsaw","Quartz","Chester","Duncan as assistant-director","Duncan as photographer","Theatre in the Quarter","TiQ"]
     },{
     "title": "The Colour Snatchers",
+    "is-in-oeuvre": true,
     "slug": "colour-snatchers",
     "epoch": 1549220400,
     "date-precision": "print",
@@ -1012,6 +1058,7 @@
     "tags-batch-two": ["Duncan as programme-designer","Duncan as lyricist","Duncan as photographer","double bill","Jigsaw","Chester","Theatre in the Quarter","TiQ"]
     },{
     "title": "Another Side",
+    "is-in-oeuvre": true,
     "slug": "another-side",
     "epoch": 1549224000,
     "date-precision": "print",
@@ -1034,6 +1081,7 @@
     "tags-batch-two": ["Duncan as photographer","Quartz","Chester","Duncan as assistant-director","Theatre in the Quarter","TiQ"]
     },{
     "title": "Blacon&rsquo;s Mystery Express",
+    "is-in-oeuvre": true,
     "slug": "blacons-mystery-express",
     "epoch": 1553711400,
     "date-precision": "print",
@@ -1056,6 +1104,7 @@
     "tags-batch-two": null
     },{
     "title": "On the Ocean",
+    "is-in-oeuvre": false,
     "slug": "on-the-ocean",
     "epoch": 1557529200,
     "date-precision": "day",
@@ -1078,6 +1127,7 @@
     "tags-batch-two": null
     },{
     "title": "The Giant Jam Sandwich",
+    "is-in-oeuvre": true,
     "slug": "giant-jam-sandwich",
     "epoch": 1561158000,
     "date-precision": "day",
@@ -1099,7 +1149,6 @@
     "tags-batch-one": ["The Giant Jam Sandwich","Giant Jam Sandwich","Giant","Jam","Sandwich","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ","Storyhouse","Chester",2019,"Duncan as assistant-director","Duncan as poster-designer"],
     "tags-batch-two": null
     }]
-    
     
     
     

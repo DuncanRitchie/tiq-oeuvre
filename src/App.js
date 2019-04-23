@@ -101,10 +101,7 @@ class App extends Component {
 
   filterPlays = () => {
     let filteredPlays = jsonData.filter(play=>{
-      let bool = true;
-      if (play.slug === "colour-snatchers-another-side") {
-        bool = false
-      }
+      let bool = play["is-in-oeuvre"];
       if (this.state.filter.slug) {
         bool = bool && play.slug===this.state.filter.slug
       }
@@ -163,7 +160,7 @@ class App extends Component {
       )
     })
     let filterParagraph = "";
-    if (numPlays === jsonData.length-1) {
+    if (numPlays === jsonData.filter(play=>{return play["is-in-oeuvre"]}).length) {
       filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or ${ReactHtmlParser("&ldquo;upcoming&rdquo;")} sticker to set a filter`
     }
     else if (numPlays > 1) {
@@ -190,8 +187,13 @@ class App extends Component {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
     if (this.state.filter.slug) {
-      let playTitle = jsonData.find(play=>{return play.slug===this.state.filter.slug}).title
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+playTitle+"&rdquo;")}`
+      if (jsonData.find(play=>{return play.slug===this.state.filter.slug})) {
+        let playTitle = jsonData.find(play=>{return play.slug===this.state.filter.slug}).title
+        filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+playTitle+"&rdquo;")}`
+      }
+      else {
+        filterParagraph += `${ReactHtmlParser("&nbsp;")}with the slug ${ReactHtmlParser("&ldquo;"+this.state.filter.slug+"&rdquo;")}`
+      }
     }
     if (this.state.filter.upcoming) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}that ${numPlays===1 ? "has" : "have"} not been performed yet`
