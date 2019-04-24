@@ -228,10 +228,18 @@ class App extends Component {
       filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filter${ReactHtmlParser("&rdquo; &mdash;&nbsp;")}there are no productions`
     }
     if (this.state.filter.role) {
-      // filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${this.state.filter.role.toLowerCase()}`
+      let roles = this.state.filter.role
+      if (Array.isArray(this.state.filter.role)) {
+        roles = this.state.filter.role.map(role => {return role.toLowerCase()}).join(" or ")
+      }
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${roles.toLowerCase()}`
     }
     if (this.state.filter.year) {
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${this.state.filter.year}`
+      let years = this.state.filter.year
+      if (Array.isArray(years)) {
+        years = years.join(" or ")
+      }
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${years}`
     }
     if (this.state.filter.troupe) {
       // troupeFound is the string that will be added to filterParagraph to represent the troupe(s).
@@ -262,13 +270,24 @@ class App extends Component {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
     if (this.state.filter.slug) {
-      if (jsonData.find(play=>{return play.slug===this.state.filter.slug})) {
-        let playTitle = jsonData.find(play=>{return play.slug===this.state.filter.slug}).title
-        filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+playTitle+"&rdquo;")}`
+      let titles = this.state.filter.slug
+      // If titles is a single slug in the Json data, the corresponding title is returned.
+      if (jsonData.find(play=>{return play.slug===titles})) {
+        titles = jsonData.find(play=>{return play.slug===titles}).title
       }
+      // If titles is not a single slug, or not in the Json data...
       else {
-        filterParagraph += `${ReactHtmlParser("&nbsp;")}with the slug ${ReactHtmlParser("&ldquo;"+this.state.filter.slug+"&rdquo;")}`
+        // If titles is an array of slugs, we want to return a title for every slug.
+        if (Array.isArray(titles)) {
+          titles = titles.map(slug => {
+            if (jsonData.find(play=>{return play.slug==slug})) {
+              return jsonData.find(play=>{return play.slug==slug}).title
+            }
+          }).filter(title=>{return title!=null}).join("&rdquo; or &ldquo;")
+        }
+        // If titles is a single incorrect slug, we don't do anything here.
       }
+      filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+titles+"&rdquo;")}`
     }
     if (this.state.filter.upcoming) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}that ${numPlays===1 ? "has" : "have"} not been performed yet`
