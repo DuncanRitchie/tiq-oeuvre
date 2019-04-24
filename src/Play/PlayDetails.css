@@ -119,7 +119,9 @@ img.landscape {
     }
 
     img.portrait {
-        height: calc(50vh - 84px)
+        /* These two values are in 210:297 ratio */
+        max-height: calc(50vh - 84px);
+        width: calc(35.4vh - 59.4px)
     }
     
     img.landscape {
