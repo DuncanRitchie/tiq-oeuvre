@@ -179,10 +179,24 @@ class App extends Component {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${this.state.filter.year}`
     }
     if (this.state.filter.troupe) {
-      let playFound = jsonData.find(play=>{return play["by-array-slug"].includes(this.state.filter.troupe)});
+      let playFound = jsonData.find(play=>{
+        return play["by-array-slug"].includes(this.state.filter.troupe)
+        });
       let troupeFound = this.state.filter.troupe;
       if (playFound) {
         troupeFound = playFound["by-array"][playFound["by-array-slug"].findIndex(troupe=>{return troupe===this.state.filter.troupe})]
+      }
+      else if (Array.isArray(this.state.filter.troupe)) {
+        let troupeNamesArray = [];
+        this.state.filter.troupe.map((troupeSlug,index)=>{
+          if (jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)})) {
+            playFound = jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)});
+            let troupeIndex = playFound["by-array-slug"].findIndex(troupeSlug=>{return troupeSlug===troupeSlug})
+            let troupeName = playFound["by-array"][troupeIndex]
+            troupeNamesArray.push(troupeName)
+          }
+        })
+        troupeFound = troupeNamesArray.join(" or ")
       }
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
