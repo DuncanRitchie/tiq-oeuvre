@@ -7,7 +7,7 @@ const HeaderBar = (props) => {
             <p className="filter-paragraph">{props.filterParagraph}. {props.rubric}&ensp;
             {props.filter.slug === "" && 
             props.filter.troupe === "" && 
-            props.filter.myRole === "" && 
+            props.filter.role === "" && 
             props.filter.year === "" && 
             !props.filter.upcoming ? null :
             <span className="clear-filters" onClick={props.clearFilter}>Clear filter</span>}

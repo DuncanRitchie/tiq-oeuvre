@@ -13,7 +13,7 @@ class App extends Component {
       slug: queryString.parse(window.location.search).slug || "",
       troupe: queryString.parse(window.location.search).troupe || "",
       year: queryString.parse(window.location.search).year || "",
-      myRole: queryString.parse(window.location.search).role || "",
+      role: queryString.parse(window.location.search).role || "",
       upcoming: queryString.parse(window.location.search).upcoming || false
     }
   }
@@ -34,34 +34,34 @@ class App extends Component {
     window.location.search = "upcoming=true"
   }
 
-  myRoleHandler = (e) => {
-    let myRole = ""
+  roleHandler = (e) => {
+    let role = ""
     switch (e.currentTarget.textContent) {
       case "poster-designer":
-        myRole = "poster-designer"
+        role = "poster-designer"
         break;
       case "programme-designer":
-        myRole = "programme-designer"
+        role = "programme-designer"
         break;
       case "lyricist":
-        myRole = "lyricist"
+        role = "lyricist"
         break;
       case "photographer":
-        myRole = "photographer"
+        role = "photographer"
         break;
       case "assistant-director":
-        myRole = "assistant-director"
+        role = "assistant-director"
         break;
       case "poster co-designer (with illustration by Alison Pitt)":
-        myRole = "co-designer"
+        role = "co-designer"
         break;
       case "actor":
-        myRole = "actor"
+        role = "actor"
         break;
       default:
-        myRole = ""
+        role = ""
     }
-    window.location.search = "role="+myRole
+    window.location.search = "role="+role
   }
 
   clearFilter = () => {
@@ -101,9 +101,17 @@ class App extends Component {
 
   filterPlays = () => {
     let filteredPlays = jsonData.filter(play=>{
+      // bool is what will determine whether a play gets displayed or not
       let bool = play["is-in-oeuvre"];
       if (this.state.filter.slug) {
-        bool = bool && play.slug===this.state.filter.slug
+        let slugBool = false
+        if (Array.isArray(this.state.filter.slug)) {
+          slugBool = this.state.filter.slug.includes(play.slug)
+        }
+        else {
+          slugBool = play.slug===this.state.filter.slug
+        }
+        bool = bool && slugBool
       }
       if (this.state.filter.troupe) {
         let troupeBool = false;
@@ -116,14 +124,61 @@ class App extends Component {
         bool = bool && troupeBool
       }
       if (this.state.filter.year) {
-        bool = bool && play["dates-as-text"].substr(0,4) === this.state.filter.year
+        let yearBool = false
+        if (Array.isArray(this.state.filter.year)) {
+          yearBool = this.state.filter.year.includes(play["dates-as-text"].substr(0,4))
+        }
+        else {
+          yearBool = this.state.filter.year === play["dates-as-text"].substr(0,4) 
+        }
+        bool = bool && yearBool
       }
-      if (this.state.filter.myRole) {
-        bool = bool && play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+this.state.filter.myRole)
+      if (this.state.filter.role) {
+        let roleBool = false
+        if (Array.isArray(this.state.filter.role)) {
+          this.state.filter.role.map(filterRole => {
+            roleBool = roleBool || play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+filterRole)
+          })
+        }
+        else {
+          roleBool = play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+this.state.filter.role)
+        }
+        bool = bool && roleBool
       }
       if (this.state.filter.upcoming) {
         let date = new Date().getTime()/1000
-        bool = bool && date<play.epoch
+        let upcomingFilterBool = true;
+        let upcomingBool = true
+        if (this.state.filter.upcoming == "false") {
+          upcomingBool = true;
+          upcomingFilterBool = false;
+        }
+        else if (Array.isArray(this.state.filter.upcoming)) {
+          upcomingFilterBool = false
+          this.state.filter.upcoming.map(upcoming => {
+            upcomingFilterBool = upcomingFilterBool || upcoming=="true"
+          })
+          if (upcomingFilterBool) {
+            upcomingBool = upcomingBool && date<play.epoch
+          }
+          else {
+            upcomingBool = true
+          }
+        }
+        else {
+          upcomingBool = date<play.epoch
+        }
+        if (this.state.filter.upcoming != upcomingFilterBool) {
+          let newFilter = {
+            role: this.state.filter.role,
+            slug: this.state.filter.slug,
+            troupe: this.state.filter.troupe,
+            upcoming: upcomingFilterBool,
+            year: this.state.filter.year
+          }
+          this.setState({filter: newFilter})
+        }
+        bool = bool && upcomingBool
       }
       return bool
     })
@@ -154,7 +209,7 @@ class App extends Component {
         slugHandler={this.slugHandler}
         troupeHandler={this.troupeHandler}
         yearHandler={this.yearHandler}
-        myRoleHandler={this.myRoleHandler}
+        roleHandler={this.roleHandler}
         upcomingHandler={this.upcomingHandler}
         />
       )
@@ -172,8 +227,8 @@ class App extends Component {
     else {
       filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filter${ReactHtmlParser("&rdquo; &mdash;&nbsp;")}there are no productions`
     }
-    if (this.state.filter.myRole) {
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${this.state.filter.myRole.toLowerCase()}`
+    if (this.state.filter.role) {
+      // filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${this.state.filter.role.toLowerCase()}`
     }
     if (this.state.filter.year) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${this.state.filter.year}`
