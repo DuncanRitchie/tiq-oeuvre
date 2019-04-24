@@ -179,15 +179,18 @@ class App extends Component {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${this.state.filter.year}`
     }
     if (this.state.filter.troupe) {
+      // troupeFound is the string that will be added to filterParagraph to represent the troupe(s).
+      let troupeFound = this.state.filter.troupe;
+      // This is what happens if the query is only one troupe.
       let playFound = jsonData.find(play=>{
         return play["by-array-slug"].includes(this.state.filter.troupe)
         });
-      let troupeFound = this.state.filter.troupe;
       if (playFound) {
         troupeFound = playFound["by-array"][playFound["by-array-slug"].findIndex(troupe=>{return troupe===this.state.filter.troupe})]
       }
+      // This is what happens if the query contains multiple troupes.
       else if (Array.isArray(this.state.filter.troupe)) {
-        let troupeNamesArray = this.state.filter.troupe.map((troupeSlug,index)=>{
+        let troupeNamesArray = this.state.filter.troupe.map((troupeSlug)=>{
           if (jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)})) {
             playFound = jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)});
             let troupeIndex = playFound["by-array-slug"].findIndex(troupe=>{return troupe===troupeSlug})
@@ -200,6 +203,7 @@ class App extends Component {
         })
         troupeFound = troupeNamesArray.filter((name)=>{return name!= null}).join(" or ")
       }
+      // Let's add whatever we have for the troupes into filterParagraph
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
     if (this.state.filter.slug) {
