@@ -187,16 +187,18 @@ class App extends Component {
         troupeFound = playFound["by-array"][playFound["by-array-slug"].findIndex(troupe=>{return troupe===this.state.filter.troupe})]
       }
       else if (Array.isArray(this.state.filter.troupe)) {
-        let troupeNamesArray = [];
-        this.state.filter.troupe.map((troupeSlug,index)=>{
+        let troupeNamesArray = this.state.filter.troupe.map((troupeSlug,index)=>{
           if (jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)})) {
             playFound = jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)});
-            let troupeIndex = playFound["by-array-slug"].findIndex(troupeSlug=>{return troupeSlug===troupeSlug})
+            let troupeIndex = playFound["by-array-slug"].findIndex(troupe=>{return troupe===troupeSlug})
             let troupeName = playFound["by-array"][troupeIndex]
-            troupeNamesArray.push(troupeName)
+            return (troupeName)
+          }
+          else {
+            return null
           }
         })
-        troupeFound = troupeNamesArray.join(" or ")
+        troupeFound = troupeNamesArray.filter((name)=>{return name!= null}).join(" or ")
       }
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
