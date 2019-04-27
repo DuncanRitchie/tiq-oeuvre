@@ -252,6 +252,29 @@
     "tags-batch-one": ["Chester Mystery Plays","CMP","Chester","Mystery Plays","Mysteries","Slaughter of the Innocents","Slaughter","Innocents",2008,"Chester Cathedral","Duncan as actor","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     },{
+    "title": "Chester Mystery Plays 2008: The Second Coming",
+    "is-in-oeuvre": true,
+    "slug": "chester-mystery-plays-2008-the-second-coming",
+    "epoch": 1223683200,
+    "date-precision": "day",
+    "dates-as-text": "2008 Oct 11 and 12",
+    "verb": "Performed",
+    "by-array": ["Jigsaw Music Theatre","Chester&nbsp;Mystery&nbsp;Plays Cast"],
+    "by-array-slug": ["jigsaw-music-theatre","chester-mystery-plays-cast"],
+    "synopsis": "An abridged reprise of Chester&rsquo;s iconic Mystery Plays, performed in Liverpool&rsquo;s Anglican Cathedral.",
+    "my-acting-role": "chorus",
+    "my-songs-lyricized": null,
+    "example-lyric": null,
+    "poster-orientation": null,
+    "photo-url-max-width-1280": null,
+    "photo-url-max-width-500": null,
+    "photo-url-max-width-400": null,
+    "photo-url-max-width-250": null,
+    "photo-url-max-width-100": null,
+    "photo-url-max-width-75": null,
+    "tags-batch-one": ["Chester Mystery Plays Second Coming","Chester Mystery Plays","Second Coming","CMP","Chester","Mystery Plays","Mysteries",2008,"Liverpool","Anglican Cathedral","Duncan as actor","Theatre in the Quarter","TiQ"],
+    "tags-batch-two": null
+    },{
     "title": "1001 Nights",
     "is-in-oeuvre": true,
     "slug": "1001-nights",
@@ -1402,9 +1425,6 @@
     "tags-batch-one": ["The Giant Jam Sandwich","Giant Jam Sandwich","Giant","Jam","Sandwich","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ","Storyhouse","Chester",2019,"Duncan as assistant-director","Duncan as poster-designer"],
     "tags-batch-two": null
     }]
-    
-    
-    
     
     
     
