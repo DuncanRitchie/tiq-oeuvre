@@ -134,13 +134,13 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": ["Chester Mystery Plays","Chester","Mystery Plays","Mysteries",2008,"Chester Cathedral","Duncan as actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
+    "tags-batch-one": ["Chester Mystery Plays","CMP","Chester","Mystery Plays","Mysteries",2008,"Chester Cathedral","Duncan as actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     },{
     "title": "The Gargoyles&rsquo; Prelude",
     "is-in-oeuvre": false,
     "slug": "gargoyles-prelude",
-    "epoch": 1212274800,
+    "epoch": 1214434800,
     "date-precision": "day",
     "dates-as-text": "2008 Jun 26 to Jul 19",
     "verb": "Performed",
@@ -157,13 +157,13 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": [],
-    "tags-batch-two": null
+    "tags-batch-one": ["Chester Mystery Plays","CMP","Chester","Mystery Plays","Mysteries","The Gargoyles Prelude"],
+    "tags-batch-two": ["Gargoyles Prelude","Gargoyle","Prelude",2008,"Chester Cathedral","Duncan as actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"]
     },{
     "title": "Creation of the Earth and Solar System and Adam and Eve",
     "is-in-oeuvre": false,
     "slug": "creation-of-the-earth-and-solar-system-and-adam-and-eve",
-    "epoch": 1212274800,
+    "epoch": 1214434800,
     "date-precision": "day",
     "dates-as-text": "2008 Jun 26 to Jul 19",
     "verb": "Performed",
@@ -180,13 +180,13 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": [],
-    "tags-batch-two": null
+    "tags-batch-one": ["Chester Mystery Plays","CMP","Chester","Mystery Plays","Mysteries","Creation of the Earth and Solar System and Adam and Eve"],
+    "tags-batch-two": ["Creation and Fall","Creation","Adam and Eve",2008,"Chester Cathedral","Duncan as actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"]
     },{
     "title": "Cain and Abel",
     "is-in-oeuvre": false,
     "slug": "cain-and-abel",
-    "epoch": 1212274800,
+    "epoch": 1214434800,
     "date-precision": "day",
     "dates-as-text": "2008 Jun 26 to Jul 19",
     "verb": "Performed",
@@ -203,13 +203,13 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": [],
+    "tags-batch-one": ["Chester Mystery Plays","CMP","Chester","Mystery Plays","Mysteries","Cain and Abel","Cain","Abel",2008,"Chester Cathedral","Duncan as actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     },{
     "title": "Noah and the Flood",
     "is-in-oeuvre": false,
     "slug": "noah-and-the-flood",
-    "epoch": 1212274800,
+    "epoch": 1214434800,
     "date-precision": "day",
     "dates-as-text": "2008 Jun 26 to Jul 19",
     "verb": "Performed",
@@ -226,13 +226,13 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": [],
+    "tags-batch-one": ["Chester Mystery Plays","CMP","Chester","Mystery Plays","Mysteries","Noah and the Flood","Noahs Flood","Noah","Flood",2008,"Chester Cathedral","Duncan as actor","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     },{
     "title": "The Slaughter of the Innocents",
     "is-in-oeuvre": false,
     "slug": "slaughter-of-the-innocents",
-    "epoch": 1212274800,
+    "epoch": 1214434800,
     "date-precision": "day",
     "dates-as-text": "2008 Jun 26 to Jul 19",
     "verb": "Performed",
@@ -249,7 +249,7 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": [],
+    "tags-batch-one": ["Chester Mystery Plays","CMP","Chester","Mystery Plays","Mysteries","Slaughter of the Innocents","Slaughter","Innocents",2008,"Chester Cathedral","Duncan as actor","Theatre in the Quarter","TiQ"],
     "tags-batch-two": null
     },{
     "title": "1001 Nights",
@@ -962,7 +962,7 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": [],
+    "tags-batch-one": ["The Night Before Christmas","Night Before Christmas","Rewind Youth Theatre","Theatre in the Quarter","Cheshire Dance","Blacon",2016,"Duncan as poster-designer","Duncan as programme-designer","double bill","Rewind","Chester"],
     "tags-batch-two": null
     },{
     "title": "A Reindeer Named Rudolph",
@@ -985,8 +985,8 @@
     "photo-url-max-width-250": null,
     "photo-url-max-width-100": null,
     "photo-url-max-width-75": null,
-    "tags-batch-one": [],
-    "tags-batch-two": null
+    "tags-batch-one": ["The Night Before Christmas","Night Before Christmas","A Reindeer Named Rudolph","Reindeer Named Rudolph","Reindeer","Rudolph"],
+    "tags-batch-two": ["Jigsaw Music Theatre","Theatre in the Quarter",2016,"Duncan as poster-designer","Duncan as programme-designer","double bill","Jigsaw","Chester"]
     },{
     "title": "Before a Fall",
     "is-in-oeuvre": true,
@@ -1062,7 +1062,7 @@
     "slug": "swagalicious",
     "epoch": 1498086000,
     "date-precision": "day",
-    "dates-as-text": "2017 Jun 22, Jun 23, Jul 01",
+    "dates-as-text": "2017 Jun 22, Jun 23, and Jul 01",
     "verb": "Performed",
     "by-array": ["Rewind Youth Theatre"],
     "by-array-slug": ["rewind-youth-theatre"],
@@ -1083,9 +1083,9 @@
     "title": "Chester International Music Week",
     "is-in-oeuvre": true,
     "slug": "chester-international-music-week",
-    "epoch": 1504220400,
+    "epoch": 1499036400,
     "date-precision": "day",
-    "dates-as-text": "2017 Jul 03, 04, 05, 06",
+    "dates-as-text": "2017 Jul 03, 04, 05, and 06",
     "verb": "Performed",
     "by-array": ["A&nbsp;Handbag&nbsp;of&nbsp;Harmonies","Jiaman&nbsp;Yin","Mill&nbsp;View Primary School Choir","Mother&nbsp;Touch Dance Group","Parkie Youth Choir","Ruisi&nbsp;Zhi","St&nbsp;Werburgh&rsquo;s Primary School Choir"],
     "by-array-slug": ["handbag-of-harmonies","jiaman-yin","mill-view-primary-school-choir","mother-touch-dance-group","parkie-youth-choir","ruisi-zhi","st-werburghs-primary-school-choir"],
@@ -1102,6 +1102,29 @@
     "photo-url-max-width-75": "https://66.media.tumblr.com/79b724716b7e3a20ef095ffc053799af/tumblr_pkrzvrw8zD1y4ne37o2_r1_75sq.jpg",
     "tags-batch-one": ["Chester International Music Week","Mill View Primary School Choir","St Werburghs Primary School Choir","Mother Touch Dance Group","A Handbag of Harmonies","Chester Town Hall Square"],
     "tags-batch-two": ["Duncan as photographer","St Marys Creative Space","Parkie Youth Choir","St Marys","St Marys Centre","Town Hall Square","Eastgate Street","Week","CIMW","Chester",2017,"Eisteddfod","Handbags","Mother Touch","Ruisi Zhi","Jiaman Yin"]
+    },{
+    "title": "The Highwayman",
+    "is-in-oeuvre": false,
+    "slug": "highwayman",
+    "epoch": 1499446800,
+    "date-precision": "print",
+    "dates-as-text": "2017 Jul 07, 08, and 09",
+    "verb": "Performed",
+    "by-array": ["Quartz Youth Theatre"],
+    "by-array-slug": ["quartz-youth-theatre"],
+    "synopsis": null,
+    "my-acting-role": null,
+    "my-songs-lyricized": null,
+    "example-lyric": null,
+    "poster-orientation": null,
+    "photo-url-max-width-1280": null,
+    "photo-url-max-width-500": null,
+    "photo-url-max-width-400": null,
+    "photo-url-max-width-250": null,
+    "photo-url-max-width-100": null,
+    "photo-url-max-width-75": null,
+    "tags-batch-one": ["The Highwayman","Highwayman","Highwayman Higgins","Quartz Youth Theatre","Quartz","Theatre in the Quarter","TiQ","Chester",2017,"Carriage Shed"],
+    "tags-batch-two": null
     },{
     "title": "Night of Promises",
     "is-in-oeuvre": true,
@@ -1325,7 +1348,7 @@
     "example-lyric": null,
     "poster-orientation": "portrait",
     "photo-url-max-width-1280": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_1280.png",
-    "photo-url-max-width-500": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_500.png",
+    "photo-url-max-width-500": null,
     "photo-url-max-width-400": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_400.png",
     "photo-url-max-width-250": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_250.png",
     "photo-url-max-width-100": "https://66.media.tumblr.com/554c4fe41f3b36a5b524f1a9d216396a/tumblr_pplgsgYfSU1y4ne37o1_100.png",
@@ -1347,12 +1370,12 @@
     "my-songs-lyricized": null,
     "example-lyric": null,
     "poster-orientation": "portrait",
-    "photo-url-max-width-1280": null,
-    "photo-url-max-width-500": null,
-    "photo-url-max-width-400": null,
-    "photo-url-max-width-250": null,
-    "photo-url-max-width-100": null,
-    "photo-url-max-width-75": null,
+    "photo-url-max-width-1280": "https://66.media.tumblr.com/75fc2f14a2fda1182e780e50211c4789/tumblr_pqmir3wVSU1y4ne37o1_1280.png",
+    "photo-url-max-width-500": "https://66.media.tumblr.com/75fc2f14a2fda1182e780e50211c4789/tumblr_pqmir3wVSU1y4ne37o1_500.png",
+    "photo-url-max-width-400": "https://66.media.tumblr.com/75fc2f14a2fda1182e780e50211c4789/tumblr_pqmir3wVSU1y4ne37o1_400.png",
+    "photo-url-max-width-250": "https://66.media.tumblr.com/75fc2f14a2fda1182e780e50211c4789/tumblr_pqmir3wVSU1y4ne37o1_250.png",
+    "photo-url-max-width-100": "https://66.media.tumblr.com/75fc2f14a2fda1182e780e50211c4789/tumblr_pqmir3wVSU1y4ne37o1_100.png",
+    "photo-url-max-width-75": "https://66.media.tumblr.com/75fc2f14a2fda1182e780e50211c4789/tumblr_pqmir3wVSU1y4ne37o1_75sq.png",
     "tags-batch-one": ["Songs of the Sea","Sea","On the Ocean","Ocean","Quartz Youth Theatre","Quartz","Theatre in the Quarter","TiQ","Chester",2019,"Duncan as assistant-director","Duncan as poster-designer"],
     "tags-batch-two": null
     },{
@@ -1379,19 +1402,6 @@
     "tags-batch-one": ["The Giant Jam Sandwich","Giant Jam Sandwich","Giant","Jam","Sandwich","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter","TiQ","Storyhouse","Chester",2019,"Duncan as assistant-director","Duncan as poster-designer"],
     "tags-batch-two": null
     }]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
