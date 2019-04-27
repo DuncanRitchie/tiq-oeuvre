@@ -138,6 +138,7 @@ class App extends Component {
         if (Array.isArray(this.state.filter.role)) {
           this.state.filter.role.map(filterRole => {
             roleBool = roleBool || play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+filterRole)
+            return roleBool
           })
         }
         else {
@@ -149,14 +150,15 @@ class App extends Component {
         let date = new Date().getTime()/1000
         let upcomingFilterBool = true;
         let upcomingBool = true
-        if (this.state.filter.upcoming == "false") {
+        if (this.state.filter.upcoming === "false") {
           upcomingBool = true;
           upcomingFilterBool = false;
         }
         else if (Array.isArray(this.state.filter.upcoming)) {
           upcomingFilterBool = false
           this.state.filter.upcoming.map(upcoming => {
-            upcomingFilterBool = upcomingFilterBool || upcoming=="true"
+            upcomingFilterBool = upcomingFilterBool || upcoming==="true"
+            return upcomingFilterBool
           })
           if (upcomingFilterBool) {
             upcomingBool = upcomingBool && date<play.epoch
@@ -168,7 +170,7 @@ class App extends Component {
         else {
           upcomingBool = date<play.epoch
         }
-        if (this.state.filter.upcoming != upcomingFilterBool) {
+        if (this.state.filter.upcoming !== upcomingFilterBool) {
           let newFilter = {
             role: this.state.filter.role,
             slug: this.state.filter.slug,
@@ -280,8 +282,11 @@ class App extends Component {
         // If titles is an array of slugs, we want to return a title for every slug.
         if (Array.isArray(titles)) {
           titles = titles.map(slug => {
-            if (jsonData.find(play=>{return play.slug==slug})) {
-              return jsonData.find(play=>{return play.slug==slug}).title
+            if (jsonData.find(play=>{return play.slug===slug})) {
+              return jsonData.find(play=>{return play.slug===slug}).title
+            }
+            else {
+              return null
             }
           }).filter(title=>{return title!=null}).join("&rdquo; or &ldquo;")
         }
