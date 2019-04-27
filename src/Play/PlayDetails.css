@@ -107,9 +107,9 @@ img.landscape {
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1250px) {
     .play-details {
-        width: 45vw
+        width: 46vw
     }
 }
 
