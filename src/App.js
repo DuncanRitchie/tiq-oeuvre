@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import queryString from "query-string";
+import ReactHtmlParser from 'react-html-parser';
 import jsonData from "./data.json";
 import HeaderBar from "./HeaderBar/HeaderBar";
 import MappedPlays from "./MappedPlays/MappedPlays";
 import PlayDetails from "./Play/PlayDetails";
-import queryString from "query-string";
-import ReactHtmlParser from 'react-html-parser';
 import './App.css';
 
 class App extends Component {
@@ -310,8 +311,10 @@ class App extends Component {
     // Let's put everything together into App.
     return (
       <div className="App">
-        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
-        <MappedPlays mappedPlays={mappedPlays} />
+        <Router>
+          <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
+          <MappedPlays mappedPlays={mappedPlays} />
+        </Router>
       </div>
     );
   }
