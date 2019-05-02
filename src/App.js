@@ -188,7 +188,9 @@ class App extends Component {
   }
 
   render() {
+    // Let's calculate the number of plays to display.
     let numPlays = this.filterPlays().length;
+    // Let's create a PlayDetails element for every play.
     let mappedPlays = this.filterPlays().map((play, index) => {
       return (
         <PlayDetails 
@@ -216,7 +218,9 @@ class App extends Component {
         />
       )
     })
+    // Let's make our filterParagraph.
     let filterParagraph = "";
+    // The first part of filterParagraph depends on the number of plays displayed.
     if (numPlays === jsonData.filter(play=>{return play["is-in-oeuvre"]}).length) {
       filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or ${ReactHtmlParser("&ldquo;upcoming&rdquo;")} sticker to set a filter`
     }
@@ -229,6 +233,8 @@ class App extends Component {
     else {
       filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filter${ReactHtmlParser("&rdquo; &mdash;&nbsp;")}there are no productions`
     }
+    // The latter parts of filterParagraph depends on the filter set.
+    //If there is a role/s in the filter...
     if (this.state.filter.role) {
       let roles = this.state.filter.role
       if (Array.isArray(this.state.filter.role)) {
@@ -236,6 +242,7 @@ class App extends Component {
       }
       filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${roles.toLowerCase()}`
     }
+    // If there is a year/s in the filter...
     if (this.state.filter.year) {
       let years = this.state.filter.year
       if (Array.isArray(years)) {
@@ -243,6 +250,7 @@ class App extends Component {
       }
       filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${years}`
     }
+    // If there is a troupe/s in the filter...
     if (this.state.filter.troupe) {
       // troupeFound is the string that will be added to filterParagraph to represent the troupe(s).
       let troupeFound = this.state.filter.troupe;
@@ -271,6 +279,7 @@ class App extends Component {
       // Let's add whatever we have for the troupes into filterParagraph
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
+    // If there is a slug in the filter...
     if (this.state.filter.slug) {
       let titles = this.state.filter.slug
       // If titles is a single slug in the Json data, the corresponding title is returned.
@@ -294,9 +303,11 @@ class App extends Component {
       }
       filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+titles+"&rdquo;")}`
     }
+    // If there is upcoming:true in the filter...
     if (this.state.filter.upcoming) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}that ${numPlays===1 ? "has" : "have"} not been performed yet`
     }
+    // Let's put everything together into App.
     return (
       <div className="App">
         <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
