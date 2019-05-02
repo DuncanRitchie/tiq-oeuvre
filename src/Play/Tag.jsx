@@ -1,5 +1,6 @@
 import React from "react";
 import ReactHtmlParser from 'react-html-parser';
+import {BrowserRouter as Link} from "react-router-dom";
 import "./Tag.css"
 
 let Tag = (props) => {
