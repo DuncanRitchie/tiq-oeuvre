@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import ReactHtmlParser from 'react-html-parser';
 import Tag from "./Tag"
 import "./PlayDetails.css"
@@ -18,7 +17,7 @@ const PlayDetails = (props) => {
             {/* Displaying the text */}
             <div className={props.image500 ? "play-text" : "play-text-only"}>
                 {/* Displaying the Upcoming! sticker if appropriate. */}
-                {isUpcoming ? <Link to="/upcoming=true" title="Upcoming!"><img className="upcoming" alt="Upcoming!" src={upcoming}/></Link> : null}
+                {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler}/> : null}
                 {/* The heading is the play's title */}
                 <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}}>{ReactHtmlParser(props.title)}</h2>
                 {/* Performance dates and troupes */}
