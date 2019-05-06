@@ -73,22 +73,22 @@ class App extends Component {
     let rubric = ""
     switch (troupeSlug) {
       case "jigsaw-music-theatre":
-        rubric = "Jigsaw were founded in 1991 and are now under the TiQ umbrella, with about two dozen members aged between seven and twelve."
+        rubric = "Jigsaw were founded in 1991 and now have about two dozen members aged seven to twelve."
         break
       case "quartz-youth-theatre":
         rubric = "Established in 2013, Quartz are the arm of TiQ for teenage thespians, with around 19 current members."
         break
       case "rewind-youth-theatre":
-        rubric = "Rewind are a company of primary-schoolchildren in the Chester suburb of Blacon; they are co-managed by TiQ and Cheshire Dance."
+        rubric = "Rewind are primary-schoolchildren in the Chester suburb of Blacon, co-managed by TiQ and Cheshire Dance."
         break
       case "handbag-of-harmonies":
-        rubric = "A Handbag of Harmonies are a choir of several dozen women from the Chester area, with handbags, feather boas, and a huge repertoire arranged by their managing director, Matt Baker."
+        rubric = "A Handbag of Harmonies are a choir of several dozen women from the Chester area."
         break
       case "garden-quarter-association":
         rubric = "The Garden Quarter is the suburb of Chester that TiQ are based in."
         break
       case "chester-mystery-plays-cast":
-        rubric = "The Chester Mystery Plays are a huge dramatic endeavour every five years (the next cycle will be in 2023) to retell Bible stories in or around Chester Cathedral; individual plays have also been reprised in Chester&rsquo;s amphitheatre."
+        rubric = "The Chester Mystery Plays are a huge feat every five years to retell Bible stories at Chester Cathedral; individual plays have been reprised in the city&rsquo;s amphitheatre."
         break
       case "theatre-in-the-quarter-adults":
         rubric = "TiQ was founded in 2005 to provide the residents of Chester with theatrical experiences alongside professional actors, as well as to run the children&rsquo;s group Jigsaw (and later Quartz and Rewind)."

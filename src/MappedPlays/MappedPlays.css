@@ -4,7 +4,7 @@
 }
 
 .mapped-plays {
-    padding-top: 144px;
+    padding-top: 144px; /* This is the height of HeaderBar */
     min-height: calc(100vh - 204px)
 }
 
@@ -34,11 +34,11 @@ a:hover {
 @media (max-width: 767px) {
 
     .mapped-plays {
-        padding-top: 96px
+        padding-top: 144px /* This is the height of HeaderBar */
     }
 
     .footer {
-        margin-top: -1px
+        margin-top: -1px /* This is to hide the border-bottom of the last PlayDetails */
     }
     
 }

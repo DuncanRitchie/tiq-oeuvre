@@ -12,21 +12,22 @@
 @media (max-width: 767px) {
     
     .header-bar {
-        height: 96px;
-        min-height: 96px;
+        height: 144px;
+        min-height: 144px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
 
     .main-header {
         font-size: 18px;
-        line-height: 12px
+        margin-top: 3px;
+        margin-bottom: 3px
     }
 
     .filter-paragraph {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0
     }
 }
