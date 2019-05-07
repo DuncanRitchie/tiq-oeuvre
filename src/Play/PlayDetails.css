@@ -3,14 +3,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.play-details-text-only {
-    width: 100%
+    padding: 0 12px;
+    width: calc(100% - 24px)
 }
 
 img.portrait {
-    max-height: calc(100vh - 168px)
+    max-height: calc(100vh - 168px);
+    max-width: 66%
 }
 
 img.landscape {
@@ -82,6 +81,7 @@ img.landscape {
         width: 95vw;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
+        padding: 0;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -102,7 +102,8 @@ img.landscape {
     }
 
     img.portrait, img.landscape {
-        margin: 8px 0 36px 0
+        margin: 8px 0 36px 0;
+        max-width: 100%
     }
 
 }

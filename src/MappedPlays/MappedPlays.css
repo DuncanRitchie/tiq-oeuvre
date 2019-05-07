@@ -5,7 +5,8 @@
 
 .mapped-plays {
     padding-top: 144px; /* This is the height of HeaderBar */
-    min-height: calc(100vh - 204px)
+    min-height: calc(100vh - 204px);
+    width: 100%
 }
 
 .footer {
