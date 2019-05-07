@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/tiq-oeuvre/static/js/runtime~main.393755fd.js"
   },
   {
-    "revision": "6a7fa7d0d7a55ba7b06f",
+    "revision": "0a293df1bcced6e99fbe",
     "url": "/tiq-oeuvre/static/js/main.c05d7969.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/tiq-oeuvre/static/js/2.0fe1f0ae.chunk.js"
   },
   {
-    "revision": "6a7fa7d0d7a55ba7b06f",
-    "url": "/tiq-oeuvre/static/css/main.ee6d48de.chunk.css"
+    "revision": "0a293df1bcced6e99fbe",
+    "url": "/tiq-oeuvre/static/css/main.c813894e.chunk.css"
   },
   {
-    "revision": "b23a0914f92c0dbf83dda27b4867bde7",
+    "revision": "0047edd1d9b0d803fe8f36ec47027453",
     "url": "/tiq-oeuvre/index.html"
   }
 ];
