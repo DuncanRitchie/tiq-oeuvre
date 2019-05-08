@@ -210,6 +210,7 @@ class App extends Component {
         tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
         image500={play["photo-url-max-width-500"]}
+        image1280={play["photo-url-max-width-1280"]}
         slugHandler={this.slugHandler}
         troupeHandler={this.troupeHandler}
         yearHandler={this.yearHandler}
