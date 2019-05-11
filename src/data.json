@@ -1399,8 +1399,8 @@
     "photo-url-max-width-250": "https://66.media.tumblr.com/78984ad4d4e937943cdaec478e10b8f7/tumblr_pqmir3wVSU1y4ne37o1_r1_250.jpg",
     "photo-url-max-width-100": "https://66.media.tumblr.com/78984ad4d4e937943cdaec478e10b8f7/tumblr_pqmir3wVSU1y4ne37o1_r1_100.jpg",
     "photo-url-max-width-75": "https://66.media.tumblr.com/78984ad4d4e937943cdaec478e10b8f7/tumblr_pqmir3wVSU1y4ne37o1_r1_75sq.jpg",
-    "tags-batch-one": ["Songs of the Sea","Sea","On the Ocean","Ocean","Quartz Youth Theatre","Quartz","Theatre in the Quarter","TiQ","Chester",2019,"Duncan as assistant-director","Duncan as poster-designer"],
-    "tags-batch-two": null
+    "tags-batch-one": ["Songs of the Sea","Sea","On the Ocean","Ocean","Quartz Youth Theatre","Quartz"],
+    "tags-batch-two": ["Theatre in the Quarter","TiQ","Chester",2019,"Groves","Amphitheatre","Town Hall Square","Duncan as assistant-director","Duncan as poster-designer","Duncan as photographer"]
     },{
     "title": "The Giant Jam Sandwich",
     "is-in-oeuvre": true,
