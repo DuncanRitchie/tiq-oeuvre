@@ -34,12 +34,12 @@ const PlayDetails = (props) => {
                 <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}}>{ReactHtmlParser(props.title)}</h2>
                 {/* Performance dates and troupes */}
                 <p className="play-by-p">{isUpcoming ? "To be ".concat(props.verb.toLowerCase()) : props.verb} <Tag handler={props.yearHandler} text={props.datesAsText} /> 
-                {props.datePrecision === "month" ? <span>&nbsp;(I can&rsquo;t be more precise than that)</span> : null }
+                {props.datePrecision === "month" ? <span>{" "}(I can&rsquo;t be more precise than that)</span> : null }
                 &nbsp;by {byMap}</p>
                 {/* Play synopsis */}
                 {props.synopsis ? <p>Synopsis: {ReactHtmlParser(props.synopsis)}</p> : null}
                 {/* List of my roles */}
-                <p className="play-roles-p">My roles: 
+                <p className="play-roles-p">My roles:{" "} 
                     {props.tags.includes("Duncan as actor") ? <Tag handler={props.roleHandler} text="actor"/> : null}
                     {props.tags.includes("Duncan as poster-designer") ? <Tag handler={props.roleHandler} text="poster-designer"/> : null}
                     {props.tags.includes("Duncan as programme-designer") ? <Tag handler={props.roleHandler} text="programme-designer"/> : null}
