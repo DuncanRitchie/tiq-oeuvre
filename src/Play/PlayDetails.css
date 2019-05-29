@@ -66,12 +66,32 @@ img.landscape {
     padding-left: 12px;
 }
 
+.subheading {
+    color: #795c28;
+    font-weight: bold
+}
+
+.synopsis {
+    background-color: #fdfde7; /* pale yellow */
+    border-radius: 6px
+}
+
 .song-title {
   display: inline-block;
   margin: -0.5px 4px -0.5px 4px;
-  border: 1px solid black;
+  border: 1px solid darkslategrey;
   border-radius: 6px;
   padding: 2px 4px
+}
+
+.example-lyric {
+    border-radius: 6px;
+    background-color: #fff8f5 /* pale orange */
+}
+
+.see-image-larger {
+    border-radius: 6px;
+    background-color: #eaf7fd
 }
 
 @media (max-width: 767px) {
@@ -110,7 +130,7 @@ img.landscape {
 
 @media (min-width: 1250px) {
     .play-details {
-        width: 46vw
+        width: 47vw
     }
 }
 

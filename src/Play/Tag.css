@@ -1,17 +1,21 @@
 .tag {
     display: inline-block;
     margin: -0.5px 4px -0.5px 4px;
-    border: 1px solid black;
+    border: 1px solid darkslategrey;
     border-radius: 6px;
     padding: 2px 4px;
-    background-color: #00ffff;
+    background-color: #80ffff;
     cursor: pointer
 }
 
 .tag:hover {
-    background-color: #80ffff
+    background-color: #b0ffff
 }
 
 .tag:active {
-    background-color: #b0ffff
+    background-color: #d0ffff
+}
+
+.first-word {
+    font-weight: bold
 }
