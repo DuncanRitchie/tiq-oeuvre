@@ -94,6 +94,8 @@ img.landscape {
     background-color: #eaf7fd
 }
 
+/* Media query for mobile */
+
 @media (max-width: 767px) {
 
     .play-details {
@@ -128,11 +130,26 @@ img.landscape {
 
 }
 
+/* Media query to make Plays into two columns */
+
 @media (min-width: 1250px) {
     .play-details {
         width: 47vw
     }
+
+    img.portrait {
+        /* These two values are in 210:297 ratio */
+        max-height: calc(100vh - 168px);
+        max-width: calc(70.8vh - 118.8px);
+        width: calc(70.8vh - 118.8px);
+    }
+    
+    img.landscape {
+        height: calc(100vh - 240px)
+    }
 }
+
+/* Media query to make Plays into two rows */
 
 @media (min-height: 1080px) {
     .play-details {
@@ -142,7 +159,7 @@ img.landscape {
     img.portrait {
         /* These two values are in 210:297 ratio */
         max-height: calc(50vh - 84px);
-        width: calc(35.4vh - 59.4px)
+        max-width: calc(35.4vh - 59.4px)
     }
     
     img.landscape {
