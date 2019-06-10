@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tiq-oeuvre/precache-manifest.5b58a0b79e50286c6f86daa090ab3183.js"
+  "/tiq-oeuvre/precache-manifest.3dc84ab287b7f0a7931ff01bc111186b.js"
 );
 
 workbox.clientsClaim();
