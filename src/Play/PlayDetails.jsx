@@ -46,7 +46,7 @@ const PlayDetails = (props) => {
                     {props.tags.includes("Duncan as lyricist") ? <Tag handler={props.roleHandler} text="lyricist" /> : null}
                     {props.tags.includes("Duncan as photographer") ? <Tag handler={props.roleHandler} text="photographer"/> : null}
                     {props.tags.includes("Duncan as assistant-director") ? <Tag handler={props.roleHandler} text="assistant-director"/> : null}
-                    {props.tags.includes("Duncan as co-designer") ? <Tag handler={props.roleHandler} text="poster co-designer (with illustration by Alison Pitt)"/> : null}
+                    {props.tags.includes("Duncan as co-designer") ? <Tag handler={props.roleHandler} text="co-designer of the poster (with illustration by Alison Pitt)"/> : null}
                 </p>
                 {/* If I lyricized songs, they are listed. */}
                 {props.mySongsLyricized ? <p><span className="subheading">Songs I lyricized:</span> {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{ReactHtmlParser(song)}</span>})}</p> : null}

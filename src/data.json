@@ -874,7 +874,7 @@
     "tags-batch-two": null
     },{
     "title": "The Hills Are Alive",
-    "is-in-oeuvre": true,
+    "is-in-oeuvre": false,
     "slug": "hills-are-alive",
     "epoch": 1467720000,
     "date-precision": "print",
@@ -897,7 +897,7 @@
     "tags-batch-two": ["Llangollen 2016","Cantilon","Coro San Benildo","Helsby Hillside","Fireflies","Soundwall","Little Big Band","Mother Touch","St Marys","St Marys Centre",2016,"illustration not mine","Chester","Duncan as co-designer"]
     },{
     "title": "Christmas 2016 in the Garden Quarter",
-    "is-in-oeuvre": true,
+    "is-in-oeuvre": false,
     "slug": "christmas-2016-in-the-garden-quarter",
     "epoch": 1480093200,
     "date-precision": "print",
@@ -920,7 +920,7 @@
     "tags-batch-two": null
     },{
     "title": "The Garden Quarter&rsquo;s Famous Christmas Market",
-    "is-in-oeuvre": true,
+    "is-in-oeuvre": false,
     "slug": "garden-quarters-famous-christmas-market",
     "epoch": 1480761000,
     "date-precision": "print",
