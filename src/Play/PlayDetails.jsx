@@ -53,7 +53,7 @@ const PlayDetails = (props) => {
                 {/* If there's an example lyric, it's displayed. */}
                 {props.exampleLyric ? <p className="example-lyric"><span className="subheading">Example lyric:</span><br/>
                 {ReactHtmlParser(props.exampleLyric)}</p> : null}
-                {props.image1280 ? <p className="see-image-larger"><a href={props.image1280} title={"See "+imgType+" at larger size (1280 pixels width)"}><i class="fas fa-search-plus"></i>&nbsp;See {imgType} at larger size</a></p> : null}
+                {props.image1280 ? <p className="see-image-larger"><a href={props.image1280} title={"See "+imgType+" at larger size (1280 pixels width)"}><i className="fas fa-search-plus"></i>&nbsp;See {imgType} at larger size</a></p> : null}
             </div>
         </div>
     )
