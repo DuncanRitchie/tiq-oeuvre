@@ -89,7 +89,8 @@ img.landscape {
     background-color: #fff8f5 /* pale orange */
 }
 
-.see-image-larger {
+.see-pdf {
+    padding: 3px 6px;
     border-radius: 6px;
     background-color: #eaf7fd
 }

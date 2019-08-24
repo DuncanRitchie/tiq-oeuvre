@@ -221,14 +221,14 @@ class Page extends Component {
         verb={play.verb}
         byArray={play["by-array"]}
         byArraySlug={play["by-array-slug"]}
-        synopsis={play.synopsis}s
+        synopsis={play.synopsis}
         myActingRole={play["my-acting-role"]}
         mySongsLyricized={play["my-songs-lyricized"]}
         exampleLyric={play["example-lyric"]}
         tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
         image500={play["photo-url-max-width-500"]}
-        image1280={play["photo-url-max-width-1280"]}
+        pdf={play.pdf}
         slugHandler={this.slugHandler}
         troupeHandler={this.troupeHandler}
         yearHandler={this.yearHandler}
