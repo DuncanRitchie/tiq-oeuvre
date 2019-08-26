@@ -5,7 +5,7 @@ import Page from "./Page/Page"
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/tiq-oeuvre">
         <Route component={Page}/>
       </BrowserRouter>
     )
