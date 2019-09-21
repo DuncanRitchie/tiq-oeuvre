@@ -23,11 +23,11 @@ const PlayDetails = (props) => {
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
     return (
         // If a URL for the image is specified in the data, we don't want a className of play-details-text-only.
-        <div className={props.image500 ? "play-details" : "play-details play-details-text-only"}>
+        <div className={props.image400 ? "play-details" : "play-details play-details-text-only"}>
             {/* If a URL for the image is specified in the data, we display the image. */}
-            {props.image500 ? <img src={props.image500} alt={ReactHtmlParser(props.title)+" "+imgType} className={props.posterOrientation}/> : null}
+            {props.image400 ? <img src={props.image400} alt={ReactHtmlParser(props.title)+" "+imgType} className={props.posterOrientation}/> : null}
             {/* Displaying the text */}
-            <div className={props.image500 ? "play-text" : "play-text-only"}>
+            <div className={props.image400 ? "play-text" : "play-text-only"}>
                 {/* Displaying the Upcoming! sticker if appropriate. */}
                 {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler}/> : null}
                 {/* The heading is the play's title */}
