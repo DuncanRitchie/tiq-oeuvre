@@ -17,18 +17,18 @@
 
 a:link {
     font-weight: bold;
-    color: #337ab7;
+    color: #23527c;
     text-decoration: none
 }
 
 a:visited {
     font-weight: bold;
-    color: #337ab7;
+    color: #23527c;
     text-decoration: none
 }
 
 a:hover {
-    color: #23527c;
+    color: #193c5a;
     text-decoration: underline
 }  
 
