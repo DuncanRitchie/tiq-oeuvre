@@ -23,6 +23,7 @@ img.landscape {
 .upcoming {
     position: absolute;
     transform: translate(-12px,-54px);
+    cursor: pointer;
 }
 
 .upcoming:hover {

@@ -29,9 +29,9 @@ const PlayDetails = (props) => {
             {/* Displaying the text */}
             <div className={props.image400 ? "play-text" : "play-text-only"}>
                 {/* Displaying the Upcoming! sticker if appropriate. */}
-                {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler}/> : null}
+                {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler} title="See all upcoming productions"/> : null}
                 {/* The heading is the play's title */}
-                <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}}>{ReactHtmlParser(props.title)}</h2>
+                <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}} title={"See only "+props.title}>{ReactHtmlParser(props.title)}</h2>
                 {/* Performance dates and troupes */}
                 <p className="play-by-p"><span className="subheading">{isUpcoming ? "To be ".concat(props.verb.toLowerCase()) : props.verb}</span> <Tag handler={props.yearHandler} text={props.datesAsText} /> 
                 {props.datePrecision === "month" ? <span>{" "}(I can&rsquo;t be more precise than that)</span> : null }
