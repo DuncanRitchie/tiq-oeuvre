@@ -6,11 +6,19 @@ const MappedPlays = (props) => {
             <div className="mapped-plays">
                 {props.mappedPlays}
             </div>
-            <div className="footer">
-                <p>
-                    Made by Duncan Ritchie using React.js. <a href="https://www.duncanritchie.co.uk" title="Duncan Ritchie&rsquo;s website">My&nbsp;website</a>. <a href="https://theatreinthequarter.co.uk" title="Theatre in the Quarter&rsquo;s website">TiQ&rsquo;s&nbsp;website</a>.
-                </p>
-            </div>
+            <footer className="footer">
+                <ul>
+                    <ol>
+                        Made by Duncan Ritchie using React.js.
+                    </ol>
+                    <ol>
+                        <a href="https://www.duncanritchie.co.uk" title="Duncan Ritchie&rsquo;s website">My&nbsp;website</a>.
+                    </ol>
+                    <ol>
+                        <a href="https://theatreinthequarter.co.uk" title="Theatre in the Quarter&rsquo;s website">TiQ&rsquo;s&nbsp;website</a>.
+                    </ol>
+                </ul>
+            </footer>
         </div>
         
     )

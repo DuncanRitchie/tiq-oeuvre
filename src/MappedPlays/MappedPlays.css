@@ -9,10 +9,15 @@
     width: 100%
 }
 
-.footer {
+footer {
     background-color: rgb(196, 226, 196);
     margin:0;
     padding: 3px
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
 }
 
 a:link {
