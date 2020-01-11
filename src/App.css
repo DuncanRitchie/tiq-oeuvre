@@ -3,7 +3,7 @@
   font-family: Alegreya, serif;
 }
 
-.clear-filters {
+.clear-filter {
   display: inline-block;
   margin: -0.5px 4px -0.5px 4px;
   border: 1px solid black;
@@ -13,11 +13,11 @@
   background-color: #ffff00
 }
 
-.clear-filters:hover {
+.clear-filter:hover {
     background-color: #ffff80
 }
 
-.clear-filters:active {
+.clear-filter:active {
     background-color: #ffffb0
 }
 
