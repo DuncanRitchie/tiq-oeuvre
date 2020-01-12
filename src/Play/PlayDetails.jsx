@@ -53,7 +53,7 @@ const PlayDetails = (props) => {
                 {/* If there's an example lyric, it's displayed. */}
                 {props.exampleLyric ? <p className="example-lyric"><span className="subheading">Example lyric:</span><br/>
                 {ReactHtmlParser(props.exampleLyric)}</p> : null}
-                {props.pdf ? <p className="see-pdf"><a href={props.pdf} title={"See "+imgType+" as a PDF (on Google Drive)"}><i className="far fa-file"></i>&nbsp; See {imgType} as a PDF</a></p> : null}
+                {props.pdf ? <p className="see-pdf"><a href={props.pdf} title={"See "+imgType+" as a PDF"}><i className="far fa-file"></i>&nbsp; See {imgType} as a PDF</a></p> : null}
             </div>
         </div>
     )
