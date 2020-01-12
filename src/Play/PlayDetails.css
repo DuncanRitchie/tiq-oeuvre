@@ -9,7 +9,8 @@
 
 img.portrait {
     max-height: calc(100vh - 168px);
-    max-width: 66%
+    max-width: 66%;
+    flex-shrink: 0;
 }
 
 img.landscape {
