@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tiq-oeuvre/precache-manifest.83ec51c2b84174d0d86c16aae89f8bfe.js"
+  "/tiq-oeuvre/precache-manifest.6b9b7f659a2c83f867101fd62cfdd3d6.js"
 );
 
 self.addEventListener('message', (event) => {
