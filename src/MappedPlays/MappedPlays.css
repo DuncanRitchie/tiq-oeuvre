@@ -1,5 +1,7 @@
 .mapped-plays-and-footer {
     background-color: rgb(254, 255, 250);
+    background-image: radial-gradient(to center, rgb(254, 255, 251), rgb(244, 247, 232));
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -11,6 +13,7 @@
 
 footer {
     background-color: rgb(196, 226, 196);
+    background-image: radial-gradient(to center, rgb(195, 241, 195), rgb(156, 243, 151));
     margin: 0;
     padding: 3px
 }
