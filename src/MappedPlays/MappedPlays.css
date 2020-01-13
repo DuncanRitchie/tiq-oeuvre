@@ -11,13 +11,20 @@
 
 footer {
     background-color: rgb(196, 226, 196);
-    margin:0;
+    margin: 0;
     padding: 3px
 }
 
 footer ul {
     display: flex;
     justify-content: center;
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li:not(:last-of-type) {
+    margin-right: 24px;
 }
 
 a:link {
@@ -43,8 +50,17 @@ a:hover {
         padding-top: 144px /* This is the height of HeaderBar */
     }
 
-    .footer {
+    footer {
         margin-top: -1px /* This is to hide the border-bottom of the last PlayDetails */
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li:not(:last-of-type) {
+        margin-bottom: 3px;
+        margin-right: 0;
     }
     
 }
