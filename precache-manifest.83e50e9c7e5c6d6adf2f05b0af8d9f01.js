@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06b4f9a7776b7a63e254f10f0765b64d",
+    "revision": "2aee9744db4c9b18a9081cbcbf16a70e",
     "url": "/tiq-oeuvre/index.html"
   },
   {
-    "revision": "05f19d6a5e60e81bc6f1",
-    "url": "/tiq-oeuvre/static/css/main.4f9fe1a1.chunk.css"
+    "revision": "cbd907946bed449e96b7",
+    "url": "/tiq-oeuvre/static/css/main.2e6f0a9b.chunk.css"
   },
   {
     "revision": "16411670f458e387b1e6",
     "url": "/tiq-oeuvre/static/js/2.c9595be7.chunk.js"
   },
   {
-    "revision": "05f19d6a5e60e81bc6f1",
+    "revision": "cbd907946bed449e96b7",
     "url": "/tiq-oeuvre/static/js/main.1ff3b63a.chunk.js"
   },
   {
