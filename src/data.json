@@ -1340,8 +1340,8 @@
 "photo-url-max-width-400": "https://res.cloudinary.com/duncanritchie/image/upload/w_400/v1578953624/2020_Frankenstein.png",
 "photo-url-max-width-100": "https://res.cloudinary.com/duncanritchie/image/upload/w_100/v1578953624/2020_Frankenstein.png",
 "pdf": "https://res.cloudinary.com/duncanritchie/image/upload/w_1280/v1578953624/2020_Frankenstein.pdf",
-"tags-batch-one": ["Frankenstein","Quartz Youth Theatre","Quartz","Theatre in the Quarter","TiQ","St Marys","St Marys Creative Space","St Marys Centre","Chester",2020,"Duncan as assistant-director","Duncan as poster-designer"],
-"tags-batch-two": null
+"tags-batch-one": ["Frankenstein","Quartz Youth Theatre","Quartz","Theatre in the Quarter","TiQ","St Marys"],
+"tags-batch-two": ["St Marys Creative Space","St Marys Centre","Chester",2020,"Duncan as assistant-director","Duncan as poster-designer","Duncan as programme-designer"]
 },{
 "title": "The Day War Came",
 "is-in-oeuvre": true,
@@ -1362,7 +1362,7 @@
 "photo-url-max-width-100": "https://res.cloudinary.com/duncanritchie/image/upload/w_100/v1578613462/2020_TheDayWarCame.png",
 "pdf": "https://res.cloudinary.com/duncanritchie/image/upload/w_1280/v1578613462/2020_TheDayWarCame.pdf",
 "tags-batch-one": ["The Day War Came","Day War Came","War","Jigsaw Music Theatre","Jigsaw","Theatre in the Quarter"],
-"tags-batch-two": ["TiQ","St Thomas","St Thomas of Canterbury","Chester",2020,"Duncan as assistant-director","Duncan as lyricist","Duncan as poster-designer"]
+"tags-batch-two": ["TiQ","St Thomas","St Thomas of Canterbury","Chester",2020,"Duncan as assistant-director","Duncan as lyricist","Duncan as poster-designer","Duncan as programme-designer"]
 }]
 
 
