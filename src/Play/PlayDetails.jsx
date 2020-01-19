@@ -3,6 +3,7 @@ import ReactHtmlParser from 'react-html-parser';
 import Tag from "./Tag"
 import "./PlayDetails.css"
 import upcoming from "./upcoming.png"
+import convertCloudinaryUrl from "./convert-cloudinary-url";
 
 const PlayDetails = (props) => {
     // Working out whether we're displaying a poster, programme, or collage (if we're displaying any image).
@@ -23,11 +24,11 @@ const PlayDetails = (props) => {
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
     return (
         // If a URL for the image is specified in the data, we don't want a className of play-details-text-only.
-        <div className={props.image400 ? "play-details" : "play-details play-details-text-only"}>
+        <div className={props.cloudinary ? "play-details" : "play-details play-details-text-only"}>
             {/* If a URL for the image is specified in the data, we display the image. */}
-            {props.image400 ? <img src={props.image400} alt={ReactHtmlParser(props.title)+" "+imgType} className={props.posterOrientation}/> : null}
+            {props.cloudinary ? <img src={convertCloudinaryUrl(props.cloudinary,400,null)} alt={ReactHtmlParser(props.title)+" "+imgType} className={props.posterOrientation}/> : null}
             {/* Displaying the text */}
-            <div className={props.image400 ? "play-text" : "play-text-only"}>
+            <div className={props.cloudinary ? "play-text" : "play-text-only"}>
                 {/* Displaying the Upcoming! sticker if appropriate. */}
                 {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler} title="See all upcoming productions"/> : null}
                 {/* The heading is the play's title */}
@@ -53,7 +54,7 @@ const PlayDetails = (props) => {
                 {/* If there's an example lyric, it's displayed. */}
                 {props.exampleLyric ? <p className="example-lyric"><span className="subheading">Example lyric:</span><br/>
                 {ReactHtmlParser(props.exampleLyric)}</p> : null}
-                {props.pdf ? <p className="see-pdf"><a href={props.pdf} title={"See "+imgType+" as a PDF"}><i className="far fa-file"></i>&nbsp; See {imgType} as a PDF</a></p> : null}
+                {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imgType+" as a PDF"}><i className="far fa-file"></i>&nbsp; See {imgType} as a PDF</a></p> : null}
             </div>
         </div>
     )

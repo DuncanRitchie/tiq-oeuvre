@@ -227,8 +227,7 @@ class Page extends Component {
         exampleLyric={play["example-lyric"]}
         tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
-        image400={play["photo-url-max-width-400"]}
-        pdf={play.pdf}
+        cloudinary={play["cloudinary"]}
         slugHandler={this.slugHandler}
         troupeHandler={this.troupeHandler}
         yearHandler={this.yearHandler}
