@@ -94,7 +94,7 @@ class Page extends Component {
         rubric = "Jigsaw were founded in 1991 and now have about two dozen members aged seven to twelve."
         break
       case "quartz-youth-theatre":
-        rubric = "Established in 2013, Quartz are the arm of TiQ for teenage thespians, with around 19 current members."
+        rubric = "Established in 2013, Quartz are the arm of TiQ for teenage thespians, with around 22 current members."
         break
       case "rewind-youth-theatre":
         rubric = "Rewind are primary-schoolchildren in the Chester suburb of Blacon, co-managed by TiQ and Cheshire Dance."
@@ -179,14 +179,14 @@ class Page extends Component {
             return upcomingFilterBool
           })
           if (upcomingFilterBool) {
-            upcomingBool = upcomingBool && date<play.epoch
+            upcomingBool = upcomingBool && date<play["epoch-last-performance"]
           }
           else {
             upcomingBool = true
           }
         }
         else {
-          upcomingBool = date<play.epoch
+          upcomingBool = date<play["epoch-last-performance"]
         }
         if (this.state.filter.upcoming !== upcomingFilterBool) {
           let newFilter = {
@@ -216,6 +216,7 @@ class Page extends Component {
         title={play.title}
         slug={play.slug}
         epoch={play.epoch}
+        epochLastPerformance={play["epoch-last-performance"]}
         datePrecision={play["date-precision"]}
         datesAsText={play["dates-as-text"]}
         verb={play.verb}
@@ -227,7 +228,7 @@ class Page extends Component {
         exampleLyric={play["example-lyric"]}
         tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
-        cloudinary={play["cloudinary"]}
+        cloudinary={play.cloudinary}
         slugHandler={this.slugHandler}
         troupeHandler={this.troupeHandler}
         yearHandler={this.yearHandler}

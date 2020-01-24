@@ -19,7 +19,7 @@ const PlayDetails = (props) => {
     }
     // Calculating whether an Upcoming! sticker should be displayed.
     let date = new Date().getTime()/1000
-    let isUpcoming = date<props.epoch
+    let isUpcoming = date<props.epochLastPerformance
     // Let's create a Tag element for every troupe.
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
     return (
