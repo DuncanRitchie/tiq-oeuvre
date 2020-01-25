@@ -3,24 +3,6 @@
   font-family: Alegreya, serif;
 }
 
-.clear-filter {
-  display: inline-block;
-  margin: -0.5px 4px -0.5px 4px;
-  border: 1px solid black;
-  border-radius: 6px;
-  padding: 2px 4px;
-  cursor: pointer;
-  background-color: #ffff00
-}
-
-.clear-filter:hover {
-    background-color: #ffff80
-}
-
-.clear-filter:active {
-    background-color: #ffffb0
-}
-
 p {
   font-size: 15px
 }
