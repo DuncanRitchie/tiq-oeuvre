@@ -6,7 +6,7 @@ const MappedPlays = (props) => {
             <main className="mapped-plays">
                 {props.mappedPlays}
             </main>
-            <footer className="footer">
+            <footer>
                 <ul>
                     <li>
                         Made by Duncan Ritchie using React.js.

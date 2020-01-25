@@ -53,9 +53,9 @@ a:hover {
         padding-top: 144px /* This is the height of HeaderBar */
     }
 
-    footer {
-        margin-top: -1px /* This is to hide the border-bottom of the last PlayDetails */
-    }
+    /*footer {
+       margin-top: -1px This is to hide the border-bottom of the last PlayDetails
+    }*/
 
     footer ul {
         flex-direction: column;

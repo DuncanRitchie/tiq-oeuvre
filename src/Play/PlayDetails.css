@@ -111,6 +111,9 @@ img.landscape {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: space-around;
+    }
+
+    .play-details:not(:last-of-type) {
         border-bottom: 1px solid black;
     }
 
