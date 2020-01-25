@@ -22,8 +22,8 @@ img.landscape {
 }
 
 .upcoming {
-    position: absolute;
-    transform: translate(-12px,-54px);
+    position: relative;
+    transform: translate(10px, 28px);
     cursor: pointer;
 }
 
