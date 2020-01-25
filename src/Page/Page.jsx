@@ -206,9 +206,9 @@ class Page extends Component {
   }
 
   render() {
-    // Let's calculate the number of plays to display.
+    // Let’s calculate the number of plays to display.
     let numPlays = this.filterPlays().length;
-    // Let's create a PlayDetails element for every play.
+    // Let’s create a PlayDetails element for every play.
     let mappedPlays = this.filterPlays().map((play, index) => {
       return (
         <PlayDetails 
@@ -238,7 +238,7 @@ class Page extends Component {
         />
       )
     })
-    // Let's make our filterParagraph.
+    // Let’s make our filterParagraph.
     let filterParagraph = "";
     // The first part of filterParagraph depends on the number of plays displayed.
     if (numPlays === jsonData.filter(play=>{return play["is-in-oeuvre"]}).length) {
@@ -296,7 +296,7 @@ class Page extends Component {
         })
         troupeFound = troupeNamesArray.filter((name)=>{return name!= null}).join(" or ")
       }
-      // Let's add whatever we have for the troupes into filterParagraph
+      // Let’s add whatever we have for the troupes into filterParagraph
       filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
     }
     // If there is a slug in the filter...
@@ -319,7 +319,7 @@ class Page extends Component {
             }
           }).filter(title=>{return title!=null}).join("&rdquo; or &ldquo;")
         }
-        // If titles is a single incorrect slug, we don't do anything here.
+        // If titles is a single incorrect slug, we don’st do anything here.
       }
       filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+titles+"&rdquo;")}`
     }
@@ -327,7 +327,7 @@ class Page extends Component {
     if (this.state.filter.upcoming) {
       filterParagraph += `${ReactHtmlParser("&nbsp;")}that ${numPlays===1 ? "has" : "have"} not been performed yet`
     }
-    // Let's put everything together into Page.
+    // Let’s put everything together into Page.
     return (
       <div className="Page">
         <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
