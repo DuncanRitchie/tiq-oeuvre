@@ -3,7 +3,7 @@ import queryString from "query-string";
 import ReactHtmlParser from 'react-html-parser';
 import jsonData from "../data.json";
 import HeaderBar from "../HeaderBar/HeaderBar";
-import MappedPlays from "../MappedPlays/MappedPlays";
+import Footer from "../Footer/Footer";
 import PlayDetails from "../Play/PlayDetails";
 import '../App.css';
 
@@ -330,7 +330,7 @@ class Page extends Component {
     return (
       <div className="Page">
         <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
-        <MappedPlays mappedPlays={mappedPlays} />
+        <Footer mappedPlays={mappedPlays} />
       </div>
     );
   }

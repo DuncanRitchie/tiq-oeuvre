@@ -1,6 +1,7 @@
 import React from 'react';
-import './MappedPlays.css';
-const MappedPlays = (props) => {
+import './Footer.css';
+
+const Footer = (props) => {
     return (
         <div className="mapped-plays-and-footer">
             <main className="mapped-plays">
@@ -20,7 +21,6 @@ const MappedPlays = (props) => {
                 </ul>
             </footer>
         </div>
-        
     )
 }
-export default MappedPlays
+export default Footer
