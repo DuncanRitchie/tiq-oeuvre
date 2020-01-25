@@ -24,3 +24,9 @@
 p {
   font-size: 15px
 }
+
+/* Font Awesome icons */
+.fab,.far {
+  width: 18px;
+  margin-right: 6px;
+}

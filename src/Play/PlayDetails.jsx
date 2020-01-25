@@ -51,10 +51,10 @@ const PlayDetails = (props) => {
                 </p>
                 {/* If I lyricized songs, they are listed. */}
                 {props.mySongsLyricized ? <p><span className="subheading">Songs I lyricized:</span> {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{ReactHtmlParser(song)}</span>})}</p> : null}
-                {/* If there's an example lyric, it's displayed. */}
+                {/* If there’s an example lyric, it’s displayed. */}
                 {props.exampleLyric ? <p className="example-lyric"><span className="subheading">Example lyric:</span><br/>
                 {ReactHtmlParser(props.exampleLyric)}</p> : null}
-                {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imgType+" as a PDF"}><i className="far fa-file"></i>&nbsp; See {imgType} as a PDF</a></p> : null}
+                {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imgType+" as a PDF"}><i className="far fa-file"></i>See {imgType} as a PDF</a></p> : null}
             </div>
         </div>
     )

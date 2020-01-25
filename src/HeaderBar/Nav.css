@@ -55,8 +55,3 @@ nav label img {
     display: inline-block;
     width: 100%;
 }
-
-#nav-open-toggler ~ ul li a .fab {
-    width: 18px;
-    margin-right: 6px;
-}
