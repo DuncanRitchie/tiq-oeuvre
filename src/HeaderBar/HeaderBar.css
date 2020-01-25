@@ -1,4 +1,4 @@
-.header-bar {
+header {
     background-color: rgb(248, 242, 192);
     background-image: radial-gradient(to center, rgb(250, 247, 214), rgb(247, 240, 181));
     position: fixed;
@@ -12,7 +12,7 @@
 
 @media (max-width: 767px) {
     
-    .header-bar {
+    header {
         height: 144px;
         min-height: 144px;
         display: flex;
@@ -21,7 +21,7 @@
         align-items: center;
     }
 
-    .main-header {
+    .header-heading {
         font-size: 18px;
         margin-top: 3px;
         margin-bottom: 3px
