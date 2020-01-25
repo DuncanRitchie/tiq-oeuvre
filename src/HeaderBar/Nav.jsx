@@ -5,6 +5,8 @@ import '../App.css';
 const Nav = () => {
     return (
         <nav>
+            {/* Checkbox is hidden but operated via the label. 
+            It determines whether the ul is hidden or not. */}
             <input type="checkbox" id="nav-open-toggler" />
             <label for="nav-open-toggler" title="Open or close the nav menu">
                 <img className="header-icon" alt="Duncan&rsquo;s fulmar icon. Click to open or close the nav menu" src="https://www.duncanritchie.co.uk/favicon-96x96.png"/>
