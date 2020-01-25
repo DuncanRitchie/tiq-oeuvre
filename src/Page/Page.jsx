@@ -155,12 +155,12 @@ class Page extends Component {
         let roleBool = false
         if (Array.isArray(this.state.filter.role)) {
           this.state.filter.role.map(filterRole => {
-            roleBool = roleBool || play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+filterRole)
+            roleBool = roleBool || play["my-roles"].includes(filterRole)
             return roleBool
           })
         }
         else {
-          roleBool = play["tags-batch-one"].concat(play["tags-batch-two"]).includes("Duncan as "+this.state.filter.role)
+          roleBool = play["my-roles"].includes(this.state.filter.role)
         }
         bool = bool && roleBool
       }
@@ -223,10 +223,10 @@ class Page extends Component {
         byArray={play["by-array"]}
         byArraySlug={play["by-array-slug"]}
         synopsis={play.synopsis}
+        myRoles={play["my-roles"]}
         myActingRole={play["my-acting-role"]}
         mySongsLyricized={play["my-songs-lyricized"]}
         exampleLyric={play["example-lyric"]}
-        tags={play["tags-batch-one"].concat(play["tags-batch-two"])}
         posterOrientation={play["poster-orientation"]}
         cloudinary={play.cloudinary}
         slugHandler={this.slugHandler}

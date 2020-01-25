@@ -8,13 +8,13 @@ import convertCloudinaryUrl from "./convert-cloudinary-url";
 const PlayDetails = (props) => {
     // Working out whether we're displaying a poster, programme, or collage (if we're displaying any image).
     let imgType = "image"
-    if (props.tags.includes("Duncan as poster-designer") || props.tags.includes("Duncan as co-designer")) {
+    if (props.myRoles.includes("poster-designer") || props.myRoles.includes("co-designer")) {
         imgType = "poster"
     }
-    else if (props.tags.includes("Duncan as programme-designer")) {
+    else if (props.myRoles.includes("programme-designer")) {
         imgType = "programme"
     }
-    else if (props.tags.includes("Duncan as photographer")) {
+    else if (props.myRoles.includes("photographer")) {
         imgType = "collage of photos"
     }
     // Calculating whether an Upcoming! sticker should be displayed.
@@ -41,13 +41,13 @@ const PlayDetails = (props) => {
                 {props.synopsis ? <p className="synopsis"><span className="subheading">Synopsis:</span> {ReactHtmlParser(props.synopsis)}</p> : null}
                 {/* List of my roles */}
                 <p className="play-roles-p"><span className="subheading">My roles:</span>{" "} 
-                    {props.tags.includes("Duncan as actor") ? <Tag handler={props.roleHandler} text="actor"/> : null}
-                    {props.tags.includes("Duncan as poster-designer") ? <Tag handler={props.roleHandler} text="poster-designer"/> : null}
-                    {props.tags.includes("Duncan as programme-designer") ? <Tag handler={props.roleHandler} text="programme-designer"/> : null}
-                    {props.tags.includes("Duncan as lyricist") ? <Tag handler={props.roleHandler} text="lyricist" /> : null}
-                    {props.tags.includes("Duncan as photographer") ? <Tag handler={props.roleHandler} text="photographer"/> : null}
-                    {props.tags.includes("Duncan as assistant-director") ? <Tag handler={props.roleHandler} text="assistant-director"/> : null}
-                    {props.tags.includes("Duncan as co-designer") ? <Tag handler={props.roleHandler} text="co-designer of the poster (with illustration by Alison Pitt)"/> : null}
+                    {props.myRoles.includes("actor") ? <Tag handler={props.roleHandler} text="actor"/> : null}
+                    {props.myRoles.includes("poster-designer") ? <Tag handler={props.roleHandler} text="poster-designer"/> : null}
+                    {props.myRoles.includes("programme-designer") ? <Tag handler={props.roleHandler} text="programme-designer"/> : null}
+                    {props.myRoles.includes("lyricist") ? <Tag handler={props.roleHandler} text="lyricist" /> : null}
+                    {props.myRoles.includes("photographer") ? <Tag handler={props.roleHandler} text="photographer"/> : null}
+                    {props.myRoles.includes("assistant-director") ? <Tag handler={props.roleHandler} text="assistant-director"/> : null}
+                    {props.myRoles.includes("co-designer") ? <Tag handler={props.roleHandler} text="co-designer of the poster (with illustration by Alison Pitt)"/> : null}
                 </p>
                 {/* If I lyricized songs, they are listed. */}
                 {props.mySongsLyricized ? <p><span className="subheading">Songs I lyricized:</span> {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{ReactHtmlParser(song)}</span>})}</p> : null}
