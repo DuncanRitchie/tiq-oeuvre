@@ -24,7 +24,7 @@ const PlayDetails = (props) => {
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
     return (
         // If a URL for the image is specified in the data, we don't want a className of play-details-text-only.
-        <div className={props.cloudinary ? "play-details" : "play-details play-details-text-only"}>
+        <section className={props.cloudinary ? "play-details" : "play-details play-details-text-only"}>
             {/* If a URL for the image is specified in the data, we display the image. */}
             {props.cloudinary ? <img src={convertCloudinaryUrl(props.cloudinary,400,null)} alt={ReactHtmlParser(props.title)+" "+imgType} className={props.posterOrientation}/> : null}
             {/* Displaying the text */}
@@ -56,7 +56,7 @@ const PlayDetails = (props) => {
                 {ReactHtmlParser(props.exampleLyric)}</p> : null}
                 {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imgType+" as a PDF"}><i className="far fa-file"></i>See {imgType} as a PDF</a></p> : null}
             </div>
-        </div>
+        </section>
     )
 }
 export default PlayDetails

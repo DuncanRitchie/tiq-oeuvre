@@ -3,9 +3,9 @@ import './MappedPlays.css';
 const MappedPlays = (props) => {
     return (
         <div className="mapped-plays-and-footer">
-            <div className="mapped-plays">
+            <main className="mapped-plays">
                 {props.mappedPlays}
-            </div>
+            </main>
             <footer className="footer">
                 <ul>
                     <li>
