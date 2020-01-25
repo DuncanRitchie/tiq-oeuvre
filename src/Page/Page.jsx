@@ -234,6 +234,7 @@ class Page extends Component {
         yearHandler={this.yearHandler}
         roleHandler={this.roleHandler}
         upcomingHandler={this.upcomingHandler}
+        numPlays={numPlays}
         />
       )
     })
@@ -330,7 +331,8 @@ class Page extends Component {
     return (
       <div className="Page">
         <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
-        <Footer mappedPlays={mappedPlays} />
+        {mappedPlays}
+        <Footer/>
       </div>
     );
   }

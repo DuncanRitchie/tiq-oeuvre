@@ -1,21 +1,11 @@
-.mapped-plays-and-footer {
-    background-color: rgb(254, 255, 250);
-    background-image: radial-gradient(to center, rgb(255, 255, 255), rgb(252, 253, 249));
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
-.mapped-plays {
-    padding-top: 144px; /* This is the height of HeaderBar */
-    min-height: calc(100vh - 204px);
-    width: 100%
-}
-
 footer {
+    position: static;
+    bottom: 0;
+    width: calc(100% - 6px);
     background-color: rgb(196, 226, 196);
     background-image: radial-gradient(to center, rgb(195, 241, 195), rgb(156, 243, 151));
     margin: 0;
-    padding: 3px
+    padding: 3px;
 }
 
 footer ul {
@@ -48,15 +38,6 @@ a:hover {
 }  
 
 @media (max-width: 767px) {
-
-    .mapped-plays {
-        padding-top: 144px /* This is the height of HeaderBar */
-    }
-
-    /*footer {
-       margin-top: -1px This is to hide the border-bottom of the last PlayDetails
-    }*/
-
     footer ul {
         flex-direction: column;
     }
@@ -64,15 +45,5 @@ a:hover {
     footer ul li:not(:last-of-type) {
         margin-bottom: 3px;
         margin-right: 0;
-    }
-    
-}
-
-@media (min-width: 1080px) {
-    .mapped-plays {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around
     }
 }

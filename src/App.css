@@ -1,6 +1,12 @@
 .Page {
   text-align: center;
   font-family: Alegreya, serif;
+  background-color: rgb(254, 255, 250);
+  background-image: radial-gradient(to center, rgb(255, 255, 255), rgb(252, 253, 249));
+  background-attachment: fixed;
+  min-height: calc(100vh - 144px);
+  padding-top: 144px; /* This is the height of HeaderBar */
+  width: 100%
 }
 
 p,a {
@@ -11,4 +17,19 @@ p,a {
 .fab,.far {
   width: 18px;
   margin-right: 6px;
+}
+
+@media (max-width: 767px) {
+  .Page {
+      padding-top: 144px /* This is the height of HeaderBar */
+  }
+}
+
+@media (min-width: 1080px) {
+  .Page {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around
+  }
 }
