@@ -35,7 +35,8 @@ nav label img {
     list-style: none;
     margin: 0;
     padding: 3px;
-    background-image: radial-gradient(to center, rgb(255, 255, 255), rgb(223, 213, 126));
+    background-color: rgb(236, 231, 186);
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(223, 213, 126));
     text-align: left;
     box-shadow: 3px 3px 6px rgb(133, 88, 62);
 }
