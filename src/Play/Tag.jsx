@@ -12,7 +12,7 @@ let Tag = (props) => {
         title={"See all results for "+ReactHtmlParser(firstWord)} 
         onClick={props.handler}
         >
-            {ReactHtmlParser(`<span class="first-word">${firstWord}</span>${restOfText}`)}
+            {ReactHtmlParser(`<span className="first-word">${firstWord}</span>${restOfText}`)}
         </span>
     )
 }

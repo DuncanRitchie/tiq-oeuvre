@@ -8,7 +8,7 @@ const Nav = () => {
             {/* Checkbox is hidden but operated via the label. 
             It determines whether the ul is hidden or not. */}
             <input type="checkbox" id="nav-open-toggler" />
-            <label for="nav-open-toggler" title="Open or close the nav menu">
+            <label htmlFor="nav-open-toggler" title="Open or close the nav menu">
                 <img className="header-icon" alt="Duncan&rsquo;s fulmar icon. Click to open or close the nav menu" src="https://www.duncanritchie.co.uk/favicon-96x96.png"/>
             </label>
             <ul>
@@ -19,12 +19,12 @@ const Nav = () => {
                 </li>
                 <li>
                     <a href="https://www.github.com/DuncanRitchie/" title="Duncan Ritchie &mdash; GitHub">
-                        <i class="fab fa-github"></i>My GitHub page
+                        <i className="fab fa-github"></i>My GitHub page
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/duncan-ritchie-uk/" title="Duncan Ritchie &mdash; LinkedIn">
-                    <i class="fab fa-linkedin"></i>My LinkedIn page
+                    <i className="fab fa-linkedin"></i>My LinkedIn page
                     </a>
                 </li>
                 <li>
