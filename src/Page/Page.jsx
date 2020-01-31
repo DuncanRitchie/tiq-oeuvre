@@ -120,7 +120,7 @@ class Page extends Component {
   filterPlays = () => {
     let filteredPlays = jsonData.filter(play=>{
       // bool is what will determine whether a play gets displayed or not
-      let bool = play["is-in-oeuvre"];
+      let bool = play.isInOeuvre;
       if (this.state.filter.slug) {
         let slugBool = false
         if (Array.isArray(this.state.filter.slug)) {
@@ -133,7 +133,7 @@ class Page extends Component {
       }
       if (this.state.filter.troupe) {
         let troupeBool = false;
-        play["by-array-slug"].map((troupeSlug,index)=>{
+        play.byArraySlug.map((troupeSlug,index)=>{
           if (this.state.filter.troupe.includes(troupeSlug)) {
             troupeBool = true
           }
@@ -144,10 +144,10 @@ class Page extends Component {
       if (this.state.filter.year) {
         let yearBool = false
         if (Array.isArray(this.state.filter.year)) {
-          yearBool = this.state.filter.year.includes(play["dates-as-text"].substr(0,4))
+          yearBool = this.state.filter.year.includes(play.datesAsText.substr(0,4))
         }
         else {
-          yearBool = this.state.filter.year === play["dates-as-text"].substr(0,4) 
+          yearBool = this.state.filter.year === play.datesAsText.substr(0,4) 
         }
         bool = bool && yearBool
       }
@@ -155,12 +155,12 @@ class Page extends Component {
         let roleBool = false
         if (Array.isArray(this.state.filter.role)) {
           this.state.filter.role.map(filterRole => {
-            roleBool = roleBool || play["my-roles"].includes(filterRole)
+            roleBool = roleBool || play.myRoles.includes(filterRole)
             return roleBool
           })
         }
         else {
-          roleBool = play["my-roles"].includes(this.state.filter.role)
+          roleBool = play.myRoles.includes(this.state.filter.role)
         }
         bool = bool && roleBool
       }
@@ -179,14 +179,14 @@ class Page extends Component {
             return upcomingFilterBool
           })
           if (upcomingFilterBool) {
-            upcomingBool = upcomingBool && date<play["epoch-last-performance"]
+            upcomingBool = upcomingBool && date<play.epochLastPerformance
           }
           else {
             upcomingBool = true
           }
         }
         else {
-          upcomingBool = date<play["epoch-last-performance"]
+          upcomingBool = date<play.epochLastPerformance
         }
         if (this.state.filter.upcoming !== upcomingFilterBool) {
           let newFilter = {
@@ -216,18 +216,18 @@ class Page extends Component {
         title={play.title}
         slug={play.slug}
         epoch={play.epoch}
-        epochLastPerformance={play["epoch-last-performance"]}
-        datePrecision={play["date-precision"]}
-        datesAsText={play["dates-as-text"]}
+        epochLastPerformance={play.epochLastPerformance}
+        datePrecision={play.datePrecision}
+        datesAsText={play.datesAsText}
         verb={play.verb}
-        byArray={play["by-array"]}
-        byArraySlug={play["by-array-slug"]}
+        byArray={play.byArray}
+        byArraySlug={play.byArraySlug}
         synopsis={play.synopsis}
-        myRoles={play["my-roles"]}
-        myActingRole={play["my-acting-role"]}
-        mySongsLyricized={play["my-songs-lyricized"]}
-        exampleLyric={play["example-lyric"]}
-        posterOrientation={play["poster-orientation"]}
+        myRoles={play.myRoles}
+        myActingRole={play.myActingRole}
+        mySongsLyricized={play.mySongsLyricized}
+        exampleLyric={play.exampleLyric}
+        posterOrientation={play.posterOrientation}
         cloudinary={play.cloudinary}
         slugHandler={this.slugHandler}
         troupeHandler={this.troupeHandler}
@@ -241,7 +241,7 @@ class Page extends Component {
     // Let’s make our filterParagraph.
     let filterParagraph = "";
     // The first part of filterParagraph depends on the number of plays displayed.
-    if (numPlays === jsonData.filter(play=>{return play["is-in-oeuvre"]}).length) {
+    if (numPlays === jsonData.filter(play=>{return play.isInOeuvre}).length) {
       filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or ${ReactHtmlParser("&ldquo;upcoming&rdquo;")} sticker to set a filter`
     }
     else if (numPlays > 1) {
@@ -276,18 +276,18 @@ class Page extends Component {
       let troupeFound = this.state.filter.troupe;
       // This is what happens if the query is only one troupe.
       let playFound = jsonData.find(play=>{
-        return play["by-array-slug"].includes(this.state.filter.troupe)
+        return play.byArraySlug.includes(this.state.filter.troupe)
         });
       if (playFound) {
-        troupeFound = playFound["by-array"][playFound["by-array-slug"].findIndex(troupe=>{return troupe===this.state.filter.troupe})]
+        troupeFound = playFound.byArray[playFound.byArraySlug.findIndex(troupe=>{return troupe===this.state.filter.troupe})]
       }
       // This is what happens if the query contains multiple troupes.
       else if (Array.isArray(this.state.filter.troupe)) {
         let troupeNamesArray = this.state.filter.troupe.map((troupeSlug)=>{
-          if (jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)})) {
-            playFound = jsonData.find(play=>{return play["by-array-slug"].includes(troupeSlug)});
-            let troupeIndex = playFound["by-array-slug"].findIndex(troupe=>{return troupe===troupeSlug})
-            let troupeName = playFound["by-array"][troupeIndex]
+          if (jsonData.find(play=>{return play.byArraySlug.includes(troupeSlug)})) {
+            playFound = jsonData.find(play=>{return play.byArraySlug.includes(troupeSlug)});
+            let troupeIndex = playFound.byArraySlug.findIndex(troupe=>{return troupe===troupeSlug})
+            let troupeName = playFound.byArray[troupeIndex]
             return (troupeName)
           }
           else {
