@@ -1,21 +1,22 @@
 import React from "react";
 import ReactHtmlParser from 'react-html-parser';
 import Tag from "./Tag"
+import Image from "./Image"
 import "./PlayDetails.css"
-import upcoming from "./upcoming.png"
 import convertCloudinaryUrl from "./convert-cloudinary-url";
+import upcoming from "./upcoming.png"
 
 const PlayDetails = (props) => {
     // Working out whether we’sre displaying a poster, programme, or collage (if we’sre displaying any image).
-    let imgType = "image"
+    let imageType = "image"
     if (props.myRoles.includes("poster-designer") || props.myRoles.includes("co-designer")) {
-        imgType = "poster"
+        imageType = "poster"
     }
     else if (props.myRoles.includes("programme-designer")) {
-        imgType = "programme"
+        imageType = "programme"
     }
     else if (props.myRoles.includes("photographer")) {
-        imgType = "collage of photos"
+        imageType = "collage of photos"
     }
     // Calculating whether an Upcoming! sticker should be displayed.
     let date = new Date().getTime()/1000
@@ -24,10 +25,10 @@ const PlayDetails = (props) => {
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
     let className = (props.cloudinary ? "play-details" : "play-details play-details-text-only") + " oneOf"+props.numPlays;
     return (
-        // If a URL for the image is specified in the data, we don’st want a className of play-details-text-only.
+        // If a URL for the image is specified in the data, we don’t want a className of play-details-text-only.
         <section className={className}>
             {/* If a URL for the image is specified in the data, we display the image. */}
-            {props.cloudinary ? <img src={convertCloudinaryUrl(props.cloudinary,400,null)} alt={ReactHtmlParser(props.title)+" "+imgType} className={props.posterOrientation}/> : null}
+            {props.cloudinary ? <Image cloudinary={props.cloudinary} imageType={imageType} title={props.title} posterOrientation={props.posterOrientation}/> : null}
             {/* Displaying the text */}
             <div className={props.cloudinary ? "play-text" : "play-text-only"}>
                 {/* Displaying the Upcoming! sticker if appropriate. */}
@@ -55,7 +56,7 @@ const PlayDetails = (props) => {
                 {/* If there’s an example lyric, it’s displayed. */}
                 {props.exampleLyric ? <p className="example-lyric"><span className="subheading">Example lyric:</span><br/>
                 {ReactHtmlParser(props.exampleLyric)}</p> : null}
-                {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imgType+" as a PDF"}><i className="far fa-file"></i>See {imgType} as a PDF</a></p> : null}
+                {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imageType+" as a PDF"}><i className="far fa-file"></i>See {imageType} as a PDF</a></p> : null}
             </div>
         </section>
     )
