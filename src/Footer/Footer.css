@@ -16,8 +16,8 @@ footer ul {
     list-style: none;
 }
 
-footer ul li:not(:last-of-type) {
-    margin-right: 24px;
+footer ul li + li {
+    margin-left: 24px;
 }
 
 a:link {
@@ -42,8 +42,8 @@ a:hover {
         flex-direction: column;
     }
 
-    footer ul li:not(:last-of-type) {
+    footer ul li + li {
         margin-bottom: 3px;
-        margin-right: 0;
+        margin-left: 0;
     }
 }

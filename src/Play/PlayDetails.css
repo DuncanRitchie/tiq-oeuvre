@@ -99,7 +99,7 @@ img.landscape {
 @media (max-width: 767px) {
 
     .play-details {
-        min-height: calc(100vh - 96px);
+        min-height: unset;
         width: 95%;
         margin-left: 2.5%;
         margin-right: 2.5%;
@@ -110,8 +110,8 @@ img.landscape {
         align-items: space-around;
     }
 
-    .play-details:not(:last-of-type) {
-        border-bottom: 1px solid black;
+    .play-details + .play-details {
+        border-top: 1px solid black;
     }
 
     .play-text {
