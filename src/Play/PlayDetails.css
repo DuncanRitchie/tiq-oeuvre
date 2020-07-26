@@ -114,6 +114,10 @@ img.landscape {
         border-top: 1px solid black;
     }
 
+    .play-details-text-only {
+        padding: 12px 0;
+    }
+
     .play-text {
         width: 90vw;
         margin-left: 5vw;
