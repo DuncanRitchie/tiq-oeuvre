@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c4c51a5a00f262c8ff30ec4f40815d1",
+    "revision": "b1f28fa70fc1dbbd7df45d449456b361",
     "url": "/tiq-oeuvre/index.html"
   },
   {
