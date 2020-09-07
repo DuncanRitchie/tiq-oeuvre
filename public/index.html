@@ -19,7 +19,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <section>
+        <style>
+          section { opacity: 0; margin: 2.5em 1em; text-align: center; font-family: 'Alegreya', serif; font-size: 1.1em; animation: fadeIn 2.5s 0.5s forwards;}
+          @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        </style>
+        <img src="https://www.duncanritchie.co.uk/favicon.ico" width="40" alt="Duncan Ritchie’s fulmar icon">
+        <p>This page needs JavaScript, because it uses React.js.<br>
+          Please turn JavaScript on or update your browser.</p>
+      </section>
+    </div>
   </body>
 </html>
