@@ -51,10 +51,23 @@ const PlayDetails = (props) => {
                     {props.myRoles.includes("co-designer") ? <Tag handler={props.roleHandler} text="co-designer of the poster (with illustration by Alison Pitt)"/> : null}
                 </p>
                 {/* If I lyricized songs, they are listed. */}
-                {props.mySongsLyricized ? <p><span className="subheading">Songs I lyricized:</span> {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{song}</span>})}</p> : null}
+                {props.mySongsLyricized
+                    ? <p>
+                        <span className="subheading">Songs I lyricized:</span>
+                        {/* Convert the array to spans. */}
+                        {props.mySongsLyricized.map((song,index)=>{
+                            return <span key={index} className="song-title">{song}</span>
+                        })}
+                      </p>
+                    : null}
                 {/* If there’s an example lyric, it’s displayed. */}
-                {props.exampleLyric ? <p className="example-lyric"><span className="subheading">Example lyric:</span><br/>
-                {props.exampleLyric}</p> : null}
+                {props.exampleLyric 
+                    ? <p className="example-lyric">
+                        <span className="subheading">Example lyric:</span><br/>
+                        {/* Convert newlines to line-breaks. */}
+                        {props.exampleLyric.split("\n").map(line=><>{line}<br /></>)}
+                      </p>
+                    : null}
                 {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imageType+" as a PDF"}><i className="far fa-file"></i>See {imageType} as a PDF</a></p> : null}
             </div>
         </section>

@@ -157,7 +157,7 @@
 "myRoles": ["actor","lyricist"],
 "myActingRole": "the Nun’s Priest and a pig",
 "mySongsLyricized": ["Chanticleer’s Song"],
-"exampleLyric": "So everybody listen —<br />Chanticleer’s a divine musician!",
+"exampleLyric": "So everybody listen —\nChanticleer’s a divine musician!",
 "cloudinary": null,
 "posterOrientation": null
 },{
@@ -211,7 +211,7 @@
 "myRoles": ["actor","lyricist"],
 "myActingRole": "a court jester",
 "mySongsLyricized": ["The Musicians’ Tango (The Rat Song)"],
-"exampleLyric": "We hear scurrying rats in the sewer<br />while we’re worrying about our future.",
+"exampleLyric": "We hear scurrying rats in the sewer\nwhile we’re worrying about our future.",
 "cloudinary": null,
 "posterOrientation": null
 },{
@@ -319,7 +319,7 @@
 "myRoles": ["lyricist","poster-designer","programme-designer","assistant-director"],
 "myActingRole": null,
 "mySongsLyricized": ["Ace of Hearts"],
-"exampleLyric": "He’ll rack up debt!<br />Debt to the girl he’s jilted,<br/>debt for all the dreams he’s wilted…<br/> I wouldn’t bet he’s guilted, ’cause I don’t bet.",
+"exampleLyric": "He’ll rack up debt!\nDebt to the girl he’s jilted,\ndebt for all the dreams he’s wilted…\n I wouldn’t bet he’s guilted, ’cause I don’t bet.",
 "cloudinary": "https://res.cloudinary.com/duncanritchie/image/upload/v1578608891/2013_GhostsOfTheCity.jpg",
 "posterOrientation": "portrait"
 },{
@@ -337,7 +337,7 @@
 "myRoles": ["lyricist","poster-designer","programme-designer","assistant-director"],
 "myActingRole": null,
 "mySongsLyricized": ["The Golden Garden","She Enters her Wonderful Garden","Heaven for Me","Turn his Death Around"],
-"exampleLyric": "Then all at once you come across a paradise exquisite —<br />a glistening golden garden with an apple-tree within it.",
+"exampleLyric": "Then all at once you come across a paradise exquisite —\na glistening golden garden with an apple-tree within it.",
 "cloudinary": "https://res.cloudinary.com/duncanritchie/image/upload/v1578608832/2014_TheFirebird.png",
 "posterOrientation": "portrait"
 },{
@@ -373,7 +373,7 @@
 "myRoles": ["lyricist","poster-designer","programme-designer","assistant-director"],
 "myActingRole": null,
 "mySongsLyricized": ["Enter the Emperor","You’ll Have What You Deserve","The Tricksters’ Escape","No Man or Woman Could Tell Another","The Emperor’s No Clothes","Attention Citizens Here Attending","So Spoke the Emperor"],
-"exampleLyric": "Why wait and face arrest when we’ve more monarchs to despoil?<br />If tricking isn’t tricky, let us trick another royal!",
+"exampleLyric": "Why wait and face arrest when we’ve more monarchs to despoil?\nIf tricking isn’t tricky, let us trick another royal!",
 "cloudinary": "https://res.cloudinary.com/duncanritchie/image/upload/v1578608831/2014_TheEmperorsNewClothes.png",
 "posterOrientation": "portrait"
 },{
@@ -409,7 +409,7 @@
 "myRoles": ["lyricist","poster-designer","programme-designer"],
 "myActingRole": null,
 "mySongsLyricized": ["Some Mean Monsters"],
-"exampleLyric": "You think you can mess with me? How can that be?<br/>I’m tougher than Trojans and oceans of sea!",
+"exampleLyric": "You think you can mess with me? How can that be?\nI’m tougher than Trojans and oceans of sea!",
 "cloudinary": "https://res.cloudinary.com/duncanritchie/image/upload/v1578608843/2015_TheStrangeAdventuresOfOdysseus.png",
 "posterOrientation": "portrait"
 },{
@@ -445,7 +445,7 @@
 "myRoles": ["poster-designer","lyricist","assistant-director"],
 "myActingRole": null,
 "mySongsLyricized": ["The Roodee Cross"],
-"exampleLyric": "And so they claim the statue came from Hawarden village,<br  />and that’s the grave the Cestrians gave a misbehaving graven image.",
+"exampleLyric": "And so they claim the statue came from Hawarden village,\nand that’s the grave the Cestrians gave a misbehaving graven image.",
 "cloudinary": "https://res.cloudinary.com/duncanritchie/image/upload/v1578608842/2015_CityOfStories.png",
 "posterOrientation": "portrait"
 },{
@@ -769,7 +769,7 @@
 "myRoles": ["assistant-director","poster-designer","programme-designer","lyricist","photographer"],
 "myActingRole": null,
 "mySongsLyricized": ["There’s a Hedge","Everything is Grey","The Colour Dragon"],
-"exampleLyric": "You’re our saviour who imbues<br /> all the world with all its hues.<br /> Music is the fuel you use.<br /> Won’t you help us with our blues?",
+"exampleLyric": "You’re our saviour who imbues\nall the world with all its hues.\nMusic is the fuel you use.\nWon’t you help us with our blues?",
 "cloudinary": "https://res.cloudinary.com/duncanritchie/image/upload/v1578608904/2019_TheColourSnatchers.jpg",
 "posterOrientation": "portrait"
 },{
@@ -895,7 +895,7 @@
 "myRoles": ["assistant-director","lyricist","poster-designer","programme-designer","photographer"],
 "myActingRole": null,
 "mySongsLyricized": ["When We Learn a World"],
-"exampleLyric": "Our hearts are full to bursting when we hear the schoolbell ring.<br/>Then we shout and sing, all wondering: what will the new day bring?",
+"exampleLyric": "Our hearts are full to bursting when we hear the schoolbell ring.\nThen we shout and sing, all wondering: what will the new day bring?",
 "cloudinary": "https://res.cloudinary.com/duncanritchie/image/upload/v1578613462/2020_TheDayWarCame.png",
 "posterOrientation": "portrait"
 }]
