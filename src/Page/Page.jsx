@@ -210,31 +210,32 @@ class Page extends Component {
     // Let’s create a PlayDetails element for every play.
     let mappedPlays = this.filterPlays().map((play, index) => {
       return (
-        <PlayDetails 
-        key={index} 
-        title={play.title}
-        slug={play.slug}
-        epochFirstPerformance={play.epochFirstPerformance}
-        epochLastPerformance={play.epochLastPerformance}
-        datePrecision={play.datePrecision}
-        datesAsText={play.datesAsText}
-        verb={play.verb}
-        byArray={play.byArray}
-        byArraySlug={play.byArraySlug}
-        synopsis={play.synopsis}
-        myRoles={play.myRoles}
-        myActingRole={play.myActingRole}
-        mySongsLyricized={play.mySongsLyricized}
-        exampleLyric={play.exampleLyric}
-        posterOrientation={play.posterOrientation}
-        cloudinary={play.cloudinary}
-        slugHandler={this.slugHandler}
-        troupeHandler={this.troupeHandler}
-        yearHandler={this.yearHandler}
-        roleHandler={this.roleHandler}
-        upcomingHandler={this.upcomingHandler}
-        numPlays={numPlays}
-        />
+            <PlayDetails 
+                key={index} 
+                title={play.title}
+                slug={play.slug}
+                epochFirstPerformance={play.epochFirstPerformance}
+                epochLastPerformance={play.epochLastPerformance}
+                datePrecision={play.datePrecision}
+                datesAsText={play.datesAsText}
+                verb={play.verb}
+                byArray={play.byArray}
+                byArraySlug={play.byArraySlug}
+                synopsis={play.synopsis}
+                myRoles={play.myRoles}
+                myActingRole={play.myActingRole}
+                mySongsLyricized={play.mySongsLyricized}
+                exampleLyric={play.exampleLyric}
+                posterOrientation={play.posterOrientation}
+                cloudinary={play.cloudinary}
+                slugHandler={this.slugHandler}
+                troupeHandler={this.troupeHandler}
+                yearHandler={this.yearHandler}
+                roleHandler={this.roleHandler}
+                upcomingHandler={this.upcomingHandler}
+                numPlays={numPlays}
+          />
+        
       )
     })
     // Let’s make our filterParagraph.
