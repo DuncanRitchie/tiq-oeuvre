@@ -214,7 +214,7 @@ class Page extends Component {
         key={index} 
         title={play.title}
         slug={play.slug}
-        epoch={play.epoch}
+        epochFirstPerformance={play.epochFirstPerformance}
         epochLastPerformance={play.epochLastPerformance}
         datePrecision={play.datePrecision}
         datesAsText={play.datesAsText}
