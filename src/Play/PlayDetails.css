@@ -138,10 +138,10 @@ img.landscape {
 
 }
 
-/* Media query to make Plays into two columns */
+/* Media query to make Plays into two columns, if numPlays > 1 */
 
 @media (min-width: 1250px) and (min-aspect-ratio: 12/13) {
-    .play-details {
+    .play-details:not(.oneOf1) {
         width: 47vw
     }
 
@@ -149,7 +149,7 @@ img.landscape {
         /* This is in 210:297 ratio with a height value of calc(100vh - 168px) */
         width: calc(70.8vh - 118.8px);
         /* These max values are in 210:297 ratio */
-        max-height: max(53.74vw);
+        max-height: 53.74vw;
         max-width: 38vw;
     }
     
@@ -165,13 +165,13 @@ img.landscape {
         min-height: calc(50vh - 72px)
     }
 
-    img.portrait {
+    .play-details:not(.oneOf1):not(.oneOf2) img.portrait {
         /* These two values are in 210:297 ratio */
         max-height: calc(50vh - 84px);
         max-width: calc(35.4vh - 59.4px)
     }
     
-    img.landscape {
+    .play-details:not(.oneOf1):not(.oneOf2) img.landscape {
         height: calc(50vh - 120px)
     }
 }
