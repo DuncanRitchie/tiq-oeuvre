@@ -1,5 +1,5 @@
 import React from "react";
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from "react-html-parser";
 import "./Tag.css"
 
 let Tag = (props) => {
@@ -9,10 +9,13 @@ let Tag = (props) => {
     return (
         <span 
         className="tag" 
-        title={"See all results for "+ReactHtmlParser(firstWord)} 
+        title={`See all results for ${firstWord}`} 
         onClick={props.handler}
         >
-            {ReactHtmlParser(`<span className="first-word">${firstWord}</span>${restOfText}`)}
+            <span className="first-word">
+                {ReactHtmlParser(firstWord)}
+            </span>
+            {ReactHtmlParser(restOfText)}
         </span>
     )
 }

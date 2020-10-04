@@ -242,7 +242,7 @@ class Page extends Component {
     let filterParagraph = "";
     // The first part of filterParagraph depends on the number of plays displayed.
     if (numPlays === jsonData.filter(play=>{return play.isInOeuvre}).length) {
-      filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or ${ReactHtmlParser("&ldquo;upcoming&rdquo;")} sticker to set a filter`
+      filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or “upcoming” sticker to set a filter`
     }
     else if (numPlays > 1) {
       filterParagraph = `Filtered to ${numPlays} productions`
@@ -251,7 +251,7 @@ class Page extends Component {
       filterParagraph = "Filtered to one production"
     }
     else {
-      filterParagraph = `Click ${ReactHtmlParser("&ldquo;")}Clear filter${ReactHtmlParser("&rdquo; &mdash;&nbsp;")}there are no productions`
+      filterParagraph = `Click “Clear filter” — there are no productions`
     }
     // The latter parts of filterParagraph depends on the filter set.
     //If there is a role/s in the filter...
@@ -260,7 +260,7 @@ class Page extends Component {
       if (Array.isArray(this.state.filter.role)) {
         roles = this.state.filter.role.map(role => {return role.toLowerCase()}).join(" or ")
       }
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}where I was ${roles.toLowerCase()}`
+      filterParagraph += ` where I was ${roles.toLowerCase()}`
     }
     // If there is a year/s in the filter...
     if (this.state.filter.year) {
@@ -268,7 +268,7 @@ class Page extends Component {
       if (Array.isArray(years)) {
         years = years.join(" or ")
       }
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}performed in ${years}`
+      filterParagraph += ` performed in ${years}`
     }
     // If there is a troupe/s in the filter...
     if (this.state.filter.troupe) {
@@ -297,7 +297,7 @@ class Page extends Component {
         troupeFound = troupeNamesArray.filter((name)=>{return name!= null}).join(" or ")
       }
       // Let’s add whatever we have for the troupes into filterParagraph
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}by ${ReactHtmlParser(troupeFound)}`
+      filterParagraph += ` by ${ReactHtmlParser(troupeFound)}`
     }
     // If there is a slug in the filter...
     if (this.state.filter.slug) {
@@ -321,11 +321,11 @@ class Page extends Component {
         }
         // If titles is a single incorrect slug, we don’st do anything here.
       }
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}entitled ${ReactHtmlParser("&ldquo;"+titles+"&rdquo;")}`
+      filterParagraph += ` entitled ${ReactHtmlParser("&ldquo;"+titles+"&rdquo;")}`
     }
     // If there is upcoming:true in the filter...
     if (this.state.filter.upcoming) {
-      filterParagraph += `${ReactHtmlParser("&nbsp;")}that ${numPlays===1 ? "has" : "have"} not been performed yet`
+      filterParagraph += ` that ${numPlays===1 ? "has" : "have"} not been performed yet`
     }
     // Let’s put everything together into Page.
     return (
