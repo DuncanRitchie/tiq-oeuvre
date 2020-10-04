@@ -6,7 +6,7 @@ const HeaderBar = (props) => {
     return (
         <header>
             <Nav />
-            <h1 className="header-heading">My &oelig;uvre with Theatre in the Quarter and related groups</h1>
+            <h1 className="header-heading">My œuvre with Theatre in the Quarter and related groups</h1>
             <p className="filter-paragraph">
                 {props.filterParagraph}. {props.rubric}&ensp;
                 {props.filter.slug === "" && 

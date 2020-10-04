@@ -37,7 +37,7 @@ const PlayDetails = (props) => {
                 <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}} title={"See only "+props.title}>{ReactHtmlParser(props.title)}</h2>
                 {/* Performance dates and troupes */}
                 <p className="play-by-p"><span className="subheading">{isUpcoming ? "To be ".concat(props.verb.toLowerCase()) : props.verb}</span> <Tag handler={props.yearHandler} text={props.datesAsText} /> 
-                {props.datePrecision === "month" ? <span>{" "}(I can&rsquo;t be more precise than that)</span> : null }
+                {props.datePrecision === "month" ? <span>{" "}(I can’t be more precise than that)</span> : null }
                 &nbsp;<span className="subheading">by</span> {byMap}</p>
                 {/* Play synopsis */}
                 {props.synopsis ? <p className="synopsis"><span className="subheading">Synopsis:</span> {ReactHtmlParser(props.synopsis)}</p> : null}

@@ -106,10 +106,10 @@ class Page extends Component {
         rubric = "The Garden Quarter is the suburb of Chester that TiQ are based in."
         break
       case "chester-mystery-plays-cast":
-        rubric = "The Chester Mystery Plays are a huge feat every five years to retell Bible stories at Chester Cathedral; individual plays have been reprised in the city&rsquo;s amphitheatre."
+        rubric = "The Chester Mystery Plays are a huge feat every five years to retell Bible stories at Chester Cathedral; individual plays have been reprised in the city’s amphitheatre."
         break
       case "theatre-in-the-quarter-adults":
-        rubric = "TiQ was founded in 2005 to provide the residents of Chester with theatrical experiences alongside professional actors, as well as to run the children&rsquo;s group Jigsaw (and later Quartz and Rewind)."
+        rubric = "TiQ was founded in 2005 to provide the residents of Chester with theatrical experiences alongside professional actors, as well as to run the children’s group Jigsaw (and later Quartz and Rewind)."
         break
       default:
         rubric = ""
@@ -317,11 +317,11 @@ class Page extends Component {
             else {
               return null
             }
-          }).filter(title=>{return title!=null}).join("&rdquo; or &ldquo;")
+          }).filter(title=>{return title!=null}).join("” or “")
         }
-        // If titles is a single incorrect slug, we don’st do anything here.
+        // If titles is a single incorrect slug, we don’t do anything here.
       }
-      filterParagraph += ` entitled ${ReactHtmlParser("&ldquo;"+titles+"&rdquo;")}`
+      filterParagraph += ` entitled ${ReactHtmlParser("“"+titles+"”")}`
     }
     // If there is upcoming:true in the filter...
     if (this.state.filter.upcoming) {
