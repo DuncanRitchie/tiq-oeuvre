@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import queryString from "query-string";
-import ReactHtmlParser from 'react-html-parser';
 import jsonData from "../data.json";
 import HeaderBar from "../HeaderBar/HeaderBar";
 import Footer from "../Footer/Footer";
@@ -297,7 +296,7 @@ class Page extends Component {
         troupeFound = troupeNamesArray.filter((name)=>{return name!= null}).join(" or ")
       }
       // Let’s add whatever we have for the troupes into filterParagraph
-      filterParagraph += ` by ${ReactHtmlParser(troupeFound)}`
+      filterParagraph += ` by ${troupeFound}`
     }
     // If there is a slug in the filter...
     if (this.state.filter.slug) {
@@ -321,7 +320,7 @@ class Page extends Component {
         }
         // If titles is a single incorrect slug, we don’t do anything here.
       }
-      filterParagraph += ` entitled ${ReactHtmlParser("“"+titles+"”")}`
+      filterParagraph += ` entitled “${titles}”`
     }
     // If there is upcoming:true in the filter...
     if (this.state.filter.upcoming) {
@@ -330,7 +329,7 @@ class Page extends Component {
     // Let’s put everything together into Page.
     return (
       <div className="Page">
-        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={ReactHtmlParser(this.troupeRubric())} clearFilter={this.clearFilter}/>
+        <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={this.troupeRubric()} clearFilter={this.clearFilter}/>
         {mappedPlays}
         <Footer/>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import ReactHtmlParser from 'react-html-parser';
 import Tag from "./Tag"
 import Image from "./Image"
 import "./PlayDetails.css"
@@ -34,13 +33,13 @@ const PlayDetails = (props) => {
                 {/* Displaying the Upcoming! sticker if appropriate. */}
                 {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler} title="See all upcoming productions"/> : null}
                 {/* The heading is the play’s title */}
-                <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}} title={"See only "+props.title}>{ReactHtmlParser(props.title)}</h2>
+                <h2 className="play-title" onClick={()=>{props.slugHandler(props.slug)}} title={`See only “${props.title}”`}>{props.title}</h2>
                 {/* Performance dates and troupes */}
                 <p className="play-by-p"><span className="subheading">{isUpcoming ? "To be ".concat(props.verb.toLowerCase()) : props.verb}</span> <Tag handler={props.yearHandler} text={props.datesAsText} /> 
                 {props.datePrecision === "month" ? <span>{" "}(I can’t be more precise than that)</span> : null }
                 &nbsp;<span className="subheading">by</span> {byMap}</p>
                 {/* Play synopsis */}
-                {props.synopsis ? <p className="synopsis"><span className="subheading">Synopsis:</span> {ReactHtmlParser(props.synopsis)}</p> : null}
+                {props.synopsis ? <p className="synopsis"><span className="subheading">Synopsis:</span> {props.synopsis}</p> : null}
                 {/* List of my roles */}
                 <p className="play-roles-p"><span className="subheading">My roles:</span>{" "} 
                     {props.myRoles.includes("actor") ? <Tag handler={props.roleHandler} text="actor"/> : null}
@@ -52,10 +51,10 @@ const PlayDetails = (props) => {
                     {props.myRoles.includes("co-designer") ? <Tag handler={props.roleHandler} text="co-designer of the poster (with illustration by Alison Pitt)"/> : null}
                 </p>
                 {/* If I lyricized songs, they are listed. */}
-                {props.mySongsLyricized ? <p><span className="subheading">Songs I lyricized:</span> {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{ReactHtmlParser(song)}</span>})}</p> : null}
+                {props.mySongsLyricized ? <p><span className="subheading">Songs I lyricized:</span> {props.mySongsLyricized.map((song,index)=>{return <span key={index} className="song-title">{song}</span>})}</p> : null}
                 {/* If there’s an example lyric, it’s displayed. */}
                 {props.exampleLyric ? <p className="example-lyric"><span className="subheading">Example lyric:</span><br/>
-                {ReactHtmlParser(props.exampleLyric)}</p> : null}
+                {props.exampleLyric}</p> : null}
                 {props.cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(props.cloudinary,1280,"pdf")} title={"See "+imageType+" as a PDF"}><i className="far fa-file"></i>See {imageType} as a PDF</a></p> : null}
             </div>
         </section>
