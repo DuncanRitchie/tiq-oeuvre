@@ -1,6 +1,7 @@
 .Page {
   text-align: center;
   font-family: Alegreya, serif;
+  color: #111111;
   background-color: rgb(254, 255, 250);
   background-image: radial-gradient(to center, rgb(255, 255, 255), rgb(252, 253, 249));
   background-attachment: fixed;
