@@ -7,6 +7,10 @@
     width: calc(100% - 24px)
 }
 
+picture {
+    display: contents;
+}
+
 img.portrait {
     max-height: calc(100vh - 168px);
     max-width: 66%;

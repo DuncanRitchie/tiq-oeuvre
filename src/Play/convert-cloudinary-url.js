@@ -1,6 +1,6 @@
 const convertCloudinaryUrl = (url, width, format) => {
     let output = url;
-    if (width) { output = output.replace(/\/(?=.+\/)(?!.*\/.*\/)/,`/w_${width}/`); }
+    if (width) { output = output.replace(/\/(?=.+\/)(?!.*\/.*\/)/,`/c_scale,w_${width}/`); }
     if (format) { output = output.replace(/\.\w+(?!.+\.)(?!.+\/)/,"."+format)}
     return output;
 }
