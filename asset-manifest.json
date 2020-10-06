@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tiq-oeuvre/static/css/main.93583418.chunk.css",
-    "main.js": "/tiq-oeuvre/static/js/main.855ef20c.chunk.js",
-    "main.js.map": "/tiq-oeuvre/static/js/main.855ef20c.chunk.js.map",
+    "main.css": "/tiq-oeuvre/static/css/main.9bd4f6d9.chunk.css",
+    "main.js": "/tiq-oeuvre/static/js/main.0c5f1ad1.chunk.js",
+    "main.js.map": "/tiq-oeuvre/static/js/main.0c5f1ad1.chunk.js.map",
     "runtime-main.js": "/tiq-oeuvre/static/js/runtime-main.5f0e7d2b.js",
     "runtime-main.js.map": "/tiq-oeuvre/static/js/runtime-main.5f0e7d2b.js.map",
     "static/js/2.b54ad3c0.chunk.js": "/tiq-oeuvre/static/js/2.b54ad3c0.chunk.js",
     "static/js/2.b54ad3c0.chunk.js.map": "/tiq-oeuvre/static/js/2.b54ad3c0.chunk.js.map",
     "index.html": "/tiq-oeuvre/index.html",
-    "precache-manifest.13e9b12f6815ec0290d98167011e7030.js": "/tiq-oeuvre/precache-manifest.13e9b12f6815ec0290d98167011e7030.js",
+    "precache-manifest.60dedb998ec511b29558c119b6b01fbc.js": "/tiq-oeuvre/precache-manifest.60dedb998ec511b29558c119b6b01fbc.js",
     "service-worker.js": "/tiq-oeuvre/service-worker.js",
-    "static/css/main.93583418.chunk.css.map": "/tiq-oeuvre/static/css/main.93583418.chunk.css.map",
+    "static/css/main.9bd4f6d9.chunk.css.map": "/tiq-oeuvre/static/css/main.9bd4f6d9.chunk.css.map",
     "static/js/2.b54ad3c0.chunk.js.LICENSE.txt": "/tiq-oeuvre/static/js/2.b54ad3c0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5f0e7d2b.js",
     "static/js/2.b54ad3c0.chunk.js",
-    "static/css/main.93583418.chunk.css",
-    "static/js/main.855ef20c.chunk.js"
+    "static/css/main.9bd4f6d9.chunk.css",
+    "static/js/main.0c5f1ad1.chunk.js"
   ]
 }
