@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import queryString from "query-string";
 import jsonData from "../data.json";
 import HeaderBar from "../HeaderBar/HeaderBar";
 import Footer from "../Footer/Footer";
-import PlayDetails from "../Play/PlayDetails";
 import '../App.css';
+const PlayDetails = lazy(() => import("../Play/PlayDetails"));
+
+const Loading = () => <section class="play-details"><p>Loading...</p></section>;
 
 class Page extends Component {
   state = {
@@ -210,34 +212,35 @@ class Page extends Component {
     // Let’s create a PlayDetails element for every play.
     let mappedPlays = this.filterPlays().map((play, index) => {
       return (
-            <PlayDetails 
-                key={index} 
-                title={play.title}
-                slug={play.slug}
-                epochFirstPerformance={play.epochFirstPerformance}
-                epochLastPerformance={play.epochLastPerformance}
-                datePrecision={play.datePrecision}
-                datesAsText={play.datesAsText}
-                verb={play.verb}
-                byArray={play.byArray}
-                byArraySlug={play.byArraySlug}
-                synopsis={play.synopsis}
-                myRoles={play.myRoles}
-                myActingRole={play.myActingRole}
-                mySongsLyricized={play.mySongsLyricized}
-                exampleLyric={play.exampleLyric}
-                posterOrientation={play.posterOrientation}
-                cloudinary={play.cloudinary}
-                slugHandler={this.slugHandler}
-                troupeHandler={this.troupeHandler}
-                yearHandler={this.yearHandler}
-                roleHandler={this.roleHandler}
-                upcomingHandler={this.upcomingHandler}
-                numPlays={numPlays}
-          />
-        
+          <PlayDetails 
+              key={index} 
+              title={play.title}
+              slug={play.slug}
+              epochFirstPerformance={play.epochFirstPerformance}
+              epochLastPerformance={play.epochLastPerformance}
+              datePrecision={play.datePrecision}
+              datesAsText={play.datesAsText}
+              verb={play.verb}
+              byArray={play.byArray}
+              byArraySlug={play.byArraySlug}
+              synopsis={play.synopsis}
+              myRoles={play.myRoles}
+              myActingRole={play.myActingRole}
+              mySongsLyricized={play.mySongsLyricized}
+              exampleLyric={play.exampleLyric}
+              posterOrientation={play.posterOrientation}
+              cloudinary={play.cloudinary}
+              slugHandler={this.slugHandler}
+              troupeHandler={this.troupeHandler}
+              yearHandler={this.yearHandler}
+              roleHandler={this.roleHandler}
+              upcomingHandler={this.upcomingHandler}
+              numPlays={numPlays}
+        />
       )
     })
+    // Wrap a <Suspense> element around it to allow for a Loading state.
+    let mappedPlaysWithLazyLoading = <Suspense fallback={Loading()}>{mappedPlays}</Suspense>;
     // Let’s make our filterParagraph.
     let filterParagraph = "";
     // The first part of filterParagraph depends on the number of plays displayed.
@@ -331,7 +334,7 @@ class Page extends Component {
     return (
       <div className="Page">
         <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={this.troupeRubric()} clearFilter={this.clearFilter}/>
-        {mappedPlays}
+        {mappedPlaysWithLazyLoading}
         <Footer/>
       </div>
     );
