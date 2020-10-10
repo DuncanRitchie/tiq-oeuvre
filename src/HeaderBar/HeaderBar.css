@@ -13,15 +13,15 @@ header {
 .clear-filter {
   display: inline-block;
   margin: -0.5px 4px -0.5px 4px;
-  border: 1px solid black;
+  border: 1px solid #222204;
   border-radius: 6px;
   padding: 2px 4px;
   cursor: pointer;
-  background-color: #ffff00
+  background-color: #fafa41;
 }
 
 .clear-filter:hover {
-    background-color: #ffff80
+    background-color: #ffff73
 }
 
 .clear-filter:active {
