@@ -6,7 +6,7 @@ let Tag = (props) => {
     const firstWord = props.text.split(" ")[0]
     const restOfText = props.text.replace(firstWord,"")
     return (
-        <span 
+        <button
         className="tag" 
         title={`See all results for ${firstWord}`} 
         onClick={props.handler}
@@ -15,7 +15,7 @@ let Tag = (props) => {
                 {firstWord}
             </span>
             {restOfText}
-        </span>
+        </button>
     )
 }
 
