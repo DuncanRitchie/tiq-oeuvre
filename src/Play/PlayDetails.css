@@ -36,10 +36,7 @@ img.landscape {
     background: url(./upcoming-hover.png) no-repeat 0 0;
     width: 0;
     height: 0;
-    padding-right: 50px;
-    width:0;
-	height:0;
-	padding:79px 0 0 113px
+    padding: 79px 0 0 113px
 }
 
 .upcoming:active {
