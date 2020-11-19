@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import './Nav.css';
 import '../App.css';
 
+//// The menu-items should not be interactive when the menu is closed (or closing).
+//// This is achieved by rendering each item with an <a> element if the menu is open,
+//// and a <span> element if closed.
+const MenuItem = (props) => {
+    if (props.isOpen) {
+        return <a href={props.href} title={props.title}>{props.children}</a>
+    }
+    else {
+        return <span>{props.children}</span>
+    }
+}
+
 class Nav extends Component {
     constructor(props) {
         super(props)
@@ -31,30 +43,22 @@ class Nav extends Component {
                 </label>
                 <ul>
                     <li>
-                        {menuOpen
-                        ? <a href="https://www.duncanritchie.co.uk/" title="Duncan Ritchie’s portfolio">Duncan Ritchie’s website</a>
-                        : <span>Duncan Ritchie’s website</span>}
+                        <MenuItem isOpen={menuOpen} href="https://www.duncanritchie.co.uk/" title="Duncan Ritchie’s portfolio">Duncan Ritchie’s website</MenuItem>
                     </li>
                     <li>
-                        {menuOpen
-                        ? <a href="https://www.github.com/DuncanRitchie/" title="Duncan Ritchie — GitHub">
+                        <MenuItem isOpen={menuOpen} href="https://www.github.com/DuncanRitchie/" title="Duncan Ritchie — GitHub">
                             <i className="fab fa-github"></i>My GitHub page
-                          </a>
-                        : <span><i className="fab fa-github"></i>My GitHub page</span>}
+                        </MenuItem>
                     </li>
                     <li>
-                        {menuOpen
-                        ? <a href="https://www.linkedin.com/in/duncan-ritchie-uk/" title="Duncan Ritchie — LinkedIn">
+                        <MenuItem isOpen={menuOpen} href="https://www.linkedin.com/in/duncan-ritchie-uk/" title="Duncan Ritchie — LinkedIn">
                             <i className="fab fa-linkedin"></i>My LinkedIn page
-                          </a>
-                        : <span><i className="fab fa-linkedin"></i>My LinkedIn page</span>}
+                        </MenuItem>
                     </li>
                     <li>
-                        {menuOpen
-                        ? <a href="https://theatreinthequarter.co.uk/" title="Theatre in the Quarter’s website">
+                        <MenuItem isOpen={menuOpen} href="https://theatreinthequarter.co.uk/" title="Theatre in the Quarter’s website">
                             Theatre in the Quarter’s website
-                          </a>
-                        : <span>Theatre in the Quarter’s website</span>}
+                        </MenuItem>
                     </li>
                 </ul>
             </nav>
