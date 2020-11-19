@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Tag from "./Tag"
 import Image from "./Image"
 import "./PlayDetails.css"
@@ -30,8 +31,12 @@ const PlayDetails = (props) => {
             {props.cloudinary ? <Image cloudinary={props.cloudinary} imageType={imageType} title={props.title} posterOrientation={props.posterOrientation}/> : null}
             {/* Displaying the text */}
             <div className={props.cloudinary ? "play-text" : "play-text-only"}>
-                {/* Displaying the Upcoming! sticker if appropriate. */}
-                {isUpcoming ? <img className="upcoming" alt="Upcoming!" src={upcoming} onClick={props.upcomingHandler} title="See all upcoming productions"/> : null}
+                {/* Displaying the Upcoming! sticker if appropriate. Both the `to` and the `onClick` are useful. */}
+                {isUpcoming
+                ?   <Link to="/?upcoming=true" onClick={props.upcomingHandler} title="See all upcoming productions">
+                      <img className="upcoming" alt="Upcoming!" src={upcoming}/>
+                    </Link>
+                : null}
                 {/* The heading is the play’s title, with a <button> for interactivity. */}
                 <h2 className="play-title">
                     <button onClick={()=>{props.slugHandler(props.slug)}} title={`See only “${props.title}”`}>
