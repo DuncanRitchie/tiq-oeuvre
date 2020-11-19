@@ -14,7 +14,7 @@ const HeaderBar = (props) => {
                 props.filter.role === "" && 
                 props.filter.year === "" && 
                 !props.filter.upcoming ? null :
-                <span className="clear-filter" title="Clear filter" onClick={props.clearFilter}>Clear filter</span>}
+                <button className="clear-filter" title="Clear filter" onClick={props.clearFilter}>Clear filter</button>}
             </p>
         </header>
     )
