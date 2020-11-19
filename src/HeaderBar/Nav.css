@@ -7,9 +7,13 @@ nav {
     align-items: flex-start;
 }
 
-/* The checkbox toggling the menu is invisible, but changed via label */
+/* The checkbox toggling the menu is hidden by the label, but changed via label */
 #nav-open-toggler {
-    display: none;
+    position: absolute;
+    width: 24px; /* The same as the label. */
+    height: 24px;
+    margin: auto;
+    z-index: -1;
 }
 
 nav label {
@@ -47,14 +51,17 @@ nav label img {
 }
 
 #nav-open-toggler ~ ul li {
-    padding: 3px 6px;
     margin: 0;
+    /* padding: 1.5px 3px; */
     width: 100%;
 }
 
-#nav-open-toggler ~ ul li a {
-    display: inline-block;
-    width: 100%;
+#nav-open-toggler ~ ul li a, #nav-open-toggler ~ ul li span {
+    display: block;
+    padding: 4.5px 9px;
+    width: calc(100% - 18px);
+    font-weight: bold;
+    color: #23527c;
 }
 
 @media (max-width: 767px) {

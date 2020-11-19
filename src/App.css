@@ -10,13 +10,17 @@
   width: 100%
 }
 
-p,a {
+p,a,span {
   font-size: 15px
 }
 
 button {
   font-size: inherit;
   font-family: inherit;
+}
+
+:focus {
+  outline: 2px dashed rgb(133, 88, 62);
 }
 
 /* Font Awesome icons */
