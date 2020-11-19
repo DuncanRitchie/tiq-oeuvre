@@ -52,7 +52,15 @@ img.landscape {
     margin-left: 2.5%;
     margin-right: 2.5%;
     background-color: #cfefef;
-    cursor: pointer
+}
+
+.play-title button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font: inherit;
 }
 
 .play-text-only {
