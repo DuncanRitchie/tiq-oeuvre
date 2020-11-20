@@ -99,7 +99,7 @@ const PlayDetails = (props) => {
                     ? <p className="example-lyric">
                         <span className="subheading">Example lyric:</span><br/>
                         {/* Convert newlines to line-breaks. */}
-                        {exampleLyric.split("\n").map(line=><>{line}<br /></>)}
+                        {exampleLyric.split("\n").map((line, index) => <span key={index}>{line}<br /></span>)}
                     </p>
                     : null}
                 {cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(cloudinary,1280,"pdf")} title={"See "+imageType+" as a PDF"}><i className="far fa-file"></i>See {imageType} as a PDF</a></p> : null}
