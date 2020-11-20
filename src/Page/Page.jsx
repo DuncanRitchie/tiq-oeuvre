@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import '../App.css';
 const PlayDetails = lazy(() => import("../Play/PlayDetails"));
 
-const Loading = () => <section class="play-details"><p>Loading...</p></section>;
+const Loading = () => <section className="play-details"><p>Loading...</p></section>;
 
 class Page extends Component {
   state = {
@@ -206,26 +206,7 @@ class Page extends Component {
     return filteredPlays.reverse()
   }
 
-  render() {
-    // Let’s calculate the number of plays to display.
-    let numPlays = this.filterPlays().length;
-    // Let’s create a PlayDetails element for every play.
-    let mappedPlays = this.filterPlays().map((play, index) => {
-      return (
-          <PlayDetails 
-              key={index}
-              play={play}
-              slugHandler={this.slugHandler}
-              troupeHandler={this.troupeHandler}
-              yearHandler={this.yearHandler}
-              roleHandler={this.roleHandler}
-              upcomingHandler={this.upcomingHandler}
-              numPlays={numPlays}
-        />
-      )
-    })
-    // Wrap a <Suspense> element around it to allow for a Loading state.
-    let mappedPlaysWithLazyLoading = <Suspense fallback={Loading()}>{mappedPlays}</Suspense>;
+  generateFilterParagraph(numPlays) {
     // Let’s make our filterParagraph.
     let filterParagraph = "";
     // The first part of filterParagraph depends on the number of plays displayed.
@@ -315,6 +296,33 @@ class Page extends Component {
     if (this.state.filter.upcoming) {
       filterParagraph += ` that ${numPlays===1 ? "has" : "have"} not been performed yet`
     }
+    return filterParagraph;
+  }
+
+  render() {
+    const filteredPlays = this.filterPlays();
+    // Let’s calculate the number of plays to display.
+    const numPlays = filteredPlays.length;
+    // Generate the paragraph in the header describing the filter.
+    const filterParagraph = this.generateFilterParagraph(numPlays);
+    // Let’s create a PlayDetails element for every play.
+    let mappedPlays = filteredPlays.map((play, index) => {
+      return (
+          <PlayDetails 
+              key={index}
+              play={play}
+              slugHandler={this.slugHandler}
+              troupeHandler={this.troupeHandler}
+              yearHandler={this.yearHandler}
+              roleHandler={this.roleHandler}
+              upcomingHandler={this.upcomingHandler}
+              numPlays={numPlays}
+        />
+      )
+    })
+    // Wrap a <Suspense> element around it to allow for a Loading state.
+    let mappedPlaysWithLazyLoading = <Suspense fallback={Loading()}>{mappedPlays}</Suspense>;
+    
     // Let’s put everything together into Page.
     return (
       <div className="Page">
