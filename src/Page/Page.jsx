@@ -213,23 +213,8 @@ class Page extends Component {
     let mappedPlays = this.filterPlays().map((play, index) => {
       return (
           <PlayDetails 
-              key={index} 
-              title={play.title}
-              slug={play.slug}
-              epochFirstPerformance={play.epochFirstPerformance}
-              epochLastPerformance={play.epochLastPerformance}
-              datePrecision={play.datePrecision}
-              datesAsText={play.datesAsText}
-              verb={play.verb}
-              byArray={play.byArray}
-              byArraySlug={play.byArraySlug}
-              synopsis={play.synopsis}
-              myRoles={play.myRoles}
-              myActingRole={play.myActingRole}
-              mySongsLyricized={play.mySongsLyricized}
-              exampleLyric={play.exampleLyric}
-              posterOrientation={play.posterOrientation}
-              cloudinary={play.cloudinary}
+              key={index}
+              play={play}
               slugHandler={this.slugHandler}
               troupeHandler={this.troupeHandler}
               yearHandler={this.yearHandler}
