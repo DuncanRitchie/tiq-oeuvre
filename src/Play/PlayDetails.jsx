@@ -23,7 +23,7 @@ const PlayDetails = (props) => {
     let isUpcoming = date<props.epochLastPerformance
     // Let’s create a Tag element for every troupe.
     let byMap = props.byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{props.troupeHandler(props.byArraySlug[index])}}/>})
-    {/* If a URL for the image is specified in the data, we don’t want a className of play-details-text-only. */}
+    // If a URL for the image is specified in the data, we don’t want a className of play-details-text-only.
     let className = (props.cloudinary ? "play-details" : "play-details play-details-text-only") + " oneOf"+props.numPlays;
     return (
         <section className={className}>
