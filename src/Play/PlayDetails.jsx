@@ -46,9 +46,13 @@ const PlayDetails = (props) => {
     }
     // Calculating whether an Upcoming! sticker should be displayed.
     let date = new Date().getTime()/1000
-    let isUpcoming = date<epochLastPerformance
+    let isUpcoming = date < epochLastPerformance
     // Let’s create a Tag element for every troupe.
-    let byMap = byArray.map((troupe,index)=>{return <Tag text={troupe} key={index} handler={()=>{troupeHandler(byArraySlug[index])}}/>})
+    let byMap = byArray.map((troupe,index) => <Tag text={troupe} key={index} handler={()=>{troupeHandler(byArraySlug[index])}}/>)
+    // Let’s create a Tag element for every role.
+    let rolesMap = myRoles.sort().map((role, index) => <Tag handler={roleHandler} text={role} key={index}/>);
+    // Let’s create a <span> element for every song I lyricized.
+    const songsMap = mySongsLyricized?.map((song,index)=> <span key={index} className="song-title">{song}</span>)
     // If a URL for the image is specified in the data, we don’t want a className of play-details-text-only.
     let className = (cloudinary ? "play-details" : "play-details play-details-text-only") + " oneOf"+numPlays;
     return (
@@ -80,23 +84,14 @@ const PlayDetails = (props) => {
                     <span className="subheading">
                         My roles:
                     </span>
-                    {" "} 
-                    {myRoles.includes("actor")              ? <Tag handler={roleHandler} text="actor"/>              : null}
-                    {myRoles.includes("poster-designer")    ? <Tag handler={roleHandler} text="poster-designer"/>    : null}
-                    {myRoles.includes("programme-designer") ? <Tag handler={roleHandler} text="programme-designer"/> : null}
-                    {myRoles.includes("lyricist")           ? <Tag handler={roleHandler} text="lyricist" />          : null}
-                    {myRoles.includes("photographer")       ? <Tag handler={roleHandler} text="photographer"/>       : null}
-                    {myRoles.includes("assistant-director") ? <Tag handler={roleHandler} text="assistant-director"/> : null}
-                    {myRoles.includes("co-designer")        ? <Tag handler={roleHandler} text="co-designer of the poster (with illustration by Alison Pitt)"/> : null}
+                    {" "}
+                    {rolesMap}
                 </p>
                 {/* If I lyricized songs, they are listed. */}
                 {mySongsLyricized
                     ? <p>
                         <span className="subheading">Songs I lyricized:</span>
-                        {/* Convert the array to spans. */}
-                        {mySongsLyricized.map((song,index)=>{
-                            return <span key={index} className="song-title">{song}</span>
-                        })}
+                        {songsMap}                        
                     </p>
                     : null}
                 {/* If there’s an example lyric, it’s displayed. */}
