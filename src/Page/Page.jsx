@@ -174,42 +174,42 @@ class Page extends Component {
         return filteredPlays.reverse()
     }
 
+    // `generateFilterParagraph` includes several local functions
+    // that may be called in the final return statement.
     generateFilterParagraph(numPlays) {
-        // Let’s make our filterParagraph.
-        let filterParagraph = "";
-        // The first part of filterParagraph depends on the number of plays displayed.
-        if (numPlays === jsonData.filter(play=>{return play.isInOeuvre}).length) {
-            filterParagraph = `Showing all ${numPlays} items. Click a date, troupe, role, title, or “upcoming” sticker to set a filter`
+        const generateFirstPartOfParagraph = () => {
+            const maxNumPlays = jsonData.filter(play => play.isInOeuvre).length;
+            if (numPlays === maxNumPlays) {
+                return `Showing all ${numPlays} items. Click a date, troupe, role, title, or “upcoming” sticker to set a filter`;
+            }
+            else if (numPlays > 1) {
+                return `Filtered to ${numPlays} productions`;
+            }
+            else if (numPlays === 1) {
+                return "Filtered to one production";
+            }
+            else {
+                return `Click “Clear filter” — there are no productions`;
+            }
         }
-        else if (numPlays > 1) {
-            filterParagraph = `Filtered to ${numPlays} productions`
-        }
-        else if (numPlays === 1) {
-            filterParagraph = "Filtered to one production"
-        }
-        else {
-            filterParagraph = `Click “Clear filter” — there are no productions`
-        }
-        // The latter parts of filterParagraph depends on the filter set.
-        //If there is a role/s in the filter...
-        if (this.state.filter.role) {
+        
+        const generateRoleClause = () => {
             let roles = this.state.filter.role
             if (Array.isArray(this.state.filter.role)) {
                 roles = this.state.filter.role.map(role => {return role.toLowerCase()}).join(" or ")
             }
-            filterParagraph += ` where I was ${roles.toLowerCase()}`
+            return ` where I was ${roles.toLowerCase()}`;
         }
-        // If there is a year/s in the filter...
-        if (this.state.filter.year) {
+
+        const generateYearClause = () => {
             let years = this.state.filter.year
             if (Array.isArray(years)) {
                 years = years.join(" or ")
             }
-            filterParagraph += ` performed in ${years}`
+            return ` performed in ${years}`;
         }
-        // If there is a troupe/s in the filter...
-        if (this.state.filter.troupe) {
-            // troupeFound is the string that will be added to filterParagraph to represent the troupe(s).
+
+        const generateTroupeClause = () => {
             let troupeFound = this.state.filter.troupe;
             // This is what happens if the query is only one troupe.
             let playFound = jsonData.find(play=>{
@@ -234,10 +234,10 @@ class Page extends Component {
                 troupeFound = troupeNamesArray.filter((name)=>{return name!= null}).join(" or ")
             }
             // Let’s add whatever we have for the troupes into filterParagraph
-            filterParagraph += ` by ${troupeFound}`
+            return ` by ${troupeFound}`;
         }
-        // If there is a slug in the filter...
-        if (this.state.filter.slug) {
+
+        const generateSlugClause = () => {
             let titles = this.state.filter.slug
             // If titles is a single slug in the Json data, the corresponding title is returned.
             if (jsonData.find(play=>{return play.slug===titles})) {
@@ -258,13 +258,21 @@ class Page extends Component {
                 }
                 // If titles is a single incorrect slug, we don’t do anything here.
             }
-            filterParagraph += ` entitled “${titles}”`
+            return ` entitled “${titles}”`
         }
-        // If there is upcoming:true in the filter...
-        if (this.state.filter.upcoming) {
-            filterParagraph += ` that ${numPlays===1 ? "has" : "have"} not been performed yet`
+
+        const generateUpcomingClause = () => {
+            return ` that ${numPlays===1 ? "has" : "have"} not been performed yet`
         }
-        return filterParagraph;
+        
+        return (
+            generateFirstPartOfParagraph()
+            + (this.state.filter.role     ? generateRoleClause()     : "")
+            + (this.state.filter.year     ? generateYearClause()     : "")
+            + (this.state.filter.troupe   ? generateTroupeClause()   : "")
+            + (this.state.filter.slug     ? generateSlugClause()     : "")
+            + (this.state.filter.upcoming ? generateUpcomingClause() : "")
+        );
     }
 
     render() {
