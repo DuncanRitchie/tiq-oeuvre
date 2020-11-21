@@ -87,35 +87,19 @@ class Page extends Component {
         this.refresh()
     }
 
-    troupeRubric = () => {
-        let troupeSlug = this.state.filter.troupe
-        let rubric = ""
-        switch (troupeSlug) {
-            case "jigsaw-music-theatre":
-                rubric = "Jigsaw were founded in 1991 and now have about two dozen members aged seven to twelve."
-                break
-            case "quartz-youth-theatre":
-                rubric = "Established in 2013, Quartz are the arm of TiQ for teenage thespians, with around 22 current members."
-                break
-            case "rewind-youth-theatre":
-                rubric = "Rewind are primary-schoolchildren in the Chester suburb of Blacon, co-managed by TiQ and Cheshire Dance."
-                break
-            case "handbag-of-harmonies":
-                rubric = "A Handbag of Harmonies are a choir of several dozen women from the Chester area."
-                break
-            case "garden-quarter-association":
-                rubric = "The Garden Quarter is the suburb of Chester that TiQ are based in."
-                break
-            case "chester-mystery-plays-cast":
-                rubric = "The Chester Mystery Plays are a huge feat every five years to retell Bible stories at Chester Cathedral; individual plays have been reprised in the city’s amphitheatre."
-                break
-            case "theatre-in-the-quarter-adults":
-                rubric = "TiQ was founded in 2005 to provide the residents of Chester with theatrical experiences alongside professional actors, as well as to run the children’s group Jigsaw (and later Quartz and Rewind)."
-                break
-            default:
-                rubric = ""
-        }
-        return (rubric)
+    getTroupeRubric = () => {
+        const rubrics =  {
+            "jigsaw-music-theatre":          "Jigsaw were founded in 1991 and now have about two dozen members aged seven to twelve.",
+            "quartz-youth-theatre":          "Established in 2013, Quartz are the arm of TiQ for teenage thespians, with around 22 current members.",
+            "rewind-youth-theatre":          "Rewind are primary-schoolchildren in the Chester suburb of Blacon, co-managed by TiQ and Cheshire Dance.",
+            "handbag-of-harmonies":          "A Handbag of Harmonies are a choir of several dozen women from the Chester area.",
+            "garden-quarter-association":    "The Garden Quarter is the suburb of Chester that TiQ are based in.",
+            "chester-mystery-plays-cast":    "The Chester Mystery Plays are a huge feat every five years to retell Bible stories at Chester Cathedral; individual plays have been reprised in the city’s amphitheatre.",
+            "theatre-in-the-quarter-adults": "TiQ was founded in 2005 to provide the residents of Chester with theatrical experiences alongside professional actors, as well as to run the children’s group Jigsaw (and later Quartz and Rewind)."
+        };
+
+        let troupeSlug = this.state.filter.troupe;
+        return (rubrics[troupeSlug] || "");
     }
 
     filterPlays = () => {
@@ -326,7 +310,7 @@ class Page extends Component {
         // Let’s put everything together into Page.
         return (
             <div className="Page">
-                <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={this.troupeRubric()} clearFilter={this.clearFilter}/>
+                <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={this.getTroupeRubric()} clearFilter={this.clearFilter}/>
                 {mappedPlaysWithLazyLoading}
                 <Footer/>
             </div>
