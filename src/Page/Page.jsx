@@ -52,32 +52,16 @@ class Page extends Component {
     }
 
     roleHandler = (e) => {
-        let role = ""
-        switch (e.currentTarget.textContent) {
-            case "poster-designer":
-                role = "poster-designer"
-                break;
-            case "programme-designer":
-                role = "programme-designer"
-                break;
-            case "lyricist":
-                role = "lyricist"
-                break;
-            case "photographer":
-                role = "photographer"
-                break;
-            case "assistant-director":
-                role = "assistant-director"
-                break;
-            case "poster co-designer (with illustration by Alison Pitt)":
-                role = "co-designer"
-                break;
-            case "actor":
-                role = "actor"
-                break;
-            default:
-                role = ""
+        const roles = {
+            "actor":              "actor",
+            "assistant-director": "assistant-director",
+            "lyricist":           "lyricist",
+            "photographer":       "photographer",
+            "poster co-designer (with illustration by Alison Pitt)": "co-designer",
+            "poster-designer":    "poster-designer",
+            "programme-designer": "programme-designer",
         }
+        const role = roles[e.currentTarget.textContent] || "";
         this.props.history.push("/?role="+role)
         this.refresh()
     }
