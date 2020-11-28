@@ -87,91 +87,78 @@ class Page extends Component {
     }
 
     filterPlays = () => {
-        let filteredPlays = jsonData.filter(play=>{
-            // bool is what will determine whether a play gets displayed or not
-            let bool = play.isInOeuvre;
-            if (this.state.filter.slug) {
-                let slugBool = false
-                if (Array.isArray(this.state.filter.slug)) {
-                    slugBool = this.state.filter.slug.includes(play.slug)
-                }
-                else {
-                    slugBool = play.slug===this.state.filter.slug
-                }
-                bool = bool && slugBool
-            }
-            if (this.state.filter.troupe) {
-                let troupeBool = false;
-                play.byArraySlug.map((troupeSlug,index)=>{
-                    if (this.state.filter.troupe.includes(troupeSlug)) {
-                        troupeBool = true
-                    }
-                    return troupeBool
-                })
-                bool = bool && troupeBool
-            }
-            if (this.state.filter.year) {
-                let yearBool = false
-                if (Array.isArray(this.state.filter.year)) {
-                    yearBool = this.state.filter.year.includes(play.datesAsText.substr(0,4))
-                }
-                else {
-                    yearBool = this.state.filter.year === play.datesAsText.substr(0,4) 
-                }
-                bool = bool && yearBool
-            }
-            if (this.state.filter.role) {
-                let roleBool = false
-                if (Array.isArray(this.state.filter.role)) {
-                    this.state.filter.role.map(filterRole => {
-                        roleBool = roleBool || play.myRoles.includes(filterRole)
-                        return roleBool
-                    })
-                }
-                else {
-                    roleBool = play.myRoles.includes(this.state.filter.role)
-                }
-                bool = bool && roleBool
-            }
-            if (this.state.filter.upcoming) {
-                let date = new Date().getTime()/1000
-                let upcomingFilterBool = true;
-                let upcomingBool = true
-                if (this.state.filter.upcoming === "false") {
-                    upcomingBool = true;
-                    upcomingFilterBool = false;
-                }
-                else if (Array.isArray(this.state.filter.upcoming)) {
-                    upcomingFilterBool = false
-                    this.state.filter.upcoming.map(upcoming => {
-                        upcomingFilterBool = upcomingFilterBool || upcoming==="true"
-                        return upcomingFilterBool
-                    })
-                    if (upcomingFilterBool) {
-                        upcomingBool = upcomingBool && date<play.epochLastPerformance
-                    }
-                    else {
-                        upcomingBool = true
+        const { filter } = this.state;
+
+        const doesPlayMatchRole = (play) => {
+            if (Array.isArray(filter.role)) {
+                for (const role of filter.role) {
+                    if (play.myRoles.includes(role)) {
+                        return true;
                     }
                 }
-                else {
-                    upcomingBool = date<play.epochLastPerformance
-                }
-                if (this.state.filter.upcoming !== upcomingFilterBool) {
-                    let newFilter = {
-                        role: this.state.filter.role,
-                        slug: this.state.filter.slug,
-                        troupe: this.state.filter.troupe,
-                        upcoming: upcomingFilterBool,
-                        year: this.state.filter.year
-                    }
-                    this.setState({filter: newFilter})
-                }
-                bool = bool && upcomingBool
+                return false;
             }
-            return bool
-        })
-        return filteredPlays.reverse()
+            else {
+                return play.myRoles.includes(filter.role);
+            }
+        }
+
+        const doesPlayMatchSlug = (play) => {
+            if (Array.isArray(filter.slug)) {
+                return filter.slug.includes(play.slug);
+            }
+            else {
+                return filter.slug === play.slug;
+            }
+        }
+
+        const doesPlayMatchTroupe = (play) => {
+            if (Array.isArray(filter.troupe)) {
+                for (const troupe of filter.troupe) {
+                    if (play.byArraySlug.includes(troupe)) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            else {
+                return play.byArraySlug.includes(filter.troupe);
+            }
+        }
+
+        const doesPlayMatchUpcoming = (play) => {
+            const date = new Date().getTime()/1000;
+            const isPlayUpcoming = date < play.epochLastPerformance
+
+            let doesUpcomingContainTrue;
+            if (Array.isArray(filter.upcoming)) {
+                doesUpcomingContainTrue = filter.upcoming.includes("true");
+            }
+            else {
+                doesUpcomingContainTrue = filter.upcoming && filter.upcoming !== "false";
+            }
+            
+            return isPlayUpcoming === doesUpcomingContainTrue;
+        }
+
+        const doesPlayMatchYear = (play) => {
+            if (Array.isArray(filter.year)) {
+                return filter.year.includes(play.datesAsText.substr(0,4));
+            }
+            else {
+                return filter.year === play.datesAsText.substr(0,4);
+            }
+        }
+
+        return (jsonData
+            .filter(play => play.isInOeuvre)
+            .filter(this.state.filter.role     ? doesPlayMatchRole     : ()=>true)
+            .filter(this.state.filter.slug     ? doesPlayMatchSlug     : ()=>true)
+            .filter(this.state.filter.troupe   ? doesPlayMatchTroupe   : ()=>true)
+            .filter(this.state.filter.upcoming ? doesPlayMatchUpcoming : ()=>true)
+            .filter(this.state.filter.year     ? doesPlayMatchYear     : ()=>true)
+            .reverse()
+        );
     }
 
     // `generateFilterParagraph` includes several local functions
