@@ -86,6 +86,11 @@ class Page extends Component {
         return (rubrics[troupeSlug] || "");
     }
 
+    isPlayUpcoming = (play) => {
+        const date = new Date().getTime() / 1000;
+        return date < play.epochLastPerformance;
+    }
+
     //// Uses state to determine whether plays that are not upcoming should be filtered out.
     //// If this.state.filter.upcoming is falsy, this method returns false and no “upcoming” filter will be set.
     //// If this.state.filter.upcoming equals "false", this method returns false, and only plays that are NOT upcoming will be displayed.
@@ -142,10 +147,7 @@ class Page extends Component {
         }
 
         const doesPlayMatchUpcoming = (play) => {
-            const date = new Date().getTime()/1000;
-            const isPlayUpcoming = date < play.epochLastPerformance
-            
-            return isPlayUpcoming === this.getDoesUpcomingFilterContainTrue();
+            return this.isPlayUpcoming(play) === this.getDoesUpcomingFilterContainTrue();
         }
 
         const doesPlayMatchYear = (play) => {
@@ -295,6 +297,7 @@ class Page extends Component {
                     yearHandler={this.yearHandler}
                     roleHandler={this.roleHandler}
                     upcomingHandler={this.upcomingHandler}
+                    playIsUpcoming={this.isPlayUpcoming(play)}
                     numPlays={numPlays}
                 />
             )

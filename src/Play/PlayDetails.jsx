@@ -26,6 +26,7 @@ const PlayDetails = (props) => {
 
     const {
         numPlays,
+        playIsUpcoming,
         roleHandler,
         slugHandler,
         troupeHandler,
@@ -44,9 +45,6 @@ const PlayDetails = (props) => {
     else if (myRoles.includes("photographer")) {
         imageType = "collage of photos"
     }
-    // Calculating whether an Upcoming! sticker should be displayed.
-    let date = new Date().getTime()/1000
-    let isUpcoming = date < epochLastPerformance
     // Let’s create a Tag element for every troupe.
     let byMap = byArray.map((troupe,index) => <Tag text={troupe} key={index} handler={()=>{troupeHandler(byArraySlug[index])}}/>)
     // Let’s create a Tag element for every role.
@@ -62,7 +60,7 @@ const PlayDetails = (props) => {
             {/* Displaying the text */}
             <div className={cloudinary ? "play-text" : "play-text-only"}>
                 {/* Displaying the Upcoming! sticker if appropriate. Both the `to` and the `onClick` are useful. */}
-                {isUpcoming
+                {playIsUpcoming
                 ?   <Link to="/?upcoming=true" onClick={upcomingHandler} title="See all upcoming productions">
                       <img className="upcoming" alt="Upcoming!" src={upcoming}/>
                     </Link>
@@ -74,9 +72,18 @@ const PlayDetails = (props) => {
                     </button>
                 </h2>
                 {/* Performance dates and troupes */}
-                <p className="play-by-p"><span className="subheading">{isUpcoming ? "To be ".concat(verb.toLowerCase()) : verb}</span> <Tag handler={yearHandler} text={datesAsText} /> 
-                {datePrecision === "month" ? <span>{" "}(I can’t be more precise than that)</span> : null }
-                &nbsp;<span className="subheading">by</span> {byMap}</p>
+                <p className="play-by-p">
+                    <span className="subheading">
+                        {playIsUpcoming ? "To be ".concat(verb.toLowerCase()) : verb}
+                    </span>
+                    {" "}
+                    <Tag handler={yearHandler} text={datesAsText} />
+                    {datePrecision === "month" ? <span>{" "}(I can’t be more precise than that)</span> : null }
+                    {" "}
+                    <span className="subheading">by</span>
+                    {" "}
+                    {byMap}
+                </p>
                 {/* Play synopsis */}
                 {synopsis ? <p className="synopsis"><span className="subheading">Synopsis:</span> {synopsis}</p> : null}
                 {/* List of my roles */}
