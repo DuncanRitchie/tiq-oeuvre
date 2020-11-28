@@ -46,14 +46,14 @@ a:hover {
   text-decoration: underline;
 }
 
-a.tag, a.play-title-link {
+a.tag, a.play-title-link, a.clear-filter {
   font-weight: inherit;
   color: inherit;
   text-decoration: inherit;
   font-size: inherit;
 }
 
-a.tag:hover, a.play-title-link:hover {
+a.tag:hover, a.play-title-link:hover, a.clear-filter:hover {
     text-decoration: none;
 }
 
