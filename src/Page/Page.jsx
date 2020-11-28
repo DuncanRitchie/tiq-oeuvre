@@ -287,15 +287,15 @@ class Page extends Component {
         // Let’s create a PlayDetails element for every play.
         let mappedPlays = filteredPlays.map((play, index) => {
             return (
-                    <PlayDetails 
-                            key={index}
-                            play={play}
-                            slugHandler={this.slugHandler}
-                            troupeHandler={this.troupeHandler}
-                            yearHandler={this.yearHandler}
-                            roleHandler={this.roleHandler}
-                            upcomingHandler={this.upcomingHandler}
-                            numPlays={numPlays}
+                <PlayDetails 
+                    key={index}
+                    play={play}
+                    slugHandler={this.slugHandler}
+                    troupeHandler={this.troupeHandler}
+                    yearHandler={this.yearHandler}
+                    roleHandler={this.roleHandler}
+                    upcomingHandler={this.upcomingHandler}
+                    numPlays={numPlays}
                 />
             )
         })
