@@ -86,7 +86,22 @@ class Page extends Component {
         return (rubrics[troupeSlug] || "");
     }
 
-    filterPlays = () => {
+    //// Uses state to determine whether plays that are not upcoming should be filtered out.
+    //// If this.state.filter.upcoming is falsy, this method returns false and no “upcoming” filter will be set.
+    //// If this.state.filter.upcoming equals "false", this method returns false, and only plays that are NOT upcoming will be displayed.
+    //// If this.state.filter.upcoming equals or contains "true", this method returns true, and only upcoming plays will be displayed.
+    getDoesUpcomingFilterContainTrue = () => {
+        const upcoming = this.state.filter.upcoming;
+        if (Array.isArray(upcoming)) {
+            return upcoming.includes("true");
+        }
+        else {
+            return upcoming && upcoming !== "false";
+        }
+    }
+
+    //// Returns an array of the plays that should be displayed.
+    getFilteredPlays = () => {
         const { filter } = this.state;
 
         const doesPlayMatchRole = (play) => {
@@ -129,16 +144,8 @@ class Page extends Component {
         const doesPlayMatchUpcoming = (play) => {
             const date = new Date().getTime()/1000;
             const isPlayUpcoming = date < play.epochLastPerformance
-
-            let doesUpcomingContainTrue;
-            if (Array.isArray(filter.upcoming)) {
-                doesUpcomingContainTrue = filter.upcoming.includes("true");
-            }
-            else {
-                doesUpcomingContainTrue = filter.upcoming && filter.upcoming !== "false";
-            }
             
-            return isPlayUpcoming === doesUpcomingContainTrue;
+            return isPlayUpcoming === this.getDoesUpcomingFilterContainTrue();
         }
 
         const doesPlayMatchYear = (play) => {
@@ -164,8 +171,9 @@ class Page extends Component {
     // `generateFilterParagraph` includes several local functions
     // that may be called in the final return statement.
     generateFilterParagraph(numPlays) {
+        const maxNumPlays = jsonData.filter(play => play.isInOeuvre).length;
+
         const generateFirstPartOfParagraph = () => {
-            const maxNumPlays = jsonData.filter(play => play.isInOeuvre).length;
             if (numPlays === maxNumPlays) {
                 return `Showing all ${numPlays} items. Click a date, troupe, role, title, or “upcoming” sticker to set a filter`;
             }
@@ -249,7 +257,15 @@ class Page extends Component {
         }
 
         const generateUpcomingClause = () => {
-            return ` that ${numPlays===1 ? "has" : "have"} not been performed yet`
+            if (numPlays === maxNumPlays) {
+                return "";
+            }
+            else if (this.getDoesUpcomingFilterContainTrue()) {
+                return ` that ${numPlays===1 ? "has" : "have"} not been performed yet`
+            }
+            else {
+                return ` that ${numPlays===1 ? "has" : "have"} been performed`
+            }
         }
         
         return (
@@ -263,7 +279,7 @@ class Page extends Component {
     }
 
     render() {
-        const filteredPlays = this.filterPlays();
+        const filteredPlays = this.getFilteredPlays();
         // Let’s calculate the number of plays to display.
         const numPlays = filteredPlays.length;
         // Generate the paragraph in the header describing the filter.
