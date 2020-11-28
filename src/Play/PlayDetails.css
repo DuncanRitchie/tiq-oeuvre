@@ -51,6 +51,11 @@ img.landscape {
     background-color: #cfefef;
 }
 
+.play-title-link {
+    display: inline-block;
+    width: 100%;
+}
+
 .play-text-only {
     width: 85%;
     margin-left: 7.5%;
