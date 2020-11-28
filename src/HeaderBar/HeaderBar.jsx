@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Nav from './Nav.jsx';
 import './HeaderBar.css';
 
@@ -14,7 +15,7 @@ const HeaderBar = (props) => {
                 props.filter.role === "" && 
                 props.filter.year === "" && 
                 !props.filter.upcoming ? null :
-                <button className="clear-filter" title="Clear filter" onClick={props.clearFilter}>Clear filter</button>}
+                <Link className="clear-filter" title="Clear filter" to="/?">Clear filter</Link>}
             </p>
         </header>
     )

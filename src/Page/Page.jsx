@@ -11,11 +11,6 @@ const Loading = () => <section className="play-details"><p>Loading...</p></secti
 class Page extends Component {
     state = {
         filter: {
-            slug: queryString.parse(window.location.search).slug || "",
-            troupe: queryString.parse(window.location.search).troupe || "",
-            year: queryString.parse(window.location.search).year || "",
-            role: queryString.parse(window.location.search).role || "",
-            upcoming: queryString.parse(window.location.search).upcoming || false
         }
     }
 
@@ -31,44 +26,15 @@ class Page extends Component {
         })
     }
 
-    slugHandler = (slug) => {
-        this.props.history.push("/?slug="+slug)
-        this.refresh()
+    componentDidMount() {
+        this.refresh();
     }
 
-    troupeHandler = (troupe) => {
-        this.props.history.push("/?troupe="+troupe)
-        this.refresh()
-    }
-
-    yearHandler = (e) => {
-        this.props.history.push("/?year="+e.currentTarget.textContent.substr(0,4))
-        this.refresh()
-    }
-
-    upcomingHandler = () => {
-        this.props.history.push("/?upcoming=true")
-        this.refresh()
-    }
-
-    roleHandler = (e) => {
-        const roles = {
-            "actor":              "actor",
-            "assistant-director": "assistant-director",
-            "lyricist":           "lyricist",
-            "photographer":       "photographer",
-            "poster co-designer (with illustration by Alison Pitt)": "co-designer",
-            "poster-designer":    "poster-designer",
-            "programme-designer": "programme-designer",
+    componentDidUpdate(prevProps, _) {
+        if (prevProps.location.search !== this.props.location.search)
+        {
+            this.refresh();
         }
-        const role = roles[e.currentTarget.textContent] || "";
-        this.props.history.push("/?role="+role)
-        this.refresh()
-    }
-
-    clearFilter = () => {
-        this.props.history.push("/?")
-        this.refresh()
     }
 
     getTroupeRubric = () => {

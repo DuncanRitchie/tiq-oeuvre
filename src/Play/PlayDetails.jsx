@@ -4,7 +4,27 @@ import Tag from "./Tag"
 import Image from "./Image"
 import "./PlayDetails.css"
 import convertCloudinaryUrl from "./convert-cloudinary-url";
-import upcoming from "./upcoming.png"
+import upcoming from "./upcoming.png";
+
+const getUrlForRole = (role) => {
+    return `/?role=${role}` ;
+};
+    
+const getUrlForSlug = (slug) => {
+    return `/?slug=${slug}`;
+};
+
+const getUrlForTroupe = (troupeSlug) => {
+    return `/?troupe=${troupeSlug}`;
+};
+
+const getUrlForUpcoming = () => {
+    return "/?upcoming=true";
+};
+
+const getUrlForYear = (datesAsText) => {
+    return `/?year=${datesAsText.substr(0,4)}`;
+};
 
 const PlayDetails = (props) => {
     const {
@@ -13,7 +33,6 @@ const PlayDetails = (props) => {
         cloudinary,
         datePrecision,
         datesAsText,
-        epochLastPerformance,
         exampleLyric,
         posterOrientation,
         myRoles,
@@ -26,15 +45,10 @@ const PlayDetails = (props) => {
 
     const {
         numPlays,
-        playIsUpcoming,
-        roleHandler,
-        slugHandler,
-        troupeHandler,
-        upcomingHandler,
-        yearHandler,
+        playIsUpcoming
     } = props;
 
-    // Working out whether we’re displaying a poster, programme, or collage (if we’sre displaying any image).
+    // Working out whether we’re displaying a poster, programme, or collage (if we’re displaying any image).
     let imageType = "image"
     if (myRoles.includes("poster-designer") || myRoles.includes("co-designer")) {
         imageType = "poster"
@@ -46,9 +60,9 @@ const PlayDetails = (props) => {
         imageType = "collage of photos"
     }
     // Let’s create a Tag element for every troupe.
-    let byMap = byArray.map((troupe,index) => <Tag text={troupe} key={index} handler={()=>{troupeHandler(byArraySlug[index])}}/>)
+    let byMap = byArray.map((troupe,index) => <Tag text={troupe} key={index} to={getUrlForTroupe(byArraySlug[index])}/>)
     // Let’s create a Tag element for every role.
-    let rolesMap = myRoles.sort().map((role, index) => <Tag handler={roleHandler} text={role} key={index}/>);
+    let rolesMap = myRoles.sort().map((role, index) => <Tag to={getUrlForRole(role)} text={role} key={index}/>);
     // Let’s create a <span> element for every song I lyricized.
     const songsMap = mySongsLyricized?.map((song,index)=> <span key={index} className="song-title">{song}</span>)
     // If a URL for the image is specified in the data, we don’t want a className of play-details-text-only.
@@ -61,15 +75,15 @@ const PlayDetails = (props) => {
             <div className={cloudinary ? "play-text" : "play-text-only"}>
                 {/* Displaying the Upcoming! sticker if appropriate. Both the `to` and the `onClick` are useful. */}
                 {playIsUpcoming
-                ?   <Link to="/?upcoming=true" onClick={upcomingHandler} title="See all upcoming productions">
+                ?   <Link to={getUrlForUpcoming()} title="See all upcoming productions">
                       <img className="upcoming" alt="Upcoming!" src={upcoming}/>
                     </Link>
                 : null}
                 {/* The heading is the play’s title, with a <button> for interactivity. */}
                 <h2 className="play-title">
-                    <button onClick={()=>{slugHandler(slug)}} title={`See only “${title}”`}>
+                    <Link to={getUrlForSlug(slug)} title={`See only “${title}”`}>
                         {title}
-                    </button>
+                    </Link>
                 </h2>
                 {/* Performance dates and troupes */}
                 <p className="play-by-p">
@@ -77,7 +91,7 @@ const PlayDetails = (props) => {
                         {playIsUpcoming ? "To be ".concat(verb.toLowerCase()) : verb}
                     </span>
                     {" "}
-                    <Tag handler={yearHandler} text={datesAsText} />
+                    <Tag to={getUrlForYear(datesAsText)} text={datesAsText} />
                     {datePrecision === "month" ? <span>{" "}(I can’t be more precise than that)</span> : null }
                     {" "}
                     <span className="subheading">by</span>

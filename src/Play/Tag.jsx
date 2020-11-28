@@ -1,21 +1,22 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./Tag.css"
 
-let Tag = (props) => {
+const Tag = (props) => {
     // The first word of the text is displayed in bold, the rest in normal weight.
     const firstWord = props.text.split(" ")[0]
     const restOfText = props.text.replace(firstWord,"")
     return (
-        <button
+        <Link
         className="tag" 
         title={`See all results for ${firstWord}`} 
-        onClick={props.handler}
+        to={props.to}
         >
             <span className="first-word">
                 {firstWord}
             </span>
             {restOfText}
-        </button>
+        </Link>
     )
 }
 
