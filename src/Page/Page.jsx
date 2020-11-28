@@ -309,7 +309,9 @@ class Page extends Component {
         return (
             <div className="Page">
                 <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={this.getTroupeRubric()} clearFilter={this.clearFilter}/>
-                {mappedPlaysWithLazyLoading}
+                <main>
+                    {mappedPlaysWithLazyLoading}
+                </main>
                 <Footer/>
             </div>
         );

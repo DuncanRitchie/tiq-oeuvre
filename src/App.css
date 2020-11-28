@@ -7,7 +7,18 @@
   background-attachment: fixed;
   min-height: calc(100vh - 144px);
   padding-top: 144px; /* This is the height of HeaderBar */
-  width: 100%
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 p,a,span {
@@ -38,7 +49,6 @@ button {
 @media (min-width: 1080px) {
   .Page {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around
   }
