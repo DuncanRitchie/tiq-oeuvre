@@ -5,11 +5,14 @@
     border-radius: 6px;
     padding: 2px 4px;
     background-color: #ade9e9;
-    cursor: pointer
+    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .tag:hover {
     background-color: #c4f5f5;
+    text-decoration: underline;
 }
 
 .tag:active {

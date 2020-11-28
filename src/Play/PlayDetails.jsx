@@ -79,9 +79,9 @@ const PlayDetails = (props) => {
                       <img className="upcoming" alt="Upcoming!" src={upcoming}/>
                     </Link>
                 : null}
-                {/* The heading is the play’s title, with a <button> for interactivity. */}
+                {/* The heading is the play’s title. */}
                 <h2 className="play-title">
-                    <Link to={getUrlForSlug(slug)} title={`See only “${title}”`}>
+                    <Link to={getUrlForSlug(slug)} title={`See only “${title}”`} className="play-title-link">
                         {title}
                     </Link>
                 </h2>

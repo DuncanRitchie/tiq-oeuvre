@@ -20,23 +20,6 @@ footer ul li + li {
     margin-left: 24px;
 }
 
-a:link {
-    font-weight: bold;
-    color: #23527c;
-    text-decoration: none
-}
-
-a:visited {
-    font-weight: bold;
-    color: #23527c;
-    text-decoration: none
-}
-
-a:hover {
-    color: #193c5a;
-    text-decoration: underline
-}  
-
 @media (max-width: 767px) {
     footer ul {
         flex-direction: column;

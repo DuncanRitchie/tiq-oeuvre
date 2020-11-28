@@ -18,20 +18,43 @@ main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 p,a,span {
   font-size: 15px
 }
 
-button {
-  font-size: inherit;
-  font-family: inherit;
-}
-
 :focus {
   outline: 2px dashed rgb(133, 88, 62);
+}
+
+a:link {
+  font-weight: bold;
+  color: #23527c;
+  text-decoration: none;
+}
+
+a:visited {
+  font-weight: bold;
+  color: #23527c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #193c5a;
+  text-decoration: underline;
+}
+
+a.tag, a.play-title-link {
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+a.tag:hover, a.play-title-link:hover {
+    text-decoration: none;
 }
 
 /* Font Awesome icons */
@@ -42,14 +65,14 @@ button {
 
 @media (max-width: 767px) {
   .Page {
-      padding-top: 144px /* This is the height of HeaderBar */
+    padding-top: 144px /* This is the height of HeaderBar */
   }
 }
 
 @media (min-width: 1080px) {
   .Page {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
   }
 }
