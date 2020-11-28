@@ -20,16 +20,16 @@ class Page extends Component {
     }
 
     refresh = () => {
-                this.setState({
-                        filter: {
-                            slug: queryString.parse(window.location.search).slug || "",
-                            troupe: queryString.parse(window.location.search).troupe || "",
-                            year: queryString.parse(window.location.search).year || "",
-                            role: queryString.parse(window.location.search).role || "",
-                            upcoming: queryString.parse(window.location.search).upcoming || false
-                        }
-                })
+        this.setState({
+            filter: {
+                slug: queryString.parse(window.location.search).slug || "",
+                troupe: queryString.parse(window.location.search).troupe || "",
+                year: queryString.parse(window.location.search).year || "",
+                role: queryString.parse(window.location.search).role || "",
+                upcoming: queryString.parse(window.location.search).upcoming || false
             }
+        })
+    }
 
     slugHandler = (slug) => {
         this.props.history.push("/?slug="+slug)
