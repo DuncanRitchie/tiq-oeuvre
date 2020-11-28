@@ -10,6 +10,6 @@ It’s a static React page. The data, in Json format, have been output by an Exc
 
 Productions can be filtered by clicking on values such as the name of the troupe or the year of performance; this uses query strings with React Router. You can combine filters by changing the URL yourself: [?role=poster-designer&year=2019&year=2020](https://www.duncanritchie.co.uk/tiq-oeuvre/?role=poster-designer&year=2019&year=2020) yields posters I designed in the year 2019 or 2020.
 
-I use Cloudinary to serve my images, GitHub Pages to host the page itself, and react-lazy-load to improve performance.
+I use Cloudinary to serve my images, GitHub Pages to host the page itself, and lazy-loading to improve performance.
 
 www.duncanritchie.co.uk/tiq-oeuvre
