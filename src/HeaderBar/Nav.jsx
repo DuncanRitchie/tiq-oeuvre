@@ -38,7 +38,7 @@ class Nav extends Component {
                     tabIndex="0"
                     aria-haspopup="true"
                 />
-                <label htmlFor="nav-open-toggler" title="Open or close the nav menu">
+                <label htmlFor="nav-open-toggler" title="Open or close the nav menu" aria-expanded={menuOpen}>
                     <img className="header-icon" alt="Duncan’s fulmar icon. Click to open or close the nav menu" src="https://www.duncanritchie.co.uk/favicon-96x96.png"/>
                 </label>
                 <ul>
