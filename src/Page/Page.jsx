@@ -258,11 +258,6 @@ class Page extends Component {
                 <PlayDetails 
                     key={index}
                     play={play}
-                    slugHandler={this.slugHandler}
-                    troupeHandler={this.troupeHandler}
-                    yearHandler={this.yearHandler}
-                    roleHandler={this.roleHandler}
-                    upcomingHandler={this.upcomingHandler}
                     playIsUpcoming={this.isPlayUpcoming(play)}
                     numPlays={numPlays}
                 />
