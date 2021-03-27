@@ -29,18 +29,20 @@ class Nav extends Component {
         let menuOpen = this.state.menuOpen;
         return (
             <nav>
-                {/* Checkbox is visually hidden but operated via the label. 
+                {/* Button is visually hidden but operated via the label. 
                 It determines whether the ul is hidden or not. */}
-                <input
-                    type="checkbox"
+                <button
                     id="nav-open-toggler"
-                    onChange={this.toggleMenuOpen}
-                    tabIndex="0"
+                    type="button"
+                    aria-controls="menu"
+                    aria-expanded={menuOpen}
+                    onClick={this.toggleMenuOpen}
+                    className={menuOpen ? "open": "closed"}
                 />
-                <label htmlFor="nav-open-toggler" title="Open or close the nav menu" aria-expanded={menuOpen}>
-                    <img className="header-icon" alt="Duncan’s fulmar icon. Click to open or close the nav menu" src="https://www.duncanritchie.co.uk/favicon-96x96.png"/>
+                <label htmlFor="nav-open-toggler" title="Open or close the navigation menu">
+                    <img className="header-icon" alt="Duncan’s fulmar icon. Click to open or close the navigation menu" src="https://www.duncanritchie.co.uk/favicon-96x96.png"/>
                 </label>
-                <ul>
+                <ul aria-label="Navigation" aria-hidden={!menuOpen}>
                     <li>
                         <MenuItem isOpen={menuOpen} href="https://www.duncanritchie.co.uk/" title="Duncan Ritchie’s portfolio">Duncan Ritchie’s website</MenuItem>
                     </li>

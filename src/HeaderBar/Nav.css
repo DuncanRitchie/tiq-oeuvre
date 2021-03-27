@@ -7,7 +7,7 @@ nav {
     align-items: flex-start;
 }
 
-/* The checkbox toggling the menu is hidden by the label, but changed via label */
+/* The button toggling the menu is hidden by the label, but changed via label */
 #nav-open-toggler {
     position: absolute;
     width: 24px; /* The same as the label. */
@@ -45,7 +45,7 @@ nav label img {
     box-shadow: 3px 3px 6px rgb(133, 88, 62);
 }
 
-#nav-open-toggler:checked ~ ul {
+#nav-open-toggler.open ~ ul {
     opacity: 1;
     clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%);
 }
