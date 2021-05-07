@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {Link} from "react-router-dom";
 import Tag from "./Tag"
 import Image from "./Image"
@@ -92,7 +92,7 @@ const PlayDetails = (props) => {
                     </span>
                     {" "}
                     <Tag to={getUrlForYear(datesAsText)} text={datesAsText} />
-                    {datePrecision === "month" ? <span>{" "}(I can’t be more precise than that)</span> : null }
+                    {datePrecision === "month" ? <>{" "}(I can’t be more precise than that)</> : null }
                     {" "}
                     <span className="subheading">by</span>
                     {" "}
@@ -120,7 +120,7 @@ const PlayDetails = (props) => {
                     ? <p className="example-lyric">
                         <span className="subheading">Example lyric:</span><br/>
                         {/* Convert newlines to line-breaks. */}
-                        {exampleLyric.split("\n").map((line, index) => <span key={index}>{line}<br /></span>)}
+                        {exampleLyric.split("\n").map((line, index) => <Fragment key={index}>{line}<br /></Fragment>)}
                     </p>
                     : null}
                 {cloudinary ? <p className="see-pdf"><a href={convertCloudinaryUrl(cloudinary,1280,"pdf")} title={"See "+imageType+" as a PDF"}><i className="far fa-file"></i>See {imageType} as a PDF</a></p> : null}

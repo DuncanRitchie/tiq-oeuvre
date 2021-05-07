@@ -4,7 +4,7 @@ import '../App.css';
 
 //// The menu-items should not be interactive when the menu is closed (or closing).
 //// This is achieved by rendering each item with an <a> element if the menu is open,
-//// and a <span> element if closed.
+//// and a <span> element if closed. (It’s a <span> not a <Fragment> for CSS.)
 const MenuItem = (props) => {
     if (props.isOpen) {
         return <a href={props.href} title={props.title}>{props.children}</a>
