@@ -269,10 +269,12 @@ class Page extends Component {
         // Let’s put everything together into Page.
         return (
             <div className="Page">
-                <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={this.getTroupeRubric()} clearFilter={this.clearFilter}/>
-                <main>
-                    {mappedPlaysWithLazyLoading}
-                </main>
+                <div className="full-height">
+                    <HeaderBar filter={this.state.filter} filterParagraph={filterParagraph} rubric={this.getTroupeRubric()} clearFilter={this.clearFilter}/>
+                    <main>
+                        {mappedPlaysWithLazyLoading}
+                    </main>
+                </div>
                 <Footer/>
             </div>
         );
